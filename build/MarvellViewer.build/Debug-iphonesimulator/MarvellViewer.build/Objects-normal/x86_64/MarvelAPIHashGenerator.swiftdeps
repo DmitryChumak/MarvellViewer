@@ -1,0 +1,143 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MarvelAPIHashGenerator"
+provides-nominal:
+- "13MarvellViewer22MarvelAPIHashGeneratorC"
+provides-member:
+- ["13MarvellViewer22MarvelAPIHashGeneratorC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "MarvelAPIHashGenerator"
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- !private ["SK", "md5"]
+- !private ["s7CVarArgP", "md5"]
+- !private ["Sl", "md5"]
+- !private ["SL", "md5"]
+- !private ["s28CustomDebugStringConvertibleP", "md5"]
+- !private ["s17CustomReflectableP", "md5"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "md5"]
+- !private ["Se", "md5"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "md5"]
+- !private ["SQ", "md5"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "md5"]
+- !private ["s32ExpressibleByStringInterpolationP", "md5"]
+- !private ["s26ExpressibleByStringLiteralP", "md5"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "md5"]
+- !private ["SH", "md5"]
+- !private ["s25LosslessStringConvertibleP", "md5"]
+- ["13MarvellViewer22MarvelAPIHashGeneratorC", "Int"]
+- ["13MarvellViewer22MarvelAPIHashGeneratorC", "String"]
+- ["13MarvellViewer22MarvelAPIHashGeneratorC", "generateHash"]
+- ["13MarvellViewer22MarvelAPIHashGeneratorC", "init"]
+- !private ["s10MirrorPathP", "md5"]
+- !private ["So8NSCodingP", "md5"]
+- !private ["So9NSCopyingP", "md5"]
+- !private ["So21NSItemProviderReadingP", "md5"]
+- !private ["So21NSItemProviderWritingP", "md5"]
+- !private ["So16NSMutableCopyingP", "md5"]
+- !private ["So8NSObjectC", "md5"]
+- !private ["So8NSObjectP", "md5"]
+- !private ["So14NSSecureCodingP", "md5"]
+- !private ["So8NSStringC", "md5"]
+- !private ["Sm", "md5"]
+- !private ["ST", "md5"]
+- !private ["SS", "md5"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "md5"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "md5"]
+- !private ["s20TextOutputStreamableP", "md5"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "md5"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "md5"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "md5"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "md5"]
+- !private ["s19_HasContiguousBytesP", "md5"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "md5"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "md5"]
+- !private ["s21_ObjectiveCBridgeableP", "md5"]
+depends-nominal:
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- !private "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SH"
+- !private "s25LosslessStringConvertibleP"
+- "13MarvellViewer22MarvelAPIHashGeneratorC"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "Sm"
+- !private "ST"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/dmitry/Documents/Projects/MarvellViewer/build/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework/Modules/CryptoSwift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/dmitry/Documents/Projects/MarvellViewer/build/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework/Headers/CryptoSwift-umbrella.h"
+- "/Users/dmitry/Documents/Projects/MarvellViewer/build/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework/Headers/CryptoSwift-Swift.h"
+- "/Users/dmitry/Documents/Projects/MarvellViewer/build/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "76354a1cdee4c67abec07338b20820ca"

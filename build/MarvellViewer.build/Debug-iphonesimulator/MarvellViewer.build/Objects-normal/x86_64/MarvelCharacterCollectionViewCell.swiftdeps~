@@ -1,0 +1,341 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MarvelCharacterCollectionViewCell"
+provides-nominal:
+- "13MarvellViewer33MarvelCharacterCollectionViewCellC"
+provides-member:
+- ["13MarvellViewer33MarvelCharacterCollectionViewCellC", ""]
+provides-dynamic-lookup:
+- "marvelCharacterImage"
+- "marvelCharacterNameLabel"
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "Data"
+- "MarvelCharacter"
+- "MarvelCharacterCollectionViewCell"
+- "NilCoalescingPrecedence"
+- "UICollectionViewCell"
+- !private "UIImage"
+- "UIImageView"
+- "UILabel"
+depends-member:
+- !private ["SK", "init"]
+- !private ["So15CALayerDelegateP", "Data"]
+- !private ["So15CALayerDelegateP", "UIImage"]
+- ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "marvelCharacterImage"]
+- !private ["So15CALayerDelegateP", "marvelCharacterNameLabel"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "Data"]
+- !private ["s7CVarArgP", "UIImage"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "marvelCharacterImage"]
+- !private ["s7CVarArgP", "marvelCharacterNameLabel"]
+- !private ["s7CVarArgP", "text"]
+- !private ["Sl", "init"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Data"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "marvelCharacterImage"]
+- !private ["s28CustomDebugStringConvertibleP", "marvelCharacterNameLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "text"]
+- !private ["s23CustomStringConvertibleP", "Data"]
+- !private ["s23CustomStringConvertibleP", "UIImage"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "marvelCharacterImage"]
+- !private ["s23CustomStringConvertibleP", "marvelCharacterNameLabel"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["10Foundation4DataV", "init"]
+- !private ["10Foundation12DataProtocolP", "init"]
+- !private ["Se", "imageURL"]
+- !private ["Se", "init"]
+- !private ["Se", "name"]
+- !private ["Se", "text"]
+- !private ["SE", "init"]
+- !private ["SE", "text"]
+- !private ["SQ", "Data"]
+- !private ["SQ", "UIImage"]
+- ["SQ", ""]
+- !private ["SQ", "init"]
+- !private ["SQ", "marvelCharacterImage"]
+- !private ["SQ", "marvelCharacterNameLabel"]
+- !private ["SQ", "text"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["SH", "Data"]
+- !private ["SH", "UIImage"]
+- ["SH", ""]
+- !private ["SH", "init"]
+- !private ["SH", "marvelCharacterImage"]
+- !private ["SH", "marvelCharacterNameLabel"]
+- !private ["SH", "text"]
+- !private ["13MarvellViewer15MarvelCharacterV", "imageURL"]
+- !private ["13MarvellViewer15MarvelCharacterV", "name"]
+- !private ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "Data"]
+- ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "MarvelCharacter"]
+- !private ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "UIImage"]
+- ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "UIImageView"]
+- ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "UILabel"]
+- ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "configure"]
+- ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "deinit"]
+- ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "init"]
+- !private ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "marvelCharacterImage"]
+- !private ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "marvelCharacterNameLabel"]
+- !private ["SM", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["So8NSCodingP", "Data"]
+- !private ["So8NSCodingP", "UIImage"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "marvelCharacterImage"]
+- !private ["So8NSCodingP", "marvelCharacterNameLabel"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSObjectC", "Data"]
+- ["So8NSObjectC", "MarvelCharacter"]
+- !private ["So8NSObjectC", "UIImage"]
+- ["So8NSObjectC", "UIImageView"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "configure"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "marvelCharacterImage"]
+- ["So8NSObjectC", "marvelCharacterNameLabel"]
+- !private ["So8NSObjectC", "text"]
+- !private ["So8NSObjectP", "Data"]
+- !private ["So8NSObjectP", "UIImage"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "marvelCharacterImage"]
+- !private ["So8NSObjectP", "marvelCharacterNameLabel"]
+- !private ["So8NSObjectP", "text"]
+- !private ["Sq", "text"]
+- !private ["Sk", "init"]
+- !private ["Sm", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["ST", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "Data"]
+- !private ["So29UIAccessibilityIdentificationP", "UIImage"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "marvelCharacterImage"]
+- !private ["So29UIAccessibilityIdentificationP", "marvelCharacterNameLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "Data"]
+- !private ["So12UIAppearanceP", "UIImage"]
+- ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "marvelCharacterImage"]
+- !private ["So12UIAppearanceP", "marvelCharacterNameLabel"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "Data"]
+- !private ["So21UIAppearanceContainerP", "UIImage"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "marvelCharacterImage"]
+- !private ["So21UIAppearanceContainerP", "marvelCharacterNameLabel"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So24UICollectionReusableViewC", "Data"]
+- ["So24UICollectionReusableViewC", "MarvelCharacter"]
+- !private ["So24UICollectionReusableViewC", "UIImage"]
+- ["So24UICollectionReusableViewC", "UIImageView"]
+- ["So24UICollectionReusableViewC", "UILabel"]
+- ["So24UICollectionReusableViewC", "configure"]
+- ["So24UICollectionReusableViewC", "init"]
+- ["So24UICollectionReusableViewC", "marvelCharacterImage"]
+- ["So24UICollectionReusableViewC", "marvelCharacterNameLabel"]
+- !private ["So20UICollectionViewCellC", "Data"]
+- ["So20UICollectionViewCellC", "MarvelCharacter"]
+- !private ["So20UICollectionViewCellC", "UIImage"]
+- ["So20UICollectionViewCellC", "UIImageView"]
+- ["So20UICollectionViewCellC", "UILabel"]
+- ["So20UICollectionViewCellC", ""]
+- ["So20UICollectionViewCellC", "configure"]
+- ["So20UICollectionViewCellC", "init"]
+- ["So20UICollectionViewCellC", "marvelCharacterImage"]
+- ["So20UICollectionViewCellC", "marvelCharacterNameLabel"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "Data"]
+- !private ["So17UICoordinateSpaceP", "UIImage"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "marvelCharacterImage"]
+- !private ["So17UICoordinateSpaceP", "marvelCharacterNameLabel"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "Data"]
+- !private ["So13UIDynamicItemP", "UIImage"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "marvelCharacterImage"]
+- !private ["So13UIDynamicItemP", "marvelCharacterNameLabel"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "Data"]
+- !private ["So18UIFocusEnvironmentP", "UIImage"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "marvelCharacterImage"]
+- !private ["So18UIFocusEnvironmentP", "marvelCharacterNameLabel"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So11UIFocusItemP", "Data"]
+- !private ["So11UIFocusItemP", "UIImage"]
+- ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "marvelCharacterImage"]
+- !private ["So11UIFocusItemP", "marvelCharacterNameLabel"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So20UIFocusItemContainerP", "Data"]
+- !private ["So20UIFocusItemContainerP", "UIImage"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "marvelCharacterImage"]
+- !private ["So20UIFocusItemContainerP", "marvelCharacterNameLabel"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "Data"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "marvelCharacterImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "marvelCharacterNameLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So11UIResponderC", "Data"]
+- ["So11UIResponderC", "MarvelCharacter"]
+- !private ["So11UIResponderC", "UIImage"]
+- ["So11UIResponderC", "UIImageView"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "configure"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "marvelCharacterImage"]
+- ["So11UIResponderC", "marvelCharacterNameLabel"]
+- !private ["So11UIResponderC", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "Data"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "marvelCharacterImage"]
+- !private ["So30UIResponderStandardEditActionsP", "marvelCharacterNameLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So18UITraitEnvironmentP", "Data"]
+- !private ["So18UITraitEnvironmentP", "UIImage"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "marvelCharacterImage"]
+- !private ["So18UITraitEnvironmentP", "marvelCharacterNameLabel"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So23UIUserActivityRestoringP", "Data"]
+- !private ["So23UIUserActivityRestoringP", "UIImage"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "marvelCharacterImage"]
+- !private ["So23UIUserActivityRestoringP", "marvelCharacterNameLabel"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So6UIViewC", "Data"]
+- ["So6UIViewC", "MarvelCharacter"]
+- !private ["So6UIViewC", "UIImage"]
+- ["So6UIViewC", "UIImageView"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "configure"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "marvelCharacterImage"]
+- ["So6UIViewC", "marvelCharacterNameLabel"]
+- !private ["So6UIViewC", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "marvelCharacterImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "marvelCharacterNameLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "Data"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "UIImage"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "marvelCharacterImage"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "marvelCharacterNameLabel"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
+depends-nominal:
+- !private "SK"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation4DataV"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s23ExpressibleByNilLiteralP"
+- "SH"
+- !private "13MarvellViewer15MarvelCharacterV"
+- "13MarvellViewer33MarvelCharacterCollectionViewCellC"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sq"
+- !private "Sk"
+- !private "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So24UICollectionReusableViewC"
+- "So20UICollectionViewCellC"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/dmitry/Documents/Projects/MarvellViewer/build/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework/Modules/CryptoSwift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/dmitry/Documents/Projects/MarvellViewer/build/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework/Headers/CryptoSwift-umbrella.h"
+- "/Users/dmitry/Documents/Projects/MarvellViewer/build/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework/Headers/CryptoSwift-Swift.h"
+- "/Users/dmitry/Documents/Projects/MarvellViewer/build/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "d274bb1b6d6daf35405476bd62fc5cca"

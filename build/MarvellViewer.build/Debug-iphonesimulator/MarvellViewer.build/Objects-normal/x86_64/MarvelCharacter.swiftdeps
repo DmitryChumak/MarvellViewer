@@ -1,0 +1,328 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MarvelCharacter"
+- "MarvelCharacterCollection"
+- "AnyCodingKey"
+provides-nominal:
+- "13MarvellViewer15MarvelCharacterV"
+- "13MarvellViewer25MarvelCharacterCollectionV"
+- "13MarvellViewer12AnyCodingKeyV"
+provides-member:
+- ["13MarvellViewer15MarvelCharacterV", ""]
+- ["13MarvellViewer25MarvelCharacterCollectionV", ""]
+- ["13MarvellViewer12AnyCodingKeyV", ""]
+- ["13MarvellViewer25MarvelCharacterCollectionV", "init"]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "AnyCodingKey"
+- "AssignmentPrecedence"
+- "CodingKey"
+- "Decodable"
+- "Decoder"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "MarvelCharacter"
+- "MarvelCharacterCollection"
+- "String"
+- "StringLiteralType"
+- "URL"
+- !private "UnicodeScalarType"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["13MarvellViewer12AnyCodingKeyV", "Int"]
+- ["13MarvellViewer12AnyCodingKeyV", "String"]
+- ["13MarvellViewer12AnyCodingKeyV", "debugDescription"]
+- ["13MarvellViewer12AnyCodingKeyV", "deinit"]
+- ["13MarvellViewer12AnyCodingKeyV", "description"]
+- ["13MarvellViewer12AnyCodingKeyV", "init"]
+- ["13MarvellViewer12AnyCodingKeyV", "intValue"]
+- ["13MarvellViewer12AnyCodingKeyV", "stringValue"]
+- !private ["SK", "init"]
+- !private ["s7CVarArgP", "init"]
+- ["s9CodingKeyP", "=="]
+- ["s9CodingKeyP", "RawValue"]
+- !private ["s9CodingKeyP", "String"]
+- !private ["s9CodingKeyP", "ThumbnailCodingKeys"]
+- ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_Default_RawValue"]
+- !private ["s9CodingKeyP", "_findStringSwitchCase"]
+- ["s9CodingKeyP", "_rawHashValue"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- !private ["s9CodingKeyP", "ext"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- !private ["s9CodingKeyP", "id"]
+- ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- !private ["s9CodingKeyP", "name"]
+- !private ["s9CodingKeyP", "path"]
+- ["s9CodingKeyP", "rawValue"]
+- ["s9CodingKeyP", "stringValue"]
+- !private ["s9CodingKeyP", "thumbnail"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- ["s28CustomDebugStringConvertibleP", "=="]
+- ["s28CustomDebugStringConvertibleP", "RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "ThumbnailCodingKeys"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- !private ["s28CustomDebugStringConvertibleP", "ext"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- !private ["s28CustomDebugStringConvertibleP", "id"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "path"]
+- ["s28CustomDebugStringConvertibleP", "rawValue"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- !private ["s28CustomDebugStringConvertibleP", "thumbnail"]
+- !private ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "ThumbnailCodingKeys"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- !private ["s23CustomStringConvertibleP", "ext"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "id"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "path"]
+- ["s23CustomStringConvertibleP", "rawValue"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- !private ["s23CustomStringConvertibleP", "thumbnail"]
+- !private ["Se", "AnyCodingKey"]
+- !private ["Se", "CodingKeys"]
+- !private ["Se", "Int"]
+- !private ["Se", "MarvelCharacter"]
+- !private ["Se", "String"]
+- !private ["Se", "URL"]
+- ["Se", ""]
+- !private ["Se", "_findStringSwitchCase"]
+- !private ["Se", "description"]
+- !private ["Se", "id"]
+- !private ["Se", "imageURL"]
+- ["Se", "init"]
+- !private ["Se", "name"]
+- !private ["s7DecoderP", "container"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "init"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- !private ["SQ", "ThumbnailCodingKeys"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- !private ["SQ", "ext"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "id"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- !private ["SQ", "name"]
+- !private ["SQ", "path"]
+- ["SQ", "rawValue"]
+- ["SQ", "stringValue"]
+- !private ["SQ", "thumbnail"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- !private ["SH", "ThumbnailCodingKeys"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- !private ["SH", "ext"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "id"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- !private ["SH", "name"]
+- !private ["SH", "path"]
+- ["SH", "rawValue"]
+- ["SH", "stringValue"]
+- !private ["SH", "thumbnail"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s22KeyedDecodingContainerV", "nestedContainer"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "nestedContainer"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- ["13MarvellViewer15MarvelCharacterV", "CodingKey"]
+- !private ["13MarvellViewer15MarvelCharacterV", "CodingKeys"]
+- ["13MarvellViewer15MarvelCharacterV", "Decoder"]
+- ["13MarvellViewer15MarvelCharacterV", "Int"]
+- ["13MarvellViewer15MarvelCharacterV", "String"]
+- ["13MarvellViewer15MarvelCharacterV", "URL"]
+- !private ["13MarvellViewer15MarvelCharacterV", "_findStringSwitchCase"]
+- ["13MarvellViewer15MarvelCharacterV", "deinit"]
+- ["13MarvellViewer15MarvelCharacterV", "description"]
+- ["13MarvellViewer15MarvelCharacterV", "id"]
+- ["13MarvellViewer15MarvelCharacterV", "imageURL"]
+- ["13MarvellViewer15MarvelCharacterV", "init"]
+- ["13MarvellViewer15MarvelCharacterV", "name"]
+- !private ["13MarvellViewer25MarvelCharacterCollectionV", "AnyCodingKey"]
+- ["13MarvellViewer25MarvelCharacterCollectionV", "Decoder"]
+- ["13MarvellViewer25MarvelCharacterCollectionV", "MarvelCharacter"]
+- ["13MarvellViewer25MarvelCharacterCollectionV", "deinit"]
+- ["13MarvellViewer25MarvelCharacterCollectionV", "init"]
+- ["13MarvellViewer25MarvelCharacterCollectionV", "marvelCharacters"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["Sm", "init"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- !private ["SY", "ThumbnailCodingKeys"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "debugDescription"]
+- ["SY", "description"]
+- !private ["SY", "ext"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- !private ["SY", "id"]
+- ["SY", "init"]
+- ["SY", "intValue"]
+- !private ["SY", "name"]
+- !private ["SY", "path"]
+- ["SY", "rawValue"]
+- ["SY", "stringValue"]
+- !private ["SY", "thumbnail"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "=="]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "RawValue"]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "_Default_RawValue"]
+- !private ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "_findStringSwitchCase"]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "_rawHashValue"]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "debugDescription"]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "deinit"]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "description"]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "ext"]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "hash"]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "hashValue"]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "init"]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "intValue"]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "path"]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "rawValue"]
+- ["13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O", "stringValue"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- "13MarvellViewer12AnyCodingKeyV"
+- !private "SK"
+- !private "s7CVarArgP"
+- "s9CodingKeyP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "s7DecoderP"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- !private "s25LosslessStringConvertibleP"
+- "13MarvellViewer15MarvelCharacterV"
+- "13MarvellViewer25MarvelCharacterCollectionV"
+- !private "s10MirrorPathP"
+- !private "Sm"
+- "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "13MarvellViewer15MarvelCharacterV10CodingKeys33_89B44176B1D30CA62471DEC648475E62LLO09ThumbnaileF0O"
+- !private "10Foundation3URLV"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/dmitry/Documents/Projects/MarvellViewer/build/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework/Modules/CryptoSwift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/dmitry/Documents/Projects/MarvellViewer/build/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework/Headers/CryptoSwift-umbrella.h"
+- "/Users/dmitry/Documents/Projects/MarvellViewer/build/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework/Headers/CryptoSwift-Swift.h"
+- "/Users/dmitry/Documents/Projects/MarvellViewer/build/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "ac034df11bb296e2c5bb16d029116f9a"
