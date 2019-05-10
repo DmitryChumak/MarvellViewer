@@ -13,7 +13,6 @@ depends-top-level:
 - !private "Data"
 - "MarvelCharacter"
 - "MarvelCharacterCollectionViewCell"
-- "NilCoalescingPrecedence"
 - "UICollectionViewCell"
 - !private "UIImage"
 - "UIImageView"
@@ -23,6 +22,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "Data"]
 - !private ["So15CALayerDelegateP", "UIImage"]
 - ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "image"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "marvelCharacterImage"]
 - !private ["So15CALayerDelegateP", "marvelCharacterNameLabel"]
@@ -30,6 +30,7 @@ depends-member:
 - !private ["s7CVarArgP", "Data"]
 - !private ["s7CVarArgP", "UIImage"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "image"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "marvelCharacterImage"]
 - !private ["s7CVarArgP", "marvelCharacterNameLabel"]
@@ -39,38 +40,46 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Data"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "marvelCharacterImage"]
 - !private ["s28CustomDebugStringConvertibleP", "marvelCharacterNameLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s17CustomReflectableP", "image"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "text"]
 - !private ["s23CustomStringConvertibleP", "Data"]
 - !private ["s23CustomStringConvertibleP", "UIImage"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "image"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "marvelCharacterImage"]
 - !private ["s23CustomStringConvertibleP", "marvelCharacterNameLabel"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["10Foundation4DataV", "init"]
 - !private ["10Foundation12DataProtocolP", "init"]
+- !private ["Se", "image"]
 - !private ["Se", "imageURL"]
 - !private ["Se", "init"]
 - !private ["Se", "name"]
 - !private ["Se", "text"]
+- !private ["SE", "image"]
 - !private ["SE", "init"]
 - !private ["SE", "text"]
 - !private ["SQ", "Data"]
 - !private ["SQ", "UIImage"]
 - ["SQ", ""]
+- !private ["SQ", "image"]
 - !private ["SQ", "init"]
 - !private ["SQ", "marvelCharacterImage"]
 - !private ["SQ", "marvelCharacterNameLabel"]
 - !private ["SQ", "text"]
+- !private ["s23ExpressibleByNilLiteralP", "image"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["SH", "Data"]
 - !private ["SH", "UIImage"]
 - ["SH", ""]
+- !private ["SH", "image"]
 - !private ["SH", "init"]
 - !private ["SH", "marvelCharacterImage"]
 - !private ["SH", "marvelCharacterNameLabel"]
@@ -92,16 +101,20 @@ depends-member:
 - !private ["So8NSCodingP", "Data"]
 - !private ["So8NSCodingP", "UIImage"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "image"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "marvelCharacterImage"]
 - !private ["So8NSCodingP", "marvelCharacterNameLabel"]
 - !private ["So8NSCodingP", "text"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So8NSObjectC", "Data"]
 - ["So8NSObjectC", "MarvelCharacter"]
 - !private ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "configure"]
+- !private ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "marvelCharacterImage"]
 - ["So8NSObjectC", "marvelCharacterNameLabel"]
@@ -109,18 +122,23 @@ depends-member:
 - !private ["So8NSObjectP", "Data"]
 - !private ["So8NSObjectP", "UIImage"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "image"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "marvelCharacterImage"]
 - !private ["So8NSObjectP", "marvelCharacterNameLabel"]
 - !private ["So8NSObjectP", "text"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["Sq", "image"]
 - !private ["Sq", "text"]
 - !private ["Sk", "init"]
 - !private ["Sm", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["ST", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
 - !private ["So29UIAccessibilityIdentificationP", "Data"]
 - !private ["So29UIAccessibilityIdentificationP", "UIImage"]
 - ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "marvelCharacterImage"]
 - !private ["So29UIAccessibilityIdentificationP", "marvelCharacterNameLabel"]
@@ -128,6 +146,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "Data"]
 - !private ["So12UIAppearanceP", "UIImage"]
 - ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "image"]
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "marvelCharacterImage"]
 - !private ["So12UIAppearanceP", "marvelCharacterNameLabel"]
@@ -135,6 +154,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Data"]
 - !private ["So21UIAppearanceContainerP", "UIImage"]
 - ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "image"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "marvelCharacterImage"]
 - !private ["So21UIAppearanceContainerP", "marvelCharacterNameLabel"]
@@ -162,6 +182,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "Data"]
 - !private ["So17UICoordinateSpaceP", "UIImage"]
 - ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "image"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "marvelCharacterImage"]
 - !private ["So17UICoordinateSpaceP", "marvelCharacterNameLabel"]
@@ -169,6 +190,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "Data"]
 - !private ["So13UIDynamicItemP", "UIImage"]
 - ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "image"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "marvelCharacterImage"]
 - !private ["So13UIDynamicItemP", "marvelCharacterNameLabel"]
@@ -176,6 +198,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Data"]
 - !private ["So18UIFocusEnvironmentP", "UIImage"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "image"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "marvelCharacterImage"]
 - !private ["So18UIFocusEnvironmentP", "marvelCharacterNameLabel"]
@@ -183,6 +206,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "Data"]
 - !private ["So11UIFocusItemP", "UIImage"]
 - ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "image"]
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "marvelCharacterImage"]
 - !private ["So11UIFocusItemP", "marvelCharacterNameLabel"]
@@ -190,14 +214,19 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "Data"]
 - !private ["So20UIFocusItemContainerP", "UIImage"]
 - ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "image"]
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "marvelCharacterImage"]
 - !private ["So20UIFocusItemContainerP", "marvelCharacterNameLabel"]
 - !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So7UIImageC", "init"]
+- !private ["So11UIImageViewC", "image"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So7UILabelC", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "Data"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "image"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "marvelCharacterImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "marvelCharacterNameLabel"]
@@ -208,6 +237,7 @@ depends-member:
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "configure"]
+- !private ["So11UIResponderC", "image"]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "marvelCharacterImage"]
 - ["So11UIResponderC", "marvelCharacterNameLabel"]
@@ -215,6 +245,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Data"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImage"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "image"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "marvelCharacterImage"]
 - !private ["So30UIResponderStandardEditActionsP", "marvelCharacterNameLabel"]
@@ -222,6 +253,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Data"]
 - !private ["So18UITraitEnvironmentP", "UIImage"]
 - ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "image"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "marvelCharacterImage"]
 - !private ["So18UITraitEnvironmentP", "marvelCharacterNameLabel"]
@@ -229,6 +261,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "Data"]
 - !private ["So23UIUserActivityRestoringP", "UIImage"]
 - ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "image"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "marvelCharacterImage"]
 - !private ["So23UIUserActivityRestoringP", "marvelCharacterNameLabel"]
@@ -239,22 +272,27 @@ depends-member:
 - ["So6UIViewC", "UIImageView"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "configure"]
+- !private ["So6UIViewC", "image"]
 - ["So6UIViewC", "init"]
 - ["So6UIViewC", "marvelCharacterImage"]
 - ["So6UIViewC", "marvelCharacterNameLabel"]
 - !private ["So6UIViewC", "text"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Data"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "marvelCharacterImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "marvelCharacterNameLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["s21_ObjectiveCBridgeableP", "image"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "Data"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "UIImage"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "image"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "marvelCharacterImage"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "marvelCharacterNameLabel"]
@@ -280,13 +318,17 @@ depends-nominal:
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "So14NSSecureCodingP"
 - !private "Sq"
 - !private "Sk"
 - !private "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "ST"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -298,6 +340,9 @@ depends-nominal:
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
 - "So20UIFocusItemContainerP"
+- !private "So7UIImageC"
+- !private "So11UIImageViewC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "So7UILabelC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
@@ -305,6 +350,7 @@ depends-nominal:
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
+- !private "s26_ExpressibleByImageLiteralP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - "s38__DefaultCustomPlaygroundQuickLookableP"

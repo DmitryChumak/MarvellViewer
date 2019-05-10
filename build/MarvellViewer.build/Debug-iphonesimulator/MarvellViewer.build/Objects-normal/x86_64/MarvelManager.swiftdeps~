@@ -12,21 +12,29 @@ depends-top-level:
 - "Error"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
+- !private "MarvelAPIConfig"
 - "MarvelCharacter"
+- "MarvelCharacterCollection"
+- "MarvelComicsCollection"
 - "MarvelManager"
 - "NetworkManager"
 - "Result"
-- "String"
+- !private "StringLiteralType"
 depends-member:
 - !private ["SK", "decoded"]
 - !private ["Sl", "decoded"]
 - !private ["10Foundation15ContiguousBytesP", "decoded"]
 - !private ["s28CustomDebugStringConvertibleP", "decoded"]
 - !private ["s17CustomReflectableP", "decoded"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "decoded"]
 - !private ["10Foundation4DataV", "decoded"]
 - !private ["10Foundation12DataProtocolP", "decoded"]
 - !private ["Se", "decoded"]
+- !private ["Se", "id"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "decoded"]
 - ["SQ", "=="]
 - !private ["SQ", ""]
@@ -65,15 +73,22 @@ depends-member:
 - !private ["SH", "invalidData"]
 - !private ["SH", "success"]
 - !private ["s6HasherV", "combine"]
-- !private ["13MarvellViewer15MarvelCharacterV", "deinit"]
+- !private ["13MarvellViewer15MarvelAPIConfigC", "baseURL"]
+- !private ["13MarvellViewer15MarvelAPIConfigC", "secureParameters"]
+- !private ["13MarvellViewer15MarvelCharacterV", "id"]
+- !private ["13MarvellViewer25MarvelCharacterCollectionV", "deinit"]
+- !private ["13MarvellViewer22MarvelComicsCollectionV", "deinit"]
 - ["13MarvellViewer13MarvelManagerC", "Error"]
+- !private ["13MarvellViewer13MarvelManagerC", "MarvelAPIConfig"]
 - ["13MarvellViewer13MarvelManagerC", "MarvelCharacter"]
+- ["13MarvellViewer13MarvelManagerC", "MarvelCharacterCollection"]
+- ["13MarvellViewer13MarvelManagerC", "MarvelComicsCollection"]
+- !private ["13MarvellViewer13MarvelManagerC", "MarvelManagerError"]
 - ["13MarvellViewer13MarvelManagerC", "NetworkManager"]
-- !private ["13MarvellViewer13MarvelManagerC", "QuoteLoaderError"]
 - ["13MarvellViewer13MarvelManagerC", "Result"]
-- ["13MarvellViewer13MarvelManagerC", "String"]
 - ["13MarvellViewer13MarvelManagerC", "init"]
-- ["13MarvellViewer13MarvelManagerC", "loadMarvelCharacters"]
+- ["13MarvellViewer13MarvelManagerC", "loadCharacters"]
+- ["13MarvellViewer13MarvelManagerC", "loadComics"]
 - !private ["13MarvellViewer13MarvelManagerC", "networkClient"]
 - !private ["SM", "decoded"]
 - !private ["10Foundation19MutableDataProtocolP", "decoded"]
@@ -84,6 +99,10 @@ depends-member:
 - !private ["s6ResultO", "failure"]
 - !private ["s6ResultO", "success"]
 - !private ["ST", "decoded"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["s21_ObjectiveCBridgeableP", "decoded"]
 depends-nominal:
 - !private "SK"
@@ -95,12 +114,16 @@ depends-nominal:
 - !private "10Foundation4DataV"
 - !private "10Foundation12DataProtocolP"
 - !private "Se"
+- !private "s26DefaultStringInterpolationV"
 - !private "SE"
 - "SQ"
 - "s5ErrorP"
 - "SH"
 - !private "s6HasherV"
+- !private "13MarvellViewer15MarvelAPIConfigC"
 - !private "13MarvellViewer15MarvelCharacterV"
+- !private "13MarvellViewer25MarvelCharacterCollectionV"
+- !private "13MarvellViewer22MarvelComicsCollectionV"
 - "13MarvellViewer13MarvelManagerC"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
@@ -110,6 +133,8 @@ depends-nominal:
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "s6ResultO"
 - !private "ST"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
@@ -141,4 +166,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "75cbda1f44973795daed88828b7464ba"
+interface-hash: "1287f6e705bf758b5e51606e849a2acf"

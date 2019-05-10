@@ -10,16 +10,13 @@ depends-top-level:
 - "=="
 - "AssignmentPrecedence"
 - "Error"
-- !private "FloatLiteralType"
 - !private "Int"
-- !private "IntegerLiteralType"
 - !private "MarvelAPIConfig"
 - !private "MarvelAPIHashGenerator"
 - "MarvelCharacterCollection"
 - "MarvelCharacterManager"
 - "NetworkManager"
 - "Result"
-- !private "StringLiteralType"
 - !private "TimeProvider"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]

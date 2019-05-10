@@ -13,19 +13,20 @@ class ViewController: UIViewController {
     
     @IBOutlet private var collectionView: UICollectionView!
     
-    private var marvelCollection: MarvelCharacterCollection! = nil
-    private var marvelManager: MarvelCharacterManager!
+    private var marvelCollection: MarvelCharacterCollection!
+    private var marvelManager: MarvelManager!
     
     override func viewDidLoad() {
         
-        marvelManager = MarvelCharacterManager(networkClient: URLSession.shared)
+        marvelManager = MarvelManager(networkClient: URLSession.shared)
         MarvelCharacterCollectionViewCell.register(for: collectionView)
-        loadCollection()
+        collectionView.delegate = self
+        loadCharactersCollection()
         
     }
     
-    private func loadCollection() {
-        marvelManager.loadMarvelCollection() { [weak self] result in
+    private func loadCharactersCollection() {
+        marvelManager.loadCharacters() { [weak self] result in
             switch result {
             case .success(let res):
                 self?.marvelCollection = res
@@ -38,13 +39,14 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-    private func handleError(error: Error) {
-        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
-        self.present(alert, animated: true, completion: nil)
-    }
+
     
 }
+
+
+
+
+
 
 
 // MARK: - MarvelCharacterCollectionViewDelegate
@@ -58,9 +60,7 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MarvelCharacterCollectionViewCell.reuseIdentifier, for: indexPath) as! MarvelCharacterCollectionViewCell
-        
         cell.configure(with: marvelCollection.marvelCharacters[indexPath.row])
-        
         return cell
     }
     
@@ -71,7 +71,12 @@ extension ViewController: UICollectionViewDataSource {
 extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        <#code#>
-    }
+        
+        let storyboard = UIStoryboard(name: "MarvelCharacterDetails", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! MarvelCharacterDetailsViewController
+        let character = marvelCollection.marvelCharacters[indexPath.row]
+        vc.configure(marvelCharacter: character)
+        self.navigationController?.pushViewController(vc, animated: true)
     
+    }
 }

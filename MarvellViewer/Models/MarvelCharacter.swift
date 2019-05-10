@@ -19,7 +19,6 @@ struct MarvelCharacter : Decodable {
         case id
         case name
         case description
-        case imageURL
         case thumbnail
         
         enum ThumbnailCodingKeys: String, CodingKey {
@@ -43,10 +42,13 @@ struct MarvelCharacter : Decodable {
     }
 }
 
+
+
 struct MarvelCharacterCollection : Decodable {
     var marvelCharacters: [MarvelCharacter]
     
 }
+
 
 extension MarvelCharacterCollection {
     init(from decoder: Decoder) throws {
