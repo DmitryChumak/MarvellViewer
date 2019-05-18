@@ -11,6 +11,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Error"
 - !private "FloatLiteralType"
+- "Int"
 - !private "IntegerLiteralType"
 - !private "MarvelAPIConfig"
 - "MarvelCharacter"
@@ -20,6 +21,7 @@ depends-top-level:
 - "NetworkManager"
 - "Result"
 - !private "StringLiteralType"
+- !private "UnicodeScalarType"
 depends-member:
 - !private ["SK", "decoded"]
 - !private ["Sl", "decoded"]
@@ -79,6 +81,7 @@ depends-member:
 - !private ["13MarvellViewer25MarvelCharacterCollectionV", "deinit"]
 - !private ["13MarvellViewer22MarvelComicsCollectionV", "deinit"]
 - ["13MarvellViewer13MarvelManagerC", "Error"]
+- ["13MarvellViewer13MarvelManagerC", "Int"]
 - !private ["13MarvellViewer13MarvelManagerC", "MarvelAPIConfig"]
 - ["13MarvellViewer13MarvelManagerC", "MarvelCharacter"]
 - ["13MarvellViewer13MarvelManagerC", "MarvelCharacterCollection"]
@@ -166,4 +169,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1287f6e705bf758b5e51606e849a2acf"
+interface-hash: "72f895da26b13c6e3606d01887eac297"

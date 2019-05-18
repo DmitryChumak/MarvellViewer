@@ -219,6 +219,24 @@ SWIFT_CLASS("_TtC13MarvellViewer36MarvelCharacterDetailsViewController")
 @end
 
 
+@interface MarvelCharacterDetailsViewController (SWIFT_EXTENSION(MarvellViewer)) <UICollectionViewDelegate>
+@end
+
+@class UICollectionView;
+
+@interface MarvelCharacterDetailsViewController (SWIFT_EXTENSION(MarvellViewer)) <UICollectionViewDataSource>
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC13MarvellViewer30MarvelComicsCollectionViewCell")
+@interface MarvelComicsCollectionViewCell : UICollectionViewCell
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 
 
@@ -232,16 +250,17 @@ SWIFT_CLASS("_TtC13MarvellViewer14ViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UICollectionView;
-
-@interface ViewController (SWIFT_EXTENSION(MarvellViewer)) <UICollectionViewDelegate>
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-@end
-
 
 @interface ViewController (SWIFT_EXTENSION(MarvellViewer)) <UICollectionViewDataSource>
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class UIScrollView;
+
+@interface ViewController (SWIFT_EXTENSION(MarvellViewer)) <UICollectionViewDelegate>
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
 @end
 
 #if __has_attribute(external_source_symbol)

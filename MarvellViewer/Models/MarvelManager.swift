@@ -17,8 +17,8 @@ class MarvelManager {
         self.networkClient = networkClient
     }
     
-    func loadCharacters(completionHandler: @escaping (Result<MarvelCharacterCollection, Error>) -> ()) {
-        let url = "\(MarvelAPIConfig.baseURL)characters?\(MarvelAPIConfig.secureParameters)"
+    func loadCharacters(from offset: Int, take count: Int, completionHandler: @escaping (Result<MarvelCharacterCollection, Error>) -> ()) {
+        let url = "\(MarvelAPIConfig.baseURL)characters?offset=\(offset)&limit=\(count)&\(MarvelAPIConfig.secureParameters)"
         networkClient.loadData(from: url) { result in
             switch result {
             case .success(let data):

@@ -15,46 +15,50 @@ class ViewController: UIViewController {
     
     private var marvelCollection: MarvelCharacterCollection!
     private var marvelManager: MarvelManager!
+    private var isLoading: Bool = false
     
     override func viewDidLoad() {
         
         marvelManager = MarvelManager(networkClient: URLSession.shared)
         MarvelCharacterCollectionViewCell.register(for: collectionView)
         collectionView.delegate = self
-        loadCharactersCollection()
+        collectionView.dataSource = self
+        loadCharactersCollection(from: 0, count: 20)
         
     }
     
-    private func loadCharactersCollection() {
-        marvelManager.loadCharacters() { [weak self] result in
+    private func loadCharactersCollection(from offset: Int, count limit: Int) {
+  
+        marvelManager.loadCharacters(from: offset, take: limit) { [weak self] result in
             switch result {
             case .success(let res):
-                self?.marvelCollection = res
+                if self?.marvelCollection != nil {
+                    self?.marvelCollection.marvelCharacters.append(contentsOf: res.marvelCharacters)
+                } else {
+                    self?.marvelCollection = res
+                }
                 DispatchQueue.main.async {
-                    self?.collectionView.dataSource = self
+                    self?.collectionView.reloadData()
+                    self?.isLoading = false
                 }
             case .failure(let error):
-                self?.handleError(error: error)
-                
+                DispatchQueue.main.async {
+                    self?.handleError(error: error)
+                }
             }
         }
     }
-
-    
 }
 
 
 
-
-
-
-
-// MARK: - MarvelCharacterCollectionViewDelegate
+// MARK: - MarvelCharacterCollectionViewDataSource
 
 extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return marvelCollection.marvelCharacters.count
+        guard let count = marvelCollection?.marvelCharacters.count else { return 0 }
+        return count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -64,9 +68,11 @@ extension ViewController: UICollectionViewDataSource {
         return cell
     }
     
+    
+    
 }
 
-// MARK: - MarvelCharacterCollectionViewDataSource
+// MARK: - MarvelCharacterCollectionViewDelegate
 
 extension ViewController: UICollectionViewDelegate {
     
@@ -78,5 +84,15 @@ extension ViewController: UICollectionViewDelegate {
         vc.configure(marvelCharacter: character)
         self.navigationController?.pushViewController(vc, animated: true)
     
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        if offsetY > contentHeight - scrollView.frame.size.height && !isLoading {
+            isLoading = true
+            loadCharactersCollection(from: marvelCollection.marvelCharacters.count, count: 20)
+            
+        }
     }
 }

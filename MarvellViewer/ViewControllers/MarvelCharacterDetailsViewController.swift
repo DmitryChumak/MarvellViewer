@@ -10,7 +10,7 @@ import UIKit
 
 class MarvelCharacterDetailsViewController: UIViewController {
 
-    @IBOutlet private var marvelComicsLabel: UILabel!
+    @IBOutlet private var collectionView: UICollectionView!
     
     private var marvelCharacter: MarvelCharacter!
     private var marvelManager: MarvelManager!
@@ -20,8 +20,11 @@ class MarvelCharacterDetailsViewController: UIViewController {
         super.viewDidLoad()
 
         marvelManager = MarvelManager(networkClient: URLSession.shared)
+        MarvelComicsCollectionViewCell.register(for: collectionView)
+        collectionView.delegate = self
+        collectionView.dataSource = self
         loadComicsCollection()
-       
+
         
     }
     
@@ -30,18 +33,14 @@ class MarvelCharacterDetailsViewController: UIViewController {
             switch result {
             case .success(let res):
                 self?.marvelComicsCollection = res
-                var resStr = ""
-                for marvelComics in (self?.marvelComicsCollection.marvelComics)! {
-                    resStr += "\(marvelComics.description)\n"
-                }
                 DispatchQueue.main.async {
-                    self?.marvelComicsLabel.text = resStr
+                    self?.collectionView.reloadData()
                 }
-                
             case .failure(let error):
-                self?.handleError(error: error)
+                DispatchQueue.main.async {
+                    self?.handleError(error: error)
+                }
             }
-            
         }
     }
     
@@ -50,4 +49,31 @@ class MarvelCharacterDetailsViewController: UIViewController {
     }
     
 
+}
+
+
+// MARK: - MarvelCharacterDetailsViewControllerDataSource
+
+
+extension MarvelCharacterDetailsViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        guard let count = marvelComicsCollection?.marvelComics.count else { return 0 }
+        return count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MarvelComicsCollectionViewCell.reuseIdentifier, for: indexPath) as! MarvelComicsCollectionViewCell
+        cell.configure(with: marvelComicsCollection.marvelComics[indexPath.row])
+        return cell
+    }
+    
+    
+}
+
+
+
+// MARK: - MarvelCharacterDetailsViewControllerDataSource
+
+extension MarvelCharacterDetailsViewController: UICollectionViewDelegate {
+    
 }

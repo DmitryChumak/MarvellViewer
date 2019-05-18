@@ -50,7 +50,7 @@
 		</data>
 		<key>MarvelCharacterDetails.storyboardc/0Cp-lW-Svg-view-Lxp-Ru-T88.nib</key>
 		<data>
-		LIuxENUb4gtGbuAz/r4Tx5XeW/o=
+		uss5n4jwxhYe2HxFMJSkHpLrZkc=
 		</data>
 		<key>MarvelCharacterDetails.storyboardc/Info.plist</key>
 		<data>
@@ -58,7 +58,11 @@
 		</data>
 		<key>MarvelCharacterDetails.storyboardc/MarvelCharacterDetails.nib</key>
 		<data>
-		ohHtI0UxxbY1FT0TatI2J4LXJuQ=
+		G44RuehYM8Ekqa8Ni7RG46VAbAQ=
+		</data>
+		<key>MarvelComicsCollectionViewCell.nib</key>
+		<data>
+		lso9vYXW0v8Yc1TAuZ43QBMbtAI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -145,7 +149,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l2uwvb7vZkl7d31kpT3tkX9N/tQaw+N7SmAfWjFmC5Y=
+			lWoq6oUtfeFvzEeotAPXS3QP4Hhz7KdM6f0kSrDfNXE=
 			</data>
 		</dict>
 		<key>MarvelCharacterDetails.storyboardc/Info.plist</key>
@@ -159,7 +163,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i5aCvr0YOAcujMw5FY27wXZcVbj89vwK/KYBsRzoqT0=
+			nHiMY64pUKX/6VlRrJMq9/WaYRCmvqGeVIsqquxc4Nw=
+			</data>
+		</dict>
+		<key>MarvelComicsCollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+/niXHnfQ3PHLvn/OLqowNB5rp9MY4PLkhBrgW2cmPU=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

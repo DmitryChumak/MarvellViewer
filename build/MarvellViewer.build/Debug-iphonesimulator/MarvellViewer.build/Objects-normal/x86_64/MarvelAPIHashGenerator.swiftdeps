@@ -7,12 +7,9 @@ provides-member:
 - ["13MarvellViewer22MarvelAPIHashGeneratorC", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - "MarvelAPIHashGenerator"
 - "String"
-- !private "StringLiteralType"
 depends-member:
 - !private ["SK", "md5"]
 - !private ["s7CVarArgP", "md5"]

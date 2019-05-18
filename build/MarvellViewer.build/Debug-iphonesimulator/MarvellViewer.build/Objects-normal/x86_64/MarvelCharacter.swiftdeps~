@@ -20,7 +20,9 @@ depends-top-level:
 - "CodingKey"
 - "Decodable"
 - "Decoder"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - "MarvelCharacter"
 - "MarvelCharacterCollection"
 - "String"
@@ -53,14 +55,11 @@ depends-member:
 - !private ["s9CodingKeyP", "ext"]
 - ["s9CodingKeyP", "hash"]
 - ["s9CodingKeyP", "hashValue"]
-- !private ["s9CodingKeyP", "id"]
 - ["s9CodingKeyP", "init"]
 - ["s9CodingKeyP", "intValue"]
-- !private ["s9CodingKeyP", "name"]
 - !private ["s9CodingKeyP", "path"]
 - ["s9CodingKeyP", "rawValue"]
 - ["s9CodingKeyP", "stringValue"]
-- !private ["s9CodingKeyP", "thumbnail"]
 - !private ["Sl", "init"]
 - !private ["SL", "init"]
 - ["s28CustomDebugStringConvertibleP", "=="]
@@ -76,14 +75,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "ext"]
 - ["s28CustomDebugStringConvertibleP", "hash"]
 - ["s28CustomDebugStringConvertibleP", "hashValue"]
-- !private ["s28CustomDebugStringConvertibleP", "id"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "intValue"]
-- !private ["s28CustomDebugStringConvertibleP", "name"]
 - !private ["s28CustomDebugStringConvertibleP", "path"]
 - ["s28CustomDebugStringConvertibleP", "rawValue"]
 - ["s28CustomDebugStringConvertibleP", "stringValue"]
-- !private ["s28CustomDebugStringConvertibleP", "thumbnail"]
 - !private ["s17CustomReflectableP", "init"]
 - ["s23CustomStringConvertibleP", "=="]
 - ["s23CustomStringConvertibleP", "RawValue"]
@@ -100,14 +96,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "ext"]
 - ["s23CustomStringConvertibleP", "hash"]
 - ["s23CustomStringConvertibleP", "hashValue"]
-- !private ["s23CustomStringConvertibleP", "id"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "intValue"]
-- !private ["s23CustomStringConvertibleP", "name"]
 - !private ["s23CustomStringConvertibleP", "path"]
 - ["s23CustomStringConvertibleP", "rawValue"]
 - ["s23CustomStringConvertibleP", "stringValue"]
-- !private ["s23CustomStringConvertibleP", "thumbnail"]
 - !private ["Se", "AnyCodingKey"]
 - !private ["Se", "CodingKeys"]
 - !private ["Se", "Int"]
@@ -137,14 +130,11 @@ depends-member:
 - !private ["SQ", "ext"]
 - ["SQ", "hash"]
 - ["SQ", "hashValue"]
-- !private ["SQ", "id"]
 - ["SQ", "init"]
 - ["SQ", "intValue"]
-- !private ["SQ", "name"]
 - !private ["SQ", "path"]
 - ["SQ", "rawValue"]
 - ["SQ", "stringValue"]
-- !private ["SQ", "thumbnail"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
@@ -161,19 +151,17 @@ depends-member:
 - !private ["SH", "ext"]
 - ["SH", "hash"]
 - ["SH", "hashValue"]
-- !private ["SH", "id"]
 - ["SH", "init"]
 - ["SH", "intValue"]
-- !private ["SH", "name"]
 - !private ["SH", "path"]
 - ["SH", "rawValue"]
 - ["SH", "stringValue"]
-- !private ["SH", "thumbnail"]
 - !private ["s22KeyedDecodingContainerV", "decode"]
 - !private ["s22KeyedDecodingContainerV", "nestedContainer"]
 - !private ["s30KeyedDecodingContainerProtocolP", "decode"]
 - !private ["s30KeyedDecodingContainerProtocolP", "nestedContainer"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["13MarvellViewer15MarvelCharacterV", "AnyCodingKey"]
 - ["13MarvellViewer15MarvelCharacterV", "CodingKey"]
 - !private ["13MarvellViewer15MarvelCharacterV", "CodingKeys"]
 - ["13MarvellViewer15MarvelCharacterV", "Decoder"]
@@ -207,14 +195,11 @@ depends-member:
 - !private ["SY", "ext"]
 - ["SY", "hash"]
 - ["SY", "hashValue"]
-- !private ["SY", "id"]
 - ["SY", "init"]
 - ["SY", "intValue"]
-- !private ["SY", "name"]
 - !private ["SY", "path"]
 - ["SY", "rawValue"]
 - ["SY", "stringValue"]
-- !private ["SY", "thumbnail"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["ST", "init"]
 - !private ["SS", "init"]
@@ -323,4 +308,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ac034df11bb296e2c5bb16d029116f9a"
+interface-hash: "99d89e36e9532b8231fca6c7ca453589"
