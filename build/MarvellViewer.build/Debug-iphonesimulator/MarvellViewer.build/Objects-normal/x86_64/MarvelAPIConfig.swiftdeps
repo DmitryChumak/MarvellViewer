@@ -7,16 +7,90 @@ provides-member:
 - ["13MarvellViewer15MarvelAPIConfigC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "FloatLiteralType"
+- !private "Int"
+- !private "IntegerLiteralType"
 - "MarvelAPIConfig"
+- !private "MarvelAPIHashGenerator"
 - "String"
 - !private "StringLiteralType"
+- !private "TimeProvider"
 depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["Sz", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["SL", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["Se", "init"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "init"]
+- !private ["SQ", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SH", "init"]
+- !private ["Si", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["13MarvellViewer15MarvelAPIConfigC", "Int"]
+- !private ["13MarvellViewer15MarvelAPIConfigC", "MarvelAPIHashGenerator"]
 - ["13MarvellViewer15MarvelAPIConfigC", "String"]
+- !private ["13MarvellViewer15MarvelAPIConfigC", "TimeProvider"]
+- ["13MarvellViewer15MarvelAPIConfigC", "baseURL"]
+- ["13MarvellViewer15MarvelAPIConfigC", "hash"]
 - ["13MarvellViewer15MarvelAPIConfigC", "init"]
 - ["13MarvellViewer15MarvelAPIConfigC", "privateKey"]
 - ["13MarvellViewer15MarvelAPIConfigC", "publicKey"]
+- ["13MarvellViewer15MarvelAPIConfigC", "secureParameters"]
+- !private ["13MarvellViewer22MarvelAPIHashGeneratorC", "generateHash"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["Sj", "init"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["13MarvellViewer12TimeProviderC", "currentTimeMillis"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "Sz"
+- !private "s7CVarArgP"
+- !private "SL"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- !private "SQ"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SH"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
 - "13MarvellViewer15MarvelAPIConfigC"
+- !private "13MarvellViewer22MarvelAPIHashGeneratorC"
+- !private "s10MirrorPathP"
+- !private "Sj"
+- !private "s10SIMDScalarP"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "13MarvellViewer12TimeProviderC"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Users/dmitry/Documents/Projects/MarvellViewer/build/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework/Modules/CryptoSwift.swiftmodule/x86_64.swiftmodule"
@@ -47,4 +121,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5cfbb2eb6190a2f8cd55444ff08307dc"
+interface-hash: "354d3919f49cf6af336a7a58f37dfd8b"

@@ -23,13 +23,13 @@ class ViewController: UIViewController {
         MarvelCharacterCollectionViewCell.register(for: collectionView)
         collectionView.delegate = self
         collectionView.dataSource = self
-        loadCharactersCollection(from: 0, count: 20)
+        loadCharactersCollection(from: 0)
         
     }
     
-    private func loadCharactersCollection(from offset: Int, count limit: Int) {
+    private func loadCharactersCollection(from offset: Int) {
   
-        marvelManager.loadCharacters(from: offset, take: limit) { [weak self] result in
+        marvelManager.loadCharacters(from: offset) { [weak self] result in
             switch result {
             case .success(let res):
                 if self?.marvelCollection != nil {
@@ -78,11 +78,11 @@ extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let storyboard = UIStoryboard(name: "MarvelCharacterDetails", bundle: nil)
-        let vc = storyboard.instantiateInitialViewController() as! MarvelCharacterDetailsViewController
-        let character = marvelCollection.marvelCharacters[indexPath.row]
-        vc.configure(marvelCharacter: character)
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let storyboard = UIStoryboard(name: "MarvelCharacterDetails", bundle: nil)
+//        let vc = storyboard.instantiateInitialViewController() as! MarvelCharacterDetailsViewController
+//        let character = marvelCollection.marvelCharacters[indexPath.row]
+//        vc.configure(marvelCharacter: character)
+//        self.navigationController?.pushViewController(vc, animated: true)
     
     }
     
@@ -91,7 +91,7 @@ extension ViewController: UICollectionViewDelegate {
         let contentHeight = scrollView.contentSize.height
         if offsetY > contentHeight - scrollView.frame.size.height && !isLoading {
             isLoading = true
-            loadCharactersCollection(from: marvelCollection.marvelCharacters.count, count: 20)
+            loadCharactersCollection(from: marvelCollection.marvelCharacters.count)
             
         }
     }

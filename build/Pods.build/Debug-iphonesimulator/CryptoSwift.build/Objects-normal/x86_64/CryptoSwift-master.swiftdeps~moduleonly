@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "55ae12967e26b5c973990491e2dbd32d"
-build_time: [1556042517, 562449000]
+build_time: [1558364895, 229881000]
 inputs:
   "/Users/dmitry/Documents/Projects/MarvellViewer/Pods/CryptoSwift/Sources/CryptoSwift/AEAD/AEAD.swift": [9223372036, 854775807]
   "/Users/dmitry/Documents/Projects/MarvellViewer/Pods/CryptoSwift/Sources/CryptoSwift/AEAD/AEADChaCha20Poly1305.swift": [9223372036, 854775807]
