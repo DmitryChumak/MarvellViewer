@@ -23,6 +23,7 @@
 		0A4B91472270DCC80095765B /* MarvelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B91462270DCC80095765B /* MarvelManager.swift */; };
 		0A4B91492270DE0A0095765B /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B91482270DE0A0095765B /* Data+Extension.swift */; };
 		0A59589E2292FA9600723CB4 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A59589D2292FA9600723CB4 /* UIViewController+Extension.swift */; };
+		0A5958A0229449A600723CB4 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A59589F229449A600723CB4 /* UIImage+Extension.swift */; };
 		0AF78A0F22746BB700C366E4 /* MarvelCharacterDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF78A0E22746BB700C366E4 /* MarvelCharacterDetails.storyboard */; };
 		0AF78A1122746C2700C366E4 /* MarvelCharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF78A1022746C2700C366E4 /* MarvelCharacterDetailsViewController.swift */; };
 		1A099FC7A982E93C8954FC0C /* Pods_MarvellViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D386AF3995A87339C4A331FF /* Pods_MarvellViewer.framework */; };
@@ -47,6 +48,7 @@
 		0A4B91462270DCC80095765B /* MarvelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelManager.swift; sourceTree = "<group>"; };
 		0A4B91482270DE0A0095765B /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		0A59589D2292FA9600723CB4 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		0A59589F229449A600723CB4 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		0AF78A0E22746BB700C366E4 /* MarvelCharacterDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MarvelCharacterDetails.storyboard; sourceTree = "<group>"; };
 		0AF78A1022746C2700C366E4 /* MarvelCharacterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacterDetailsViewController.swift; sourceTree = "<group>"; };
 		106B6C5D18CB3ED2ACE95FC4 /* Pods-MarvellViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvellViewer.debug.xcconfig"; path = "Target Support Files/Pods-MarvellViewer/Pods-MarvellViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				0A06C5F3226F76450097A731 /* UICollectionViewCell+Extension.swift */,
 				0A4B91482270DE0A0095765B /* Data+Extension.swift */,
 				0A59589D2292FA9600723CB4 /* UIViewController+Extension.swift */,
+				0A59589F229449A600723CB4 /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4B913F227059FB0095765B /* NetworkManager.swift in Sources */,
+				0A5958A0229449A600723CB4 /* UIImage+Extension.swift in Sources */,
 				0A59589E2292FA9600723CB4 /* UIViewController+Extension.swift in Sources */,
 				0A06C5F6226F7AA20097A731 /* MarvelCharacter.swift in Sources */,
 				0A4B91472270DCC80095765B /* MarvelManager.swift in Sources */,
