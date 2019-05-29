@@ -10,12 +10,15 @@ depends-top-level:
 - "=="
 - "AssignmentPrecedence"
 - "Error"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - !private "MarvelAPIConfig"
 - "MarvelCharacterCollection"
 - "MarvelManager"
 - "NetworkManager"
 - "Result"
+- !private "StringLiteralType"
 - !private "UnicodeScalarType"
 depends-member:
 - !private ["SK", "decoded"]
@@ -156,4 +159,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3f21417b40ecbcf8fe1e14270ad5b284"
+interface-hash: "78a825207cf57a54a5edbada3c75c840"

@@ -34,7 +34,6 @@ depends-member:
 - !private ["13MarvellViewer12TimeProviderC", "Date"]
 - ["13MarvellViewer12TimeProviderC", "Double"]
 - ["13MarvellViewer12TimeProviderC", "currentTimeMillis"]
-- ["13MarvellViewer12TimeProviderC", "deinit"]
 - ["13MarvellViewer12TimeProviderC", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "timeIntervalSince1970"]

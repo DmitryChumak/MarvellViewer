@@ -17,13 +17,13 @@
 		0A06C5F4226F76450097A731 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06C5F3226F76450097A731 /* UICollectionViewCell+Extension.swift */; };
 		0A06C5F6226F7AA20097A731 /* MarvelCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06C5F5226F7AA20097A731 /* MarvelCharacter.swift */; };
 		0A06C5F8226F891C0097A731 /* MarvelAPIHashGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06C5F7226F891C0097A731 /* MarvelAPIHashGenerator.swift */; };
+		0A0E7D79229F1D54000E16D0 /* ImageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E7D78229F1D54000E16D0 /* ImageUtility.swift */; };
 		0A4B913D226F8C2F0095765B /* TimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B913C226F8C2F0095765B /* TimeProvider.swift */; };
 		0A4B913F227059FB0095765B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B913E227059FB0095765B /* NetworkManager.swift */; };
 		0A4B9141227092CF0095765B /* MarvelAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B9140227092CF0095765B /* MarvelAPIConfig.swift */; };
 		0A4B91472270DCC80095765B /* MarvelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B91462270DCC80095765B /* MarvelManager.swift */; };
 		0A4B91492270DE0A0095765B /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B91482270DE0A0095765B /* Data+Extension.swift */; };
 		0A59589E2292FA9600723CB4 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A59589D2292FA9600723CB4 /* UIViewController+Extension.swift */; };
-		0A5958A0229449A600723CB4 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A59589F229449A600723CB4 /* UIImage+Extension.swift */; };
 		0AF78A0F22746BB700C366E4 /* MarvelCharacterDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF78A0E22746BB700C366E4 /* MarvelCharacterDetails.storyboard */; };
 		0AF78A1122746C2700C366E4 /* MarvelCharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF78A1022746C2700C366E4 /* MarvelCharacterDetailsViewController.swift */; };
 		1A099FC7A982E93C8954FC0C /* Pods_MarvellViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D386AF3995A87339C4A331FF /* Pods_MarvellViewer.framework */; };
@@ -42,13 +42,13 @@
 		0A06C5F3226F76450097A731 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 		0A06C5F5226F7AA20097A731 /* MarvelCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacter.swift; sourceTree = "<group>"; };
 		0A06C5F7226F891C0097A731 /* MarvelAPIHashGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIHashGenerator.swift; sourceTree = "<group>"; };
+		0A0E7D78229F1D54000E16D0 /* ImageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtility.swift; sourceTree = "<group>"; };
 		0A4B913C226F8C2F0095765B /* TimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeProvider.swift; sourceTree = "<group>"; };
 		0A4B913E227059FB0095765B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0A4B9140227092CF0095765B /* MarvelAPIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIConfig.swift; sourceTree = "<group>"; };
 		0A4B91462270DCC80095765B /* MarvelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelManager.swift; sourceTree = "<group>"; };
 		0A4B91482270DE0A0095765B /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		0A59589D2292FA9600723CB4 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		0A59589F229449A600723CB4 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		0AF78A0E22746BB700C366E4 /* MarvelCharacterDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MarvelCharacterDetails.storyboard; sourceTree = "<group>"; };
 		0AF78A1022746C2700C366E4 /* MarvelCharacterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacterDetailsViewController.swift; sourceTree = "<group>"; };
 		106B6C5D18CB3ED2ACE95FC4 /* Pods-MarvellViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvellViewer.debug.xcconfig"; path = "Target Support Files/Pods-MarvellViewer/Pods-MarvellViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +109,7 @@
 				0A4B913E227059FB0095765B /* NetworkManager.swift */,
 				0A4B9140227092CF0095765B /* MarvelAPIConfig.swift */,
 				0A4B91462270DCC80095765B /* MarvelManager.swift */,
+				0A0E7D78229F1D54000E16D0 /* ImageUtility.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,7 +157,6 @@
 				0A06C5F3226F76450097A731 /* UICollectionViewCell+Extension.swift */,
 				0A4B91482270DE0A0095765B /* Data+Extension.swift */,
 				0A59589D2292FA9600723CB4 /* UIViewController+Extension.swift */,
-				0A59589F229449A600723CB4 /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -301,13 +301,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4B913F227059FB0095765B /* NetworkManager.swift in Sources */,
-				0A5958A0229449A600723CB4 /* UIImage+Extension.swift in Sources */,
 				0A59589E2292FA9600723CB4 /* UIViewController+Extension.swift in Sources */,
 				0A06C5F6226F7AA20097A731 /* MarvelCharacter.swift in Sources */,
 				0A4B91472270DCC80095765B /* MarvelManager.swift in Sources */,
 				0A06C5F8226F891C0097A731 /* MarvelAPIHashGenerator.swift in Sources */,
 				0A06C5D8226F735B0097A731 /* ViewController.swift in Sources */,
 				0A06C5EF226F74260097A731 /* MarvelCharacterCollectionViewCell.swift in Sources */,
+				0A0E7D79229F1D54000E16D0 /* ImageUtility.swift in Sources */,
 				0A4B9141227092CF0095765B /* MarvelAPIConfig.swift in Sources */,
 				0A06C5D6226F735B0097A731 /* AppDelegate.swift in Sources */,
 				0A4B91492270DE0A0095765B /* Data+Extension.swift in Sources */,
@@ -463,6 +463,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FYF44BWFQU;
 				INFOPLIST_FILE = MarvellViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,6 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FYF44BWFQU;
 				INFOPLIST_FILE = MarvellViewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

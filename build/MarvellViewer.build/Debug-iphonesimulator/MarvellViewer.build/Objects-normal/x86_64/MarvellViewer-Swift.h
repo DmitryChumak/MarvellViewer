@@ -205,6 +205,7 @@ SWIFT_CLASS("_TtC13MarvellViewer11AppDelegate")
 
 SWIFT_CLASS("_TtC13MarvellViewer33MarvelCharacterCollectionViewCell")
 @interface MarvelCharacterCollectionViewCell : UICollectionViewCell
+- (void)prepareForReuse;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

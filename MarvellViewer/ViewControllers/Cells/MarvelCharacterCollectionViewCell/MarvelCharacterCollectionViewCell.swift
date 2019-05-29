@@ -12,11 +12,28 @@ class MarvelCharacterCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet private var marvelCharacterImage: UIImageView!
     @IBOutlet private var marvelCharacterNameLabel: UILabel!
+    private var imageUtil: ImageUtility = ImageUtility()
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageUtil.cancelLoading()
+    }
     
     func configure(with marvelCharacter: MarvelCharacter) {
         
-        let data = try! Data(contentsOf: marvelCharacter.imageURL!)
-        marvelCharacterImage.image = UIImage(data: data)
+        imageUtil.load(from: marvelCharacter.imageURL!) { [weak self] result in
+            switch result {
+            case .success(let image):
+                
+                DispatchQueue.main.async {
+                    self?.marvelCharacterImage.image = image
+                }
+    
+            case .failure(let error):
+                print(error)
+            }
+        }
+       
         marvelCharacterNameLabel.text = marvelCharacter.name
         
         

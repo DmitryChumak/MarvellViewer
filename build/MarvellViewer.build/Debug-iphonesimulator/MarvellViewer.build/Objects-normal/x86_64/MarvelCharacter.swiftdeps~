@@ -24,7 +24,6 @@ depends-top-level:
 - "MarvelCharacter"
 - "MarvelCharacterCollection"
 - "String"
-- "StringLiteralType"
 - "URL"
 - !private "UnicodeScalarType"
 - !private "_findStringSwitchCase"
