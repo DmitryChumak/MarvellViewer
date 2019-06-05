@@ -1,15 +1,16 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "22c9128ce6297f9e451b09de81d00170"
-build_time: [1559161807, 51170000]
+build_time: [1559743563, 715904000]
 inputs:
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/NetworkManager.swift": [1559161215, 398281443]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Extensions/UIViewController+Extension.swift": [1558365178, 121295100]
+  "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/ViewControllers/Views/LoaderView.swift": [1559742767, 206911848]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/MarvelCharacter.swift": [1558364684, 181216977]
-  "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/MarvelManager.swift": [1558365297, 253353862]
+  "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/MarvelManager.swift": [1559742300, 970807057]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/MarvelAPIHashGenerator.swift": [1558364684, 180921966]
-  "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/ViewControllers/ViewController.swift": [1559161503, 406345510]
+  "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/ViewControllers/ViewController.swift": [1559743555, 942489723]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/ViewControllers/Cells/MarvelCharacterCollectionViewCell/MarvelCharacterCollectionViewCell.swift": [1559161616, 534306254]
-  "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/ImageUtility.swift": [1559161806, 953570205]
+  "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/ImageUtility.swift": [1559162994, 543336840]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/MarvelAPIConfig.swift": [1558364684, 180533223]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/AppDelegate.swift": [1558364684, 172530496]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Extensions/Data+Extension.swift": [1558364684, 177379373]

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreGraphics
 
 
 class ViewController: UIViewController {
@@ -17,18 +18,22 @@ class ViewController: UIViewController {
     private var marvelManager: MarvelManager!
     private var isLoading: Bool = false
     
+    
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
         marvelManager = MarvelManager(networkClient: URLSession.shared)
         MarvelCharacterCollectionViewCell.register(for: collectionView)
         collectionView.delegate = self
         collectionView.dataSource = self
         loadCharactersCollection(from: 0)
-        
     }
     
     private func loadCharactersCollection(from offset: Int) {
   
+        let loaderView = LoaderView(frame: CGRect(x: 0, y: collectionView.contentSize.height, width: collectionView.bounds.width, height: 50))
+        collectionView.addSubview(loaderView)
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: loaderView.frame.size.height, right: 0)
+        
         marvelManager.loadCharacters(from: offset) { [weak self] result in
             switch result {
             case .success(let res):
@@ -38,11 +43,16 @@ class ViewController: UIViewController {
                     self?.marvelCollection = res
                 }
                 DispatchQueue.main.async {
+                    self?.collectionView.contentInset = .zero
+                    loaderView.removeFromSuperview()
                     self?.collectionView.reloadData()
                     self?.isLoading = false
                 }
+                
             case .failure(let error):
                 DispatchQueue.main.async {
+                    self?.collectionView.contentInset = .zero
+                    loaderView.removeFromSuperview()
                     self?.handleError(error: error)
                 }
             }
@@ -55,6 +65,10 @@ class ViewController: UIViewController {
 // MARK: - MarvelCharacterCollectionViewDataSource
 
 extension ViewController: UICollectionViewDataSource {
+    
+    
+    
+  
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let count = marvelCollection?.marvelCharacters.count else { return 0 }

@@ -203,6 +203,13 @@ SWIFT_CLASS("_TtC13MarvellViewer11AppDelegate")
 
 @class NSCoder;
 
+SWIFT_CLASS("_TtC13MarvellViewer10LoaderView")
+@interface LoaderView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC13MarvellViewer33MarvelCharacterCollectionViewCell")
 @interface MarvelCharacterCollectionViewCell : UICollectionViewCell
 - (void)prepareForReuse;

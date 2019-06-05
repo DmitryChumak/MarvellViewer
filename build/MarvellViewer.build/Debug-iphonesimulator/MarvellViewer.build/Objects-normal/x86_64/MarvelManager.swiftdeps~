@@ -19,7 +19,6 @@ depends-top-level:
 - "NetworkManager"
 - "Result"
 - !private "StringLiteralType"
-- !private "UnicodeScalarType"
 depends-member:
 - !private ["SK", "decoded"]
 - !private ["Sl", "decoded"]
