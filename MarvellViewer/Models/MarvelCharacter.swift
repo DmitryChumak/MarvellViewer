@@ -20,6 +20,7 @@ struct MarvelCharacter : Decodable {
         case name
         case description
         case thumbnail
+    
         
         enum ThumbnailCodingKeys: String, CodingKey {
             case path

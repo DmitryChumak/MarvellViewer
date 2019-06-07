@@ -25,22 +25,17 @@ class ViewController: UIViewController {
         MarvelCharacterCollectionViewCell.register(for: collectionView)
         collectionView.delegate = self
         collectionView.dataSource = self
-        loadCharactersCollection(from: 0)
+        loadDataForFirstPage()
     }
     
-    private func loadCharactersCollection(from offset: Int) {
-  
-        let loaderView = LoaderView(frame: CGRect(x: 0, y: collectionView.contentSize.height, width: collectionView.bounds.width, height: 50))
-        collectionView.addSubview(loaderView)
-        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: loaderView.frame.size.height, right: 0)
-        
+    private func loadDataToCollection(from offset: Int, loaderView: LoaderView) {
         marvelManager.loadCharacters(from: offset) { [weak self] result in
             switch result {
             case .success(let res):
-                if self?.marvelCollection != nil {
-                    self?.marvelCollection.marvelCharacters.append(contentsOf: res.marvelCharacters)
-                } else {
+                if self?.marvelCollection == nil {
                     self?.marvelCollection = res
+                } else {
+                    self?.marvelCollection.marvelCharacters.append(contentsOf: res.marvelCharacters)
                 }
                 DispatchQueue.main.async {
                     self?.collectionView.contentInset = .zero
@@ -58,6 +53,31 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    private func loadDataForFirstPage() {
+        let loaderView = LoaderView(frame: CGRect(x: 0, y: 0, width: collectionView.bounds.width, height: 50))
+        
+        loaderView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.addSubview(loaderView)
+        loaderView.centerXAnchor.constraint(equalTo: collectionView.centerXAnchor).isActive = true
+        loaderView.centerYAnchor.constraint(equalTo: collectionView.centerYAnchor).isActive = true
+        
+        loadDataToCollection(from: 0, loaderView: loaderView)
+        
+    }
+    
+    private func loadDataForNextPage(from offset: Int) {
+        
+        let loaderView = LoaderView(frame: CGRect(x: 0, y: collectionView.contentSize.height, width: collectionView.bounds.width, height: 50))
+
+        collectionView.addSubview(loaderView)
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: loaderView.frame.size.height, right: 0)
+        
+        loadDataToCollection(from: offset, loaderView: loaderView)
+        
+        
+    }
+    
 }
 
 
@@ -65,10 +85,6 @@ class ViewController: UIViewController {
 // MARK: - MarvelCharacterCollectionViewDataSource
 
 extension ViewController: UICollectionViewDataSource {
-    
-    
-    
-  
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let count = marvelCollection?.marvelCharacters.count else { return 0 }
@@ -108,7 +124,7 @@ extension ViewController: UICollectionViewDelegate {
         let contentHeight = scrollView.contentSize.height
         if offsetY > contentHeight - scrollView.frame.size.height && !isLoading {
             isLoading = true
-            loadCharactersCollection(from: marvelCollection.marvelCharacters.count)
+            loadDataForNextPage(from: marvelCollection.marvelCharacters.count)
             
         }
     }

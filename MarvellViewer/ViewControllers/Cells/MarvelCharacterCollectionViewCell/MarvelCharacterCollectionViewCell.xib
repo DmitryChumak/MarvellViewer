@@ -13,17 +13,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MarvelCharacterCollectionViewCell" id="gTV-IL-0wX" customClass="MarvelCharacterCollectionViewCell" customModule="MarvellViewer" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+            <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0kF-c2-1ct">
-                        <rect key="frame" x="0.0" y="5" width="414" height="150"/>
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHJ-jT-RdN">
-                        <rect key="frame" x="170" y="62.5" width="74.5" height="35"/>
+                        <rect key="frame" x="138" y="57.5" width="74.5" height="35"/>
                         <attributedString key="attributedText">
                             <fragment content="Label">
                                 <attributes>
@@ -40,20 +40,23 @@
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="0kF-c2-1ct" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="49L-NV-UJD"/>
+                <constraint firstItem="0kF-c2-1ct" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4rm-XF-92u"/>
+                <constraint firstAttribute="trailing" secondItem="0kF-c2-1ct" secondAttribute="trailing" id="FIR-VE-rE5"/>
+                <constraint firstAttribute="bottom" secondItem="0kF-c2-1ct" secondAttribute="bottom" id="GtL-ex-9Do"/>
                 <constraint firstItem="HHJ-jT-RdN" firstAttribute="centerX" secondItem="0kF-c2-1ct" secondAttribute="centerX" id="Nu4-cM-Ffi"/>
-                <constraint firstItem="0kF-c2-1ct" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="Stz-0C-frZ"/>
                 <constraint firstItem="HHJ-jT-RdN" firstAttribute="centerY" secondItem="0kF-c2-1ct" secondAttribute="centerY" id="Ut2-XF-cmI"/>
+                <constraint firstItem="0kF-c2-1ct" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ymy-Io-dn8"/>
                 <constraint firstItem="0kF-c2-1ct" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="dXh-cx-DWs"/>
-                <constraint firstItem="0kF-c2-1ct" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="nGS-4m-2DU"/>
-                <constraint firstItem="0kF-c2-1ct" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="tgS-rD-7Yi"/>
+                <constraint firstItem="0kF-c2-1ct" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tl4-gb-QeZ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="140" height="100"/>
+            <size key="customSize" width="67" height="100"/>
             <connections>
                 <outlet property="marvelCharacterImage" destination="0kF-c2-1ct" id="ugB-Fi-O0A"/>
                 <outlet property="marvelCharacterNameLabel" destination="HHJ-jT-RdN" id="Zzh-IF-zRR"/>
             </connections>
-            <point key="canvasLocation" x="113.04347826086958" y="51.5625"/>
+            <point key="canvasLocation" x="60.14492753623189" y="51.5625"/>
         </collectionViewCell>
     </objects>
 </document>

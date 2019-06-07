@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		x48nCIhJyjrSG3BuYURp0VwI0NY=
+		sM87yBxM++7khwU1ceq73aR1cyA=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		7jEEjmCzPU0y7HlS770Nzhg197I=
+		jdOJv0Hfc6hJ7asoGIipRr1Ee9M=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		Z4Lfyo34qyIhttQBGHRTj1FcEc8=
+		mNeEbVRT8oeNTzitwo/M0/UiH5c=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-rVu-Xc-Gec.nib</key>
 		<data>
-		Zwe29HLPQiPN6Jg9Vd+FItJd114=
+		oyEuFdejDK6BVm3LMwzh1LA1evw=
 		</data>
 		<key>Frameworks/CryptoSwift.framework/CryptoSwift</key>
 		<data>
@@ -98,11 +98,11 @@
 		</data>
 		<key>MarvelCharacterCollectionViewCell.nib</key>
 		<data>
-		IzP6PQUemClQtViLLk5NfwAs2A4=
+		R2NdhALHR5xEwXiGRt7Db6O2g6w=
 		</data>
 		<key>MarvelCharacterDetails.storyboardc/0Cp-lW-Svg-view-Lxp-Ru-T88.nib</key>
 		<data>
-		q4R3scggOze+zMMTBpq8mYxrekQ=
+		s8v9WTwpUNCB37Gj0zygSkPkYtU=
 		</data>
 		<key>MarvelCharacterDetails.storyboardc/Info.plist</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>MarvelCharacterDetails.storyboardc/MarvelCharacterDetails.nib</key>
 		<data>
-		dPzkmWwIcs/jFAyA8hbAUBEkLvA=
+		Wocij4yyEc5xxlWpqjsy5wk+aYI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -127,7 +127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7cBevNeOiaE1u+0lbAmTda7LTUZZyzWduQOyklKAbMk=
+			rt/4szioiQKHKn2eteOcslc3nt9bReMeQtoQ2xbbfzU=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gQxd/FuR4iOVp1VmP/55YfQMbeNAEWa75AZhAXS3W0w=
+			oxD7jp7DuBaZ6PjTWLeAsuDDUC52RvfY4knCtuosLto=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6mAeIkB1qnJQI1vxorOdSLPFxHmeL/K5MC+t/R40VpE=
+			jfXIVRPUa6DDkwPDV7VAnuz1t5mj3g5nxRl1TKYWIZU=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -162,7 +162,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OAWBEcJwAKgPiNAeteO+wucJ8glFShS68mdyciQveP4=
+			0x1fEvnpEyQAEkrco71VQzsj18r3YZ8OP2QiaTyDLhw=
 			</data>
 		</dict>
 		<key>Frameworks/CryptoSwift.framework/CryptoSwift</key>
@@ -281,14 +281,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WukdlQt+eJkSM9MOc6LbIq+xEGvt7uKaSCo2kd97M0I=
+			oSyOcEzJcrPfrGZlxDnO29gFiaab6vlRAZMx4PIZa28=
 			</data>
 		</dict>
 		<key>MarvelCharacterDetails.storyboardc/0Cp-lW-Svg-view-Lxp-Ru-T88.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vm3A2gvYrzsSMLtkl7c0luygXsoGlTanFFriSuCgg7A=
+			3YJ8kjTs3neOjWN4oamZcmpmHcXogTBr9ExwGrsm5GA=
 			</data>
 		</dict>
 		<key>MarvelCharacterDetails.storyboardc/Info.plist</key>
@@ -302,7 +302,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CjtBVSTh+nc3Nl7Mzy+nTzJBSnThRCKXZiv+0T78UVc=
+			c4ITq/Jd4p+sDyX4RC6dQwiYD7dVPC/FL4ppmC4E3c0=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>
