@@ -228,11 +228,18 @@ SWIFT_CLASS("_TtC13MarvellViewer33MarvelCharacterCollectionViewCell")
 SWIFT_CLASS("_TtC13MarvellViewer14ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;
+- (void)viewWillLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UICollectionView;
+@class UICollectionViewLayout;
+
+@interface ViewController (SWIFT_EXTENSION(MarvellViewer)) <UICollectionViewDelegateFlowLayout>
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
 
 @interface ViewController (SWIFT_EXTENSION(MarvellViewer)) <UICollectionViewDataSource>
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;

@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     private var marvelManager: MarvelManager!
     private var isLoading: Bool = false
     
+    var cellsPerRow:CGFloat = 2
+    let cellPadding:CGFloat = 5
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,24 @@ class ViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         loadDataForFirstPage()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            if UIDevice.current.orientation.isLandscape {
+                cellsPerRow = 3
+            } else {
+                cellsPerRow = 2
+            }
+        } else {
+            if UIDevice.current.orientation.isLandscape {
+                cellsPerRow = 2
+            } else {
+                cellsPerRow = 1
+            }
+        }
+        collectionView.collectionViewLayout.invalidateLayout()
     }
     
     private func loadDataToCollection(from offset: Int, loaderView: LoaderView) {
@@ -61,7 +82,6 @@ class ViewController: UIViewController {
         collectionView.addSubview(loaderView)
         loaderView.centerXAnchor.constraint(equalTo: collectionView.centerXAnchor).isActive = true
         loaderView.centerYAnchor.constraint(equalTo: collectionView.centerYAnchor).isActive = true
-        
         loadDataToCollection(from: 0, loaderView: loaderView)
         
     }
@@ -69,13 +89,9 @@ class ViewController: UIViewController {
     private func loadDataForNextPage(from offset: Int) {
         
         let loaderView = LoaderView(frame: CGRect(x: 0, y: collectionView.contentSize.height, width: collectionView.bounds.width, height: 50))
-
         collectionView.addSubview(loaderView)
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: loaderView.frame.size.height, right: 0)
-        
         loadDataToCollection(from: offset, loaderView: loaderView)
-        
-        
     }
     
 }
@@ -94,10 +110,7 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MarvelCharacterCollectionViewCell.reuseIdentifier, for: indexPath) as! MarvelCharacterCollectionViewCell
-        
-       
         cell.configure(with: marvelCollection.marvelCharacters[indexPath.row])
-        
         return cell
     }
     
@@ -128,4 +141,20 @@ extension ViewController: UICollectionViewDelegate {
             
         }
     }
+}
+
+
+
+// MARK: - MarvelCharacterCollectionViewDelegateFlowLayout
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let widthMinusPadding = collectionView.bounds.width - (cellPadding + cellPadding * cellsPerRow)
+        let width = widthMinusPadding / cellsPerRow
+        return CGSize(width: width, height: width / 2.5)
+
+    }
+    
 }
