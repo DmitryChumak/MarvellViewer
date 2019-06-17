@@ -10,15 +10,14 @@ depends-top-level:
 - "=="
 - "AssignmentPrecedence"
 - "Error"
-- !private "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
 - !private "MarvelAPIConfig"
+- "MarvelCharacter"
 - "MarvelCharacterCollection"
+- "MarvelComicsCollection"
 - "MarvelManager"
 - "NetworkManager"
 - "Result"
-- !private "StringLiteralType"
 depends-member:
 - !private ["SK", "decoded"]
 - !private ["Sl", "decoded"]
@@ -31,6 +30,7 @@ depends-member:
 - !private ["10Foundation4DataV", "decoded"]
 - !private ["10Foundation12DataProtocolP", "decoded"]
 - !private ["Se", "decoded"]
+- !private ["Se", "id"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "decoded"]
@@ -73,16 +73,22 @@ depends-member:
 - !private ["s6HasherV", "combine"]
 - !private ["13MarvellViewer15MarvelAPIConfigC", "baseURL"]
 - !private ["13MarvellViewer15MarvelAPIConfigC", "secureParameters"]
+- !private ["13MarvellViewer15MarvelCharacterV", "id"]
 - !private ["13MarvellViewer25MarvelCharacterCollectionV", "deinit"]
+- !private ["13MarvellViewer22MarvelComicsCollectionV", "deinit"]
+- !private ["13MarvellViewer12MarvelEntityP", "id"]
 - ["13MarvellViewer13MarvelManagerC", "Error"]
 - ["13MarvellViewer13MarvelManagerC", "Int"]
 - !private ["13MarvellViewer13MarvelManagerC", "MarvelAPIConfig"]
+- ["13MarvellViewer13MarvelManagerC", "MarvelCharacter"]
 - ["13MarvellViewer13MarvelManagerC", "MarvelCharacterCollection"]
+- ["13MarvellViewer13MarvelManagerC", "MarvelComicsCollection"]
 - !private ["13MarvellViewer13MarvelManagerC", "MarvelManagerError"]
 - ["13MarvellViewer13MarvelManagerC", "NetworkManager"]
 - ["13MarvellViewer13MarvelManagerC", "Result"]
 - ["13MarvellViewer13MarvelManagerC", "init"]
 - ["13MarvellViewer13MarvelManagerC", "loadCharacters"]
+- ["13MarvellViewer13MarvelManagerC", "loadComics"]
 - !private ["13MarvellViewer13MarvelManagerC", "networkClient"]
 - !private ["SM", "decoded"]
 - !private ["10Foundation19MutableDataProtocolP", "decoded"]
@@ -115,7 +121,10 @@ depends-nominal:
 - "SH"
 - !private "s6HasherV"
 - !private "13MarvellViewer15MarvelAPIConfigC"
+- !private "13MarvellViewer15MarvelCharacterV"
 - !private "13MarvellViewer25MarvelCharacterCollectionV"
+- !private "13MarvellViewer22MarvelComicsCollectionV"
+- !private "13MarvellViewer12MarvelEntityP"
 - "13MarvellViewer13MarvelManagerC"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
@@ -158,4 +167,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "78a825207cf57a54a5edbada3c75c840"
+interface-hash: "e9ed42a3bff0552f06634d46b2e8f423"

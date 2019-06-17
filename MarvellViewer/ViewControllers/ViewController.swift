@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     private var marvelManager: MarvelManager!
     private var isLoading: Bool = false
     
-    var cellsPerRow:CGFloat = 2
-    let cellPadding:CGFloat = 5
+    private var cellsPerRow:CGFloat = 2
+    private let cellPadding:CGFloat = 5
     
     
     override func viewDidLoad() {
@@ -34,17 +34,9 @@ class ViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         if UIDevice.current.userInterfaceIdiom == .pad {
-            if UIDevice.current.orientation.isLandscape {
-                cellsPerRow = 3
-            } else {
-                cellsPerRow = 2
-            }
+            cellsPerRow = UIDevice.current.orientation.isLandscape ? 3 : 2
         } else {
-            if UIDevice.current.orientation.isLandscape {
-                cellsPerRow = 2
-            } else {
-                cellsPerRow = 1
-            }
+            cellsPerRow = UIDevice.current.orientation.isLandscape ? 2 : 1
         }
         collectionView.collectionViewLayout.invalidateLayout()
     }
@@ -124,11 +116,11 @@ extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-//        let storyboard = UIStoryboard(name: "MarvelCharacterDetails", bundle: nil)
-//        let vc = storyboard.instantiateInitialViewController() as! MarvelCharacterDetailsViewController
-//        let character = marvelCollection.marvelCharacters[indexPath.row]
-//        vc.configure(marvelCharacter: character)
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let storyboard = UIStoryboard(name: "MarvelCharacterDetails", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! MarvelCharacterDetailsViewController
+        let character = marvelCollection.marvelCharacters[indexPath.row]
+        vc.configure(marvelCharacter: character)
+        self.navigationController?.pushViewController(vc, animated: true)
     
     }
     

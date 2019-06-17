@@ -9,7 +9,12 @@
 import Foundation
 import UIKit
 
-struct MarvelCharacter : Decodable {
+struct MarvelCharacter : Decodable, MarvelEntity {
+    var title: String {
+        return name
+    }
+    
+    
     var id: Int
     var name: String
     var description: String
@@ -34,7 +39,6 @@ struct MarvelCharacter : Decodable {
         id = try container.decode(Int.self, forKey: CodingKeys.id)
         name = try container.decode(String.self, forKey: CodingKeys.name)
         description = try container.decode(String.self, forKey: CodingKeys.description)
-        name = try container.decode(String.self, forKey: CodingKeys.name)
         let thumbnail = try container.nestedContainer(keyedBy: CodingKeys.ThumbnailCodingKeys.self, forKey: CodingKeys.thumbnail)
         let path = try thumbnail.decode(String.self, forKey: CodingKeys.ThumbnailCodingKeys.path)
         let ext = try thumbnail.decode(String.self, forKey: CodingKeys.ThumbnailCodingKeys.ext)

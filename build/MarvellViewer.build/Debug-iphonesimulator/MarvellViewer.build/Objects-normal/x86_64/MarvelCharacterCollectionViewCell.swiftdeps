@@ -13,8 +13,8 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "DispatchQueue"
 - "ImageUtility"
-- "MarvelCharacter"
 - "MarvelCharacterCollectionViewCell"
+- "MarvelEntity"
 - "UICollectionViewCell"
 - "UIImageView"
 - "UILabel"
@@ -73,8 +73,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["Se", "image"]
-- !private ["Se", "imageURL"]
-- !private ["Se", "name"]
 - !private ["Se", "text"]
 - !private ["So18OS_dispatch_objectC", "async"]
 - !private ["So18OS_dispatch_objectC", "main"]
@@ -117,11 +115,9 @@ depends-member:
 - !private ["13MarvellViewer12ImageUtilityC", "cancelLoading"]
 - ["13MarvellViewer12ImageUtilityC", "init"]
 - !private ["13MarvellViewer12ImageUtilityC", "load"]
-- !private ["13MarvellViewer15MarvelCharacterV", "imageURL"]
-- !private ["13MarvellViewer15MarvelCharacterV", "name"]
 - !private ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "DispatchQueue"]
 - ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "ImageUtility"]
-- ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "MarvelCharacter"]
+- ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "MarvelEntity"]
 - ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "UIImageView"]
 - ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "UILabel"]
 - ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "configure"]
@@ -132,6 +128,8 @@ depends-member:
 - !private ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "marvelCharacterNameLabel"]
 - ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "prepareForReuse"]
 - !private ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "print"]
+- !private ["13MarvellViewer12MarvelEntityP", "imageURL"]
+- !private ["13MarvellViewer12MarvelEntityP", "title"]
 - !private ["So8NSCodingP", "DispatchQueue"]
 - ["So8NSCodingP", "ImageUtility"]
 - ["So8NSCodingP", ""]
@@ -145,7 +143,7 @@ depends-member:
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSObjectC", "DispatchQueue"]
 - ["So8NSObjectC", "ImageUtility"]
-- ["So8NSObjectC", "MarvelCharacter"]
+- ["So8NSObjectC", "MarvelEntity"]
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
 - !private ["So8NSObjectC", "async"]
@@ -214,7 +212,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So24UICollectionReusableViewC", "DispatchQueue"]
 - ["So24UICollectionReusableViewC", "ImageUtility"]
-- ["So24UICollectionReusableViewC", "MarvelCharacter"]
+- ["So24UICollectionReusableViewC", "MarvelEntity"]
 - ["So24UICollectionReusableViewC", "UIImageView"]
 - ["So24UICollectionReusableViewC", "UILabel"]
 - ["So24UICollectionReusableViewC", "configure"]
@@ -226,7 +224,7 @@ depends-member:
 - !private ["So24UICollectionReusableViewC", "print"]
 - !private ["So20UICollectionViewCellC", "DispatchQueue"]
 - ["So20UICollectionViewCellC", "ImageUtility"]
-- ["So20UICollectionViewCellC", "MarvelCharacter"]
+- ["So20UICollectionViewCellC", "MarvelEntity"]
 - ["So20UICollectionViewCellC", "UIImageView"]
 - ["So20UICollectionViewCellC", "UILabel"]
 - ["So20UICollectionViewCellC", ""]
@@ -308,7 +306,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So11UIResponderC", "DispatchQueue"]
 - ["So11UIResponderC", "ImageUtility"]
-- ["So11UIResponderC", "MarvelCharacter"]
+- ["So11UIResponderC", "MarvelEntity"]
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "configure"]
@@ -355,7 +353,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "text"]
 - !private ["So6UIViewC", "DispatchQueue"]
 - ["So6UIViewC", "ImageUtility"]
-- ["So6UIViewC", "MarvelCharacter"]
+- ["So6UIViewC", "MarvelEntity"]
 - ["So6UIViewC", "UIImageView"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "configure"]
@@ -407,8 +405,8 @@ depends-nominal:
 - !private "s23ExpressibleByNilLiteralP"
 - "SH"
 - "13MarvellViewer12ImageUtilityC"
-- !private "13MarvellViewer15MarvelCharacterV"
 - "13MarvellViewer33MarvelCharacterCollectionViewCellC"
+- !private "13MarvellViewer12MarvelEntityP"
 - "So8NSCodingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
@@ -468,4 +466,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "309e407c9afd577ac77c4d0b468f8182"
+interface-hash: "c2b079984cf1a973d1eeb189a601f6bf"

@@ -217,13 +217,41 @@ SWIFT_CLASS("_TtC13MarvellViewer33MarvelCharacterCollectionViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-
-
-
-
-
 @class NSBundle;
+
+SWIFT_CLASS("_TtC13MarvellViewer36MarvelCharacterDetailsViewController")
+@interface MarvelCharacterDetailsViewController : UIViewController
+- (void)viewDidLoad;
+- (void)viewWillLayoutSubviews;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UICollectionView;
+@class UICollectionViewLayout;
+
+@interface MarvelCharacterDetailsViewController (SWIFT_EXTENSION(MarvellViewer)) <UICollectionViewDelegateFlowLayout>
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class UIScrollView;
+
+@interface MarvelCharacterDetailsViewController (SWIFT_EXTENSION(MarvellViewer)) <UICollectionViewDelegate>
+- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
+@end
+
+
+@interface MarvelCharacterDetailsViewController (SWIFT_EXTENSION(MarvellViewer)) <UICollectionViewDataSource>
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
+
+
+
+
 
 SWIFT_CLASS("_TtC13MarvellViewer14ViewController")
 @interface ViewController : UIViewController
@@ -233,8 +261,6 @@ SWIFT_CLASS("_TtC13MarvellViewer14ViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UICollectionView;
-@class UICollectionViewLayout;
 
 @interface ViewController (SWIFT_EXTENSION(MarvellViewer)) <UICollectionViewDelegateFlowLayout>
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -246,7 +272,6 @@ SWIFT_CLASS("_TtC13MarvellViewer14ViewController")
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@class UIScrollView;
 
 @interface ViewController (SWIFT_EXTENSION(MarvellViewer)) <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;

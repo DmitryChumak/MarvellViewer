@@ -19,9 +19,9 @@ class MarvelCharacterCollectionViewCell: UICollectionViewCell {
         imageUtil.cancelLoading()
     }
     
-    func configure(with marvelCharacter: MarvelCharacter) {
+    func configure(with entity: MarvelEntity) {
         
-        imageUtil.load(from: marvelCharacter.imageURL!) { [weak self] result in
+        imageUtil.load(from: entity.imageURL!) { [weak self] result in
             switch result {
             case .success(let image):
                 
@@ -34,7 +34,7 @@ class MarvelCharacterCollectionViewCell: UICollectionViewCell {
             }
         }
        
-        marvelCharacterNameLabel.text = marvelCharacter.name
+        marvelCharacterNameLabel.text = entity.title
         
         
     }
