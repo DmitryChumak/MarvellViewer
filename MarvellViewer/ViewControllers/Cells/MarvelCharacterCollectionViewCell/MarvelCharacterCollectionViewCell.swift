@@ -20,24 +20,16 @@ class MarvelCharacterCollectionViewCell: UICollectionViewCell {
     }
     
     func configure(with entity: MarvelEntity) {
-        
         imageUtil.load(from: entity.imageURL!) { [weak self] result in
             switch result {
             case .success(let image):
-                
                 DispatchQueue.main.async {
                     self?.marvelCharacterImage.image = image
                 }
-    
             case .failure(let error):
                 print(error)
             }
         }
-       
         marvelCharacterNameLabel.text = entity.title
-        
-        
     }
-    
-    
 }

@@ -19,6 +19,7 @@ depends-top-level:
 - !private "/"
 - !private "=="
 - !private ">"
+- "Array"
 - "AssignmentPrecedence"
 - "Bool"
 - "BooleanLiteralType"
@@ -32,7 +33,7 @@ depends-top-level:
 - "Int"
 - "IntegerLiteralType"
 - "LoaderView"
-- "MarvelCharacterCollection"
+- "MarvelCharacter"
 - !private "MarvelCharacterCollectionViewCell"
 - !private "MarvelCharacterDetailsViewController"
 - "MarvelManager"
@@ -54,9 +55,11 @@ depends-top-level:
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
+- ["Sa", "init"]
 - !private ["Sa", "subscript"]
 - !private ["SK", "append"]
 - !private ["SK", "count"]
+- ["SK", "init"]
 - !private ["SK", "row"]
 - !private ["SK", "subscript"]
 - !private ["So15CALayerDelegateP", "addSubview"]
@@ -84,6 +87,7 @@ depends-member:
 - !private ["So6CGRectV", "width"]
 - !private ["So6CGSizeV", "height"]
 - !private ["So6CGSizeV", "init"]
+- ["s7CVarArgP", "Array"]
 - !private ["s7CVarArgP", "CGRect"]
 - !private ["s7CVarArgP", "CGSize"]
 - !private ["s7CVarArgP", "DispatchQueue"]
@@ -121,7 +125,7 @@ depends-member:
 - ["s7CVarArgP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["s7CVarArgP", "indexTitles"]
 - ["s7CVarArgP", "indexTitlesForCollectionView"]
-- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "instantiateInitialViewController"]
 - !private ["s7CVarArgP", "invalidateLayout"]
 - !private ["s7CVarArgP", "isActive"]
@@ -130,7 +134,7 @@ depends-member:
 - !private ["s7CVarArgP", "loadDataForNextPage"]
 - !private ["s7CVarArgP", "loadDataToCollection"]
 - !private ["s7CVarArgP", "main"]
-- !private ["s7CVarArgP", "marvelCollection"]
+- !private ["s7CVarArgP", "marvelCharacters"]
 - !private ["s7CVarArgP", "marvelManager"]
 - !private ["s7CVarArgP", "navigationController"]
 - ["s7CVarArgP", "numberOfSections"]
@@ -164,12 +168,15 @@ depends-member:
 - !private ["s7CVarArgP", "viewWillLayoutSubviews"]
 - !private ["Sl", "append"]
 - !private ["Sl", "count"]
+- ["Sl", "init"]
 - !private ["Sl", "row"]
 - !private ["Sl", "subscript"]
 - !private ["SL", "row"]
 - !private ["10Foundation15ContiguousBytesP", "append"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
+- ["10Foundation15ContiguousBytesP", "init"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
+- ["s28CustomDebugStringConvertibleP", "Array"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
 - !private ["s28CustomDebugStringConvertibleP", "CGSize"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
@@ -208,7 +215,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["s28CustomDebugStringConvertibleP", "indexTitles"]
 - ["s28CustomDebugStringConvertibleP", "indexTitlesForCollectionView"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateInitialViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "invalidateLayout"]
 - !private ["s28CustomDebugStringConvertibleP", "isActive"]
@@ -219,7 +226,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "loadDataToCollection"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "marvelCharacters"]
-- !private ["s28CustomDebugStringConvertibleP", "marvelCollection"]
 - !private ["s28CustomDebugStringConvertibleP", "marvelManager"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSections"]
@@ -267,15 +273,15 @@ depends-member:
 - !private ["s17CustomReflectableP", "dataSource"]
 - !private ["s17CustomReflectableP", "delegate"]
 - !private ["s17CustomReflectableP", "height"]
-- !private ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "loadCharacters"]
-- !private ["s17CustomReflectableP", "marvelCharacters"]
 - !private ["s17CustomReflectableP", "reloadData"]
 - !private ["s17CustomReflectableP", "row"]
 - !private ["s17CustomReflectableP", "size"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "width"]
 - !private ["s17CustomReflectableP", "y"]
+- ["s23CustomStringConvertibleP", "Array"]
 - !private ["s23CustomStringConvertibleP", "CGRect"]
 - !private ["s23CustomStringConvertibleP", "CGSize"]
 - !private ["s23CustomStringConvertibleP", "DispatchQueue"]
@@ -313,7 +319,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["s23CustomStringConvertibleP", "indexTitles"]
 - ["s23CustomStringConvertibleP", "indexTitlesForCollectionView"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "instantiateInitialViewController"]
 - !private ["s23CustomStringConvertibleP", "invalidateLayout"]
 - !private ["s23CustomStringConvertibleP", "isActive"]
@@ -322,7 +328,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "loadDataForNextPage"]
 - !private ["s23CustomStringConvertibleP", "loadDataToCollection"]
 - !private ["s23CustomStringConvertibleP", "main"]
-- !private ["s23CustomStringConvertibleP", "marvelCollection"]
+- !private ["s23CustomStringConvertibleP", "marvelCharacters"]
 - !private ["s23CustomStringConvertibleP", "marvelManager"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
 - ["s23CustomStringConvertibleP", "numberOfSections"]
@@ -357,6 +363,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewWillLayoutSubviews"]
 - !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "count"]
+- ["10Foundation12DataProtocolP", "init"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["Se", "addSubview"]
 - !private ["Se", "append"]
@@ -370,9 +377,8 @@ depends-member:
 - !private ["Se", "dataSource"]
 - !private ["Se", "delegate"]
 - !private ["Se", "height"]
-- !private ["Se", "init"]
+- ["Se", "init"]
 - !private ["Se", "loadCharacters"]
-- !private ["Se", "marvelCharacters"]
 - !private ["Se", "reloadData"]
 - !private ["Se", "row"]
 - !private ["Se", "size"]
@@ -396,9 +402,8 @@ depends-member:
 - !private ["SE", "dataSource"]
 - !private ["SE", "delegate"]
 - !private ["SE", "height"]
-- !private ["SE", "init"]
+- ["SE", "init"]
 - !private ["SE", "loadCharacters"]
-- !private ["SE", "marvelCharacters"]
 - !private ["SE", "reloadData"]
 - !private ["SE", "row"]
 - !private ["SE", "size"]
@@ -406,6 +411,7 @@ depends-member:
 - !private ["SE", "width"]
 - !private ["SE", "y"]
 - !private ["SE", "zero"]
+- ["SQ", "Array"]
 - !private ["SQ", "CGRect"]
 - !private ["SQ", "CGSize"]
 - !private ["SQ", "DispatchQueue"]
@@ -445,7 +451,7 @@ depends-member:
 - ["SQ", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["SQ", "indexTitles"]
 - ["SQ", "indexTitlesForCollectionView"]
-- !private ["SQ", "init"]
+- ["SQ", "init"]
 - !private ["SQ", "instantiateInitialViewController"]
 - !private ["SQ", "invalidateLayout"]
 - !private ["SQ", "isActive"]
@@ -457,7 +463,6 @@ depends-member:
 - !private ["SQ", "loadDataToCollection"]
 - !private ["SQ", "main"]
 - !private ["SQ", "marvelCharacters"]
-- !private ["SQ", "marvelCollection"]
 - !private ["SQ", "marvelManager"]
 - !private ["SQ", "navigationController"]
 - ["SQ", "numberOfSections"]
@@ -498,6 +503,7 @@ depends-member:
 - !private ["SQ", "zero"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "row"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s23ExpressibleByNilLiteralP", "addSubview"]
@@ -510,8 +516,8 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "dataSource"]
 - !private ["s23ExpressibleByNilLiteralP", "delegate"]
 - !private ["s23ExpressibleByNilLiteralP", "loadCharacters"]
-- !private ["s23ExpressibleByNilLiteralP", "marvelCharacters"]
 - !private ["s23ExpressibleByNilLiteralP", "reloadData"]
+- ["SH", "Array"]
 - !private ["SH", "CGRect"]
 - !private ["SH", "CGSize"]
 - !private ["SH", "DispatchQueue"]
@@ -550,7 +556,7 @@ depends-member:
 - ["SH", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["SH", "indexTitles"]
 - ["SH", "indexTitlesForCollectionView"]
-- !private ["SH", "init"]
+- ["SH", "init"]
 - !private ["SH", "instantiateInitialViewController"]
 - !private ["SH", "invalidateLayout"]
 - !private ["SH", "isActive"]
@@ -562,7 +568,6 @@ depends-member:
 - !private ["SH", "loadDataToCollection"]
 - !private ["SH", "main"]
 - !private ["SH", "marvelCharacters"]
-- !private ["SH", "marvelCollection"]
 - !private ["SH", "marvelManager"]
 - !private ["SH", "navigationController"]
 - ["SH", "numberOfSections"]
@@ -606,7 +611,6 @@ depends-member:
 - !private ["13MarvellViewer10LoaderViewC", "removeFromSuperview"]
 - !private ["13MarvellViewer10LoaderViewC", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["13MarvellViewer15MarvelCharacterV", "deinit"]
-- !private ["13MarvellViewer25MarvelCharacterCollectionV", "marvelCharacters"]
 - !private ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "configure"]
 - !private ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "register"]
 - !private ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "reuseIdentifier"]
@@ -615,11 +619,14 @@ depends-member:
 - !private ["13MarvellViewer13MarvelManagerC", "loadCharacters"]
 - !private ["SM", "append"]
 - !private ["SM", "count"]
+- ["SM", "init"]
 - !private ["SM", "row"]
 - !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "append"]
 - !private ["10Foundation19MutableDataProtocolP", "count"]
+- ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- ["So8NSCodingP", "Array"]
 - !private ["So8NSCodingP", "CGRect"]
 - !private ["So8NSCodingP", "CGSize"]
 - !private ["So8NSCodingP", "DispatchQueue"]
@@ -658,7 +665,7 @@ depends-member:
 - !private ["So8NSCodingP", "loadDataForFirstPage"]
 - !private ["So8NSCodingP", "loadDataForNextPage"]
 - !private ["So8NSCodingP", "loadDataToCollection"]
-- !private ["So8NSCodingP", "marvelCollection"]
+- !private ["So8NSCodingP", "marvelCharacters"]
 - !private ["So8NSCodingP", "marvelManager"]
 - !private ["So8NSCodingP", "navigationController"]
 - ["So8NSCodingP", "numberOfSections"]
@@ -686,6 +693,7 @@ depends-member:
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
 - !private ["So8NSCodingP", "viewWillLayoutSubviews"]
+- ["So26NSExtensionRequestHandlingP", "Array"]
 - !private ["So26NSExtensionRequestHandlingP", "CGRect"]
 - !private ["So26NSExtensionRequestHandlingP", "CGSize"]
 - !private ["So26NSExtensionRequestHandlingP", "DispatchQueue"]
@@ -711,7 +719,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "loadDataForFirstPage"]
 - !private ["So26NSExtensionRequestHandlingP", "loadDataForNextPage"]
 - !private ["So26NSExtensionRequestHandlingP", "loadDataToCollection"]
-- !private ["So26NSExtensionRequestHandlingP", "marvelCollection"]
+- !private ["So26NSExtensionRequestHandlingP", "marvelCharacters"]
 - !private ["So26NSExtensionRequestHandlingP", "marvelManager"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSections"]
@@ -738,6 +746,7 @@ depends-member:
 - !private ["So18NSLayoutConstraintC", "isActive"]
 - !private ["So19NSLayoutXAxisAnchorC", "constraint"]
 - !private ["So19NSLayoutYAxisAnchorC", "constraint"]
+- ["So8NSObjectC", "Array"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CGFloat"]
 - !private ["So8NSObjectC", "CGRect"]
@@ -746,7 +755,7 @@ depends-member:
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "LoaderView"]
-- ["So8NSObjectC", "MarvelCharacterCollection"]
+- ["So8NSObjectC", "MarvelCharacter"]
 - !private ["So8NSObjectC", "MarvelCharacterCollectionViewCell"]
 - !private ["So8NSObjectC", "MarvelCharacterDetailsViewController"]
 - ["So8NSObjectC", "MarvelManager"]
@@ -791,7 +800,7 @@ depends-member:
 - ["So8NSObjectC", "loadDataForNextPage"]
 - ["So8NSObjectC", "loadDataToCollection"]
 - !private ["So8NSObjectC", "main"]
-- ["So8NSObjectC", "marvelCollection"]
+- ["So8NSObjectC", "marvelCharacters"]
 - ["So8NSObjectC", "marvelManager"]
 - !private ["So8NSObjectC", "navigationController"]
 - ["So8NSObjectC", "numberOfSections"]
@@ -822,6 +831,7 @@ depends-member:
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - ["So8NSObjectC", "viewWillLayoutSubviews"]
+- ["So8NSObjectP", "Array"]
 - !private ["So8NSObjectP", "CGRect"]
 - !private ["So8NSObjectP", "CGSize"]
 - !private ["So8NSObjectP", "DispatchQueue"]
@@ -866,7 +876,7 @@ depends-member:
 - !private ["So8NSObjectP", "loadDataForNextPage"]
 - !private ["So8NSObjectP", "loadDataToCollection"]
 - !private ["So8NSObjectP", "main"]
-- !private ["So8NSObjectP", "marvelCollection"]
+- !private ["So8NSObjectP", "marvelCharacters"]
 - !private ["So8NSObjectP", "marvelManager"]
 - !private ["So8NSObjectP", "navigationController"]
 - ["So8NSObjectP", "numberOfSections"]
@@ -910,14 +920,15 @@ depends-member:
 - !private ["Sq", "dataSource"]
 - !private ["Sq", "delegate"]
 - !private ["Sq", "loadCharacters"]
-- !private ["Sq", "marvelCharacters"]
 - !private ["Sq", "reloadData"]
 - !private ["Sk", "append"]
 - !private ["Sk", "count"]
+- ["Sk", "init"]
 - !private ["Sk", "row"]
 - !private ["Sk", "subscript"]
 - !private ["Sm", "append"]
 - !private ["Sm", "count"]
+- ["Sm", "init"]
 - !private ["Sm", "subscript"]
 - !private ["SY", "isLandscape"]
 - !private ["SY", "pad"]
@@ -926,6 +937,7 @@ depends-member:
 - !private ["s6ResultO", "success"]
 - !private ["ST", "append"]
 - !private ["ST", "count"]
+- ["ST", "init"]
 - !private ["ST", "row"]
 - !private ["ST", "subscript"]
 - !private ["So29UIAccessibilityIdentificationP", "addSubview"]
@@ -966,6 +978,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "removeFromSuperview"]
 - !private ["So12UIAppearanceP", "reuseIdentifier"]
 - !private ["So12UIAppearanceP", "translatesAutoresizingMaskIntoConstraints"]
+- ["So21UIAppearanceContainerP", "Array"]
 - !private ["So21UIAppearanceContainerP", "CGRect"]
 - !private ["So21UIAppearanceContainerP", "CGSize"]
 - !private ["So21UIAppearanceContainerP", "DispatchQueue"]
@@ -1003,7 +1016,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "loadDataForFirstPage"]
 - !private ["So21UIAppearanceContainerP", "loadDataForNextPage"]
 - !private ["So21UIAppearanceContainerP", "loadDataToCollection"]
-- !private ["So21UIAppearanceContainerP", "marvelCollection"]
+- !private ["So21UIAppearanceContainerP", "marvelCharacters"]
 - !private ["So21UIAppearanceContainerP", "marvelManager"]
 - !private ["So21UIAppearanceContainerP", "navigationController"]
 - ["So21UIAppearanceContainerP", "numberOfSections"]
@@ -1048,6 +1061,7 @@ depends-member:
 - !private ["So20UICollectionViewCellC", "configure"]
 - !private ["So20UICollectionViewCellC", "register"]
 - !private ["So20UICollectionViewCellC", "reuseIdentifier"]
+- ["So26UICollectionViewDataSourceP", "Array"]
 - !private ["So26UICollectionViewDataSourceP", "CGRect"]
 - !private ["So26UICollectionViewDataSourceP", "CGSize"]
 - !private ["So26UICollectionViewDataSourceP", "DispatchQueue"]
@@ -1072,7 +1086,7 @@ depends-member:
 - !private ["So26UICollectionViewDataSourceP", "loadDataForFirstPage"]
 - !private ["So26UICollectionViewDataSourceP", "loadDataForNextPage"]
 - !private ["So26UICollectionViewDataSourceP", "loadDataToCollection"]
-- !private ["So26UICollectionViewDataSourceP", "marvelCollection"]
+- !private ["So26UICollectionViewDataSourceP", "marvelCharacters"]
 - !private ["So26UICollectionViewDataSourceP", "marvelManager"]
 - !private ["So26UICollectionViewDataSourceP", "navigationController"]
 - ["So26UICollectionViewDataSourceP", "numberOfSections"]
@@ -1092,6 +1106,7 @@ depends-member:
 - ["So26UICollectionViewDataSourceP", "scrollViewWillEndDragging"]
 - ["So26UICollectionViewDataSourceP", "viewForZooming"]
 - ["So26UICollectionViewDataSourceP", "viewForZoomingInScrollView"]
+- ["So24UICollectionViewDelegateP", "Array"]
 - !private ["So24UICollectionViewDelegateP", "CGRect"]
 - !private ["So24UICollectionViewDelegateP", "CGSize"]
 - !private ["So24UICollectionViewDelegateP", "DispatchQueue"]
@@ -1116,7 +1131,7 @@ depends-member:
 - !private ["So24UICollectionViewDelegateP", "loadDataForFirstPage"]
 - !private ["So24UICollectionViewDelegateP", "loadDataForNextPage"]
 - !private ["So24UICollectionViewDelegateP", "loadDataToCollection"]
-- !private ["So24UICollectionViewDelegateP", "marvelCollection"]
+- !private ["So24UICollectionViewDelegateP", "marvelCharacters"]
 - !private ["So24UICollectionViewDelegateP", "marvelManager"]
 - !private ["So24UICollectionViewDelegateP", "navigationController"]
 - ["So24UICollectionViewDelegateP", "numberOfSections"]
@@ -1136,6 +1151,7 @@ depends-member:
 - ["So24UICollectionViewDelegateP", "scrollViewWillEndDragging"]
 - ["So24UICollectionViewDelegateP", "viewForZooming"]
 - ["So24UICollectionViewDelegateP", "viewForZoomingInScrollView"]
+- ["So34UICollectionViewDelegateFlowLayoutP", "Array"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "CGRect"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "CGSize"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "DispatchQueue"]
@@ -1160,7 +1176,7 @@ depends-member:
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "loadDataForFirstPage"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "loadDataForNextPage"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "loadDataToCollection"]
-- !private ["So34UICollectionViewDelegateFlowLayoutP", "marvelCollection"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "marvelCharacters"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "marvelManager"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "navigationController"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "numberOfSections"]
@@ -1181,6 +1197,7 @@ depends-member:
 - ["So34UICollectionViewDelegateFlowLayoutP", "viewForZooming"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "viewForZoomingInScrollView"]
 - !private ["So22UICollectionViewLayoutC", "invalidateLayout"]
+- ["So18UIContentContainerP", "Array"]
 - !private ["So18UIContentContainerP", "CGRect"]
 - !private ["So18UIContentContainerP", "CGSize"]
 - !private ["So18UIContentContainerP", "DispatchQueue"]
@@ -1206,7 +1223,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "loadDataForFirstPage"]
 - !private ["So18UIContentContainerP", "loadDataForNextPage"]
 - !private ["So18UIContentContainerP", "loadDataToCollection"]
-- !private ["So18UIContentContainerP", "marvelCollection"]
+- !private ["So18UIContentContainerP", "marvelCharacters"]
 - !private ["So18UIContentContainerP", "marvelManager"]
 - !private ["So18UIContentContainerP", "navigationController"]
 - ["So18UIContentContainerP", "numberOfSections"]
@@ -1284,6 +1301,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So12UIEdgeInsetsV", "init"]
 - !private ["So12UIEdgeInsetsV", "zero"]
+- ["So18UIFocusEnvironmentP", "Array"]
 - !private ["So18UIFocusEnvironmentP", "CGRect"]
 - !private ["So18UIFocusEnvironmentP", "CGSize"]
 - !private ["So18UIFocusEnvironmentP", "DispatchQueue"]
@@ -1321,7 +1339,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "loadDataForFirstPage"]
 - !private ["So18UIFocusEnvironmentP", "loadDataForNextPage"]
 - !private ["So18UIFocusEnvironmentP", "loadDataToCollection"]
-- !private ["So18UIFocusEnvironmentP", "marvelCollection"]
+- !private ["So18UIFocusEnvironmentP", "marvelCharacters"]
 - !private ["So18UIFocusEnvironmentP", "marvelManager"]
 - !private ["So18UIFocusEnvironmentP", "navigationController"]
 - ["So18UIFocusEnvironmentP", "numberOfSections"]
@@ -1401,6 +1419,7 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "frame"]
 - !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
+- ["So30UIPasteConfigurationSupportingP", "Array"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
 - !private ["So30UIPasteConfigurationSupportingP", "DispatchQueue"]
@@ -1438,7 +1457,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "loadDataForFirstPage"]
 - !private ["So30UIPasteConfigurationSupportingP", "loadDataForNextPage"]
 - !private ["So30UIPasteConfigurationSupportingP", "loadDataToCollection"]
-- !private ["So30UIPasteConfigurationSupportingP", "marvelCollection"]
+- !private ["So30UIPasteConfigurationSupportingP", "marvelCharacters"]
 - !private ["So30UIPasteConfigurationSupportingP", "marvelManager"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
@@ -1466,6 +1485,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillLayoutSubviews"]
+- ["So11UIResponderC", "Array"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "CGFloat"]
 - !private ["So11UIResponderC", "CGRect"]
@@ -1474,7 +1494,7 @@ depends-member:
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "LoaderView"]
-- ["So11UIResponderC", "MarvelCharacterCollection"]
+- ["So11UIResponderC", "MarvelCharacter"]
 - !private ["So11UIResponderC", "MarvelCharacterCollectionViewCell"]
 - !private ["So11UIResponderC", "MarvelCharacterDetailsViewController"]
 - ["So11UIResponderC", "MarvelManager"]
@@ -1512,7 +1532,7 @@ depends-member:
 - ["So11UIResponderC", "loadDataForFirstPage"]
 - ["So11UIResponderC", "loadDataForNextPage"]
 - ["So11UIResponderC", "loadDataToCollection"]
-- ["So11UIResponderC", "marvelCollection"]
+- ["So11UIResponderC", "marvelCharacters"]
 - ["So11UIResponderC", "marvelManager"]
 - !private ["So11UIResponderC", "navigationController"]
 - ["So11UIResponderC", "numberOfSections"]
@@ -1540,6 +1560,7 @@ depends-member:
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
 - ["So11UIResponderC", "viewWillLayoutSubviews"]
+- ["So30UIResponderStandardEditActionsP", "Array"]
 - !private ["So30UIResponderStandardEditActionsP", "CGRect"]
 - !private ["So30UIResponderStandardEditActionsP", "CGSize"]
 - !private ["So30UIResponderStandardEditActionsP", "DispatchQueue"]
@@ -1577,7 +1598,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "loadDataForFirstPage"]
 - !private ["So30UIResponderStandardEditActionsP", "loadDataForNextPage"]
 - !private ["So30UIResponderStandardEditActionsP", "loadDataToCollection"]
-- !private ["So30UIResponderStandardEditActionsP", "marvelCollection"]
+- !private ["So30UIResponderStandardEditActionsP", "marvelCharacters"]
 - !private ["So30UIResponderStandardEditActionsP", "marvelManager"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationController"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSections"]
@@ -1618,6 +1639,7 @@ depends-member:
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "frame"]
 - !private ["So12UIScrollViewC", "reloadData"]
+- ["So20UIScrollViewDelegateP", "Array"]
 - !private ["So20UIScrollViewDelegateP", "CGRect"]
 - !private ["So20UIScrollViewDelegateP", "CGSize"]
 - !private ["So20UIScrollViewDelegateP", "DispatchQueue"]
@@ -1642,7 +1664,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "loadDataForFirstPage"]
 - !private ["So20UIScrollViewDelegateP", "loadDataForNextPage"]
 - !private ["So20UIScrollViewDelegateP", "loadDataToCollection"]
-- !private ["So20UIScrollViewDelegateP", "marvelCollection"]
+- !private ["So20UIScrollViewDelegateP", "marvelCharacters"]
 - !private ["So20UIScrollViewDelegateP", "marvelManager"]
 - !private ["So20UIScrollViewDelegateP", "navigationController"]
 - ["So20UIScrollViewDelegateP", "numberOfSections"]
@@ -1673,6 +1695,7 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "delegate"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
+- ["So16UIStateRestoringP", "Array"]
 - !private ["So16UIStateRestoringP", "CGRect"]
 - !private ["So16UIStateRestoringP", "CGSize"]
 - !private ["So16UIStateRestoringP", "DispatchQueue"]
@@ -1698,7 +1721,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "loadDataForFirstPage"]
 - !private ["So16UIStateRestoringP", "loadDataForNextPage"]
 - !private ["So16UIStateRestoringP", "loadDataToCollection"]
-- !private ["So16UIStateRestoringP", "marvelCollection"]
+- !private ["So16UIStateRestoringP", "marvelCharacters"]
 - !private ["So16UIStateRestoringP", "marvelManager"]
 - !private ["So16UIStateRestoringP", "navigationController"]
 - ["So16UIStateRestoringP", "numberOfSections"]
@@ -1723,6 +1746,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewWillLayoutSubviews"]
 - !private ["So12UIStoryboardC", "init"]
 - !private ["So12UIStoryboardC", "instantiateInitialViewController"]
+- ["So18UITraitEnvironmentP", "Array"]
 - !private ["So18UITraitEnvironmentP", "CGRect"]
 - !private ["So18UITraitEnvironmentP", "CGSize"]
 - !private ["So18UITraitEnvironmentP", "DispatchQueue"]
@@ -1760,7 +1784,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "loadDataForFirstPage"]
 - !private ["So18UITraitEnvironmentP", "loadDataForNextPage"]
 - !private ["So18UITraitEnvironmentP", "loadDataToCollection"]
-- !private ["So18UITraitEnvironmentP", "marvelCollection"]
+- !private ["So18UITraitEnvironmentP", "marvelCharacters"]
 - !private ["So18UITraitEnvironmentP", "marvelManager"]
 - !private ["So18UITraitEnvironmentP", "navigationController"]
 - ["So18UITraitEnvironmentP", "numberOfSections"]
@@ -1788,6 +1812,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
 - !private ["So18UITraitEnvironmentP", "viewWillLayoutSubviews"]
+- ["So23UIUserActivityRestoringP", "Array"]
 - !private ["So23UIUserActivityRestoringP", "CGRect"]
 - !private ["So23UIUserActivityRestoringP", "CGSize"]
 - !private ["So23UIUserActivityRestoringP", "DispatchQueue"]
@@ -1825,7 +1850,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "loadDataForFirstPage"]
 - !private ["So23UIUserActivityRestoringP", "loadDataForNextPage"]
 - !private ["So23UIUserActivityRestoringP", "loadDataToCollection"]
-- !private ["So23UIUserActivityRestoringP", "marvelCollection"]
+- !private ["So23UIUserActivityRestoringP", "marvelCharacters"]
 - !private ["So23UIUserActivityRestoringP", "marvelManager"]
 - !private ["So23UIUserActivityRestoringP", "navigationController"]
 - ["So23UIUserActivityRestoringP", "numberOfSections"]
@@ -1873,6 +1898,7 @@ depends-member:
 - !private ["So6UIViewC", "removeFromSuperview"]
 - !private ["So6UIViewC", "reuseIdentifier"]
 - !private ["So6UIViewC", "translatesAutoresizingMaskIntoConstraints"]
+- ["So16UIViewControllerC", "Array"]
 - ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "CGFloat"]
 - !private ["So16UIViewControllerC", "CGRect"]
@@ -1881,7 +1907,7 @@ depends-member:
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "LoaderView"]
-- ["So16UIViewControllerC", "MarvelCharacterCollection"]
+- ["So16UIViewControllerC", "MarvelCharacter"]
 - !private ["So16UIViewControllerC", "MarvelCharacterCollectionViewCell"]
 - !private ["So16UIViewControllerC", "MarvelCharacterDetailsViewController"]
 - ["So16UIViewControllerC", "MarvelManager"]
@@ -1908,7 +1934,7 @@ depends-member:
 - ["So16UIViewControllerC", "loadDataForFirstPage"]
 - ["So16UIViewControllerC", "loadDataForNextPage"]
 - ["So16UIViewControllerC", "loadDataToCollection"]
-- ["So16UIViewControllerC", "marvelCollection"]
+- ["So16UIViewControllerC", "marvelCharacters"]
 - ["So16UIViewControllerC", "marvelManager"]
 - !private ["So16UIViewControllerC", "navigationController"]
 - ["So16UIViewControllerC", "numberOfSections"]
@@ -1933,6 +1959,7 @@ depends-member:
 - ["So16UIViewControllerC", "viewWillLayoutSubviews"]
 - !private ["So12NSURLSessionC", "deinit"]
 - !private ["So12NSURLSessionC", "shared"]
+- ["13MarvellViewer14ViewControllerC", "Array"]
 - ["13MarvellViewer14ViewControllerC", "Bool"]
 - ["13MarvellViewer14ViewControllerC", "CGFloat"]
 - !private ["13MarvellViewer14ViewControllerC", "CGRect"]
@@ -1941,7 +1968,7 @@ depends-member:
 - ["13MarvellViewer14ViewControllerC", "IndexPath"]
 - ["13MarvellViewer14ViewControllerC", "Int"]
 - ["13MarvellViewer14ViewControllerC", "LoaderView"]
-- ["13MarvellViewer14ViewControllerC", "MarvelCharacterCollection"]
+- ["13MarvellViewer14ViewControllerC", "MarvelCharacter"]
 - !private ["13MarvellViewer14ViewControllerC", "MarvelCharacterCollectionViewCell"]
 - !private ["13MarvellViewer14ViewControllerC", "MarvelCharacterDetailsViewController"]
 - ["13MarvellViewer14ViewControllerC", "MarvelManager"]
@@ -1967,7 +1994,7 @@ depends-member:
 - !private ["13MarvellViewer14ViewControllerC", "loadDataForFirstPage"]
 - !private ["13MarvellViewer14ViewControllerC", "loadDataForNextPage"]
 - !private ["13MarvellViewer14ViewControllerC", "loadDataToCollection"]
-- !private ["13MarvellViewer14ViewControllerC", "marvelCollection"]
+- !private ["13MarvellViewer14ViewControllerC", "marvelCharacters"]
 - !private ["13MarvellViewer14ViewControllerC", "marvelManager"]
 - !private ["13MarvellViewer14ViewControllerC", "navigationController"]
 - ["13MarvellViewer14ViewControllerC", "numberOfSections"]
@@ -1991,6 +2018,7 @@ depends-member:
 - ["13MarvellViewer14ViewControllerC", "viewWillLayoutSubviews"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
+- ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
@@ -1999,13 +2027,17 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "y"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
+- ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "count"]
+- ["s19_HasContiguousBytesP", "init"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Array"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
@@ -2050,7 +2082,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "loadDataForNextPage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "loadDataToCollection"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "marvelCollection"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "marvelCharacters"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "marvelManager"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSections"]
@@ -2093,9 +2125,8 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "dataSource"]
 - !private ["s21_ObjectiveCBridgeableP", "delegate"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "loadCharacters"]
-- !private ["s21_ObjectiveCBridgeableP", "marvelCharacters"]
 - !private ["s21_ObjectiveCBridgeableP", "reloadData"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "size"]
@@ -2123,37 +2154,36 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "reuseIdentifier"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "translatesAutoresizingMaskIntoConstraints"]
 depends-nominal:
-- !private "Sa"
-- !private "SK"
+- "Sa"
+- "SK"
 - !private "So15CALayerDelegateP"
 - !private "So7CGPointV"
 - !private "So6CGRectV"
 - !private "So6CGSizeV"
 - "s7CVarArgP"
-- !private "Sl"
+- "Sl"
 - !private "SL"
-- !private "10Foundation15ContiguousBytesP"
+- "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
-- !private "s17CustomReflectableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "10Foundation12DataProtocolP"
-- !private "Se"
+- "10Foundation12DataProtocolP"
+- "Se"
 - !private "So18OS_dispatch_objectC"
 - !private "So17OS_dispatch_queueC"
-- !private "SE"
+- "SE"
 - "SQ"
-- !private "s25ExpressibleByArrayLiteralP"
+- "s25ExpressibleByArrayLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - "SH"
 - !private "10Foundation9IndexPathV"
 - !private "13MarvellViewer10LoaderViewC"
 - !private "13MarvellViewer15MarvelCharacterV"
-- !private "13MarvellViewer25MarvelCharacterCollectionV"
 - !private "13MarvellViewer33MarvelCharacterCollectionViewCellC"
 - !private "13MarvellViewer36MarvelCharacterDetailsViewControllerC"
 - !private "13MarvellViewer13MarvelManagerC"
-- !private "SM"
-- !private "10Foundation19MutableDataProtocolP"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
 - !private "So14NSLayoutAnchorC"
@@ -2165,12 +2195,12 @@ depends-nominal:
 - !private "13MarvellViewer14NetworkManagerP"
 - !private "So9OS_objectC"
 - !private "Sq"
-- !private "Sk"
-- !private "Sm"
+- "Sk"
+- "Sm"
 - !private "SY"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "s6ResultO"
-- !private "ST"
+- "ST"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -2208,13 +2238,13 @@ depends-nominal:
 - "So16UIViewControllerC"
 - !private "So12NSURLSessionC"
 - "13MarvellViewer14ViewControllerC"
-- !private "s14_ArrayProtocolP"
+- "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
-- !private "s24_DestructorSafeContainerP"
-- !private "s19_HasContiguousBytesP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
+- "s24_DestructorSafeContainerP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s21_ObjectiveCBridgeableP"
+- "s21_ObjectiveCBridgeableP"
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
@@ -2246,4 +2276,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "490ad92f5e78f03627167315325a46e7"
+interface-hash: "9f010f3c7f1e8d71d9c9a094528e3ffe"

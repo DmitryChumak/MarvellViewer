@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet private var collectionView: UICollectionView!
     
-    private var marvelCollection: MarvelCharacterCollection!
+    private var marvelCharacters: [MarvelCharacter] = Array()
     private var marvelManager: MarvelManager!
     private var isLoading: Bool = false
     
@@ -45,11 +45,9 @@ class ViewController: UIViewController {
         marvelManager.loadCharacters(from: offset) { [weak self] result in
             switch result {
             case .success(let res):
-                if self?.marvelCollection == nil {
-                    self?.marvelCollection = res
-                } else {
-                    self?.marvelCollection.marvelCharacters.append(contentsOf: res.marvelCharacters)
-                }
+                
+                self?.marvelCharacters.append(contentsOf: res)
+                
                 DispatchQueue.main.async {
                     self?.collectionView.contentInset = .zero
                     loaderView.removeFromSuperview()
@@ -61,6 +59,7 @@ class ViewController: UIViewController {
                 DispatchQueue.main.async {
                     self?.collectionView.contentInset = .zero
                     loaderView.removeFromSuperview()
+                    self?.isLoading = false
                     self?.handleError(error: error)
                 }
             }
@@ -95,14 +94,13 @@ class ViewController: UIViewController {
 extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let count = marvelCollection?.marvelCharacters.count else { return 0 }
-        return count
+        return marvelCharacters.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MarvelCharacterCollectionViewCell.reuseIdentifier, for: indexPath) as! MarvelCharacterCollectionViewCell
-        cell.configure(with: marvelCollection.marvelCharacters[indexPath.row])
+        cell.configure(with: marvelCharacters[indexPath.row])
         return cell
     }
     
@@ -118,7 +116,7 @@ extension ViewController: UICollectionViewDelegate {
         
         let storyboard = UIStoryboard(name: "MarvelCharacterDetails", bundle: nil)
         let vc = storyboard.instantiateInitialViewController() as! MarvelCharacterDetailsViewController
-        let character = marvelCollection.marvelCharacters[indexPath.row]
+        let character = marvelCharacters[indexPath.row]
         vc.configure(marvelCharacter: character)
         self.navigationController?.pushViewController(vc, animated: true)
     
@@ -129,7 +127,7 @@ extension ViewController: UICollectionViewDelegate {
         let contentHeight = scrollView.contentSize.height
         if offsetY > contentHeight - scrollView.frame.size.height && !isLoading {
             isLoading = true
-            loadDataForNextPage(from: marvelCollection.marvelCharacters.count)
+            loadDataForNextPage(from: marvelCharacters.count)
             
         }
     }

@@ -110,7 +110,7 @@ extension MarvelCharacterDetailsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MarvelCharacterCollectionViewCell.reuseIdentifier, for: indexPath) as! MarvelCharacterCollectionViewCell
     
-        cell.configure(with: marvelComicsCollection.marvelComics[indexPath.row] as! MarvelEntity)
+        cell.configure(with: marvelComicsCollection.marvelComics[indexPath.row] as MarvelEntity)
         return cell
     }
     
