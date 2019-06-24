@@ -25,6 +25,7 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - "MarvelCharacter"
 - "MarvelCharacterCollection"
+- "MarvelEntity"
 - "String"
 - "StringLiteralType"
 - "URL"
@@ -120,9 +121,10 @@ depends-member:
 - !private ["Se", "_findStringSwitchCase"]
 - !private ["Se", "description"]
 - !private ["Se", "id"]
-- !private ["Se", "imageURL"]
+- ["Se", "imageURL"]
 - ["Se", "init"]
 - !private ["Se", "name"]
+- ["Se", "title"]
 - !private ["s7DecoderP", "container"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
@@ -189,12 +191,25 @@ depends-member:
 - ["13MarvellViewer15MarvelCharacterV", "imageURL"]
 - ["13MarvellViewer15MarvelCharacterV", "init"]
 - ["13MarvellViewer15MarvelCharacterV", "name"]
+- ["13MarvellViewer15MarvelCharacterV", "title"]
 - !private ["13MarvellViewer25MarvelCharacterCollectionV", "AnyCodingKey"]
 - ["13MarvellViewer25MarvelCharacterCollectionV", "Decoder"]
 - ["13MarvellViewer25MarvelCharacterCollectionV", "MarvelCharacter"]
 - ["13MarvellViewer25MarvelCharacterCollectionV", "deinit"]
 - ["13MarvellViewer25MarvelCharacterCollectionV", "init"]
 - ["13MarvellViewer25MarvelCharacterCollectionV", "marvelCharacters"]
+- !private ["13MarvellViewer12MarvelEntityP", "CodingKeys"]
+- !private ["13MarvellViewer12MarvelEntityP", "Int"]
+- !private ["13MarvellViewer12MarvelEntityP", "String"]
+- !private ["13MarvellViewer12MarvelEntityP", "URL"]
+- ["13MarvellViewer12MarvelEntityP", ""]
+- !private ["13MarvellViewer12MarvelEntityP", "_findStringSwitchCase"]
+- !private ["13MarvellViewer12MarvelEntityP", "description"]
+- !private ["13MarvellViewer12MarvelEntityP", "id"]
+- ["13MarvellViewer12MarvelEntityP", "imageURL"]
+- ["13MarvellViewer12MarvelEntityP", "init"]
+- !private ["13MarvellViewer12MarvelEntityP", "name"]
+- ["13MarvellViewer12MarvelEntityP", "title"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["Sm", "init"]
 - ["SY", "=="]
@@ -276,6 +291,7 @@ depends-nominal:
 - !private "s25LosslessStringConvertibleP"
 - "13MarvellViewer15MarvelCharacterV"
 - "13MarvellViewer25MarvelCharacterCollectionV"
+- "13MarvellViewer12MarvelEntityP"
 - !private "s10MirrorPathP"
 - !private "Sm"
 - "SY"
@@ -325,4 +341,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "99d89e36e9532b8231fca6c7ca453589"
+interface-hash: "5317f36d040a52e6d51c1e179b6958f2"

@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct MarvelComics: Decodable, MarvelEntity {
+struct MarvelComics: Decodable {
     var id: Int
     var title: String
     var description: String
@@ -41,6 +41,10 @@ struct MarvelComics: Decodable, MarvelEntity {
         
     
     }
+}
+
+extension MarvelComics: MarvelEntity {
+    
 }
 
 struct MarvelComicsCollection: Decodable {

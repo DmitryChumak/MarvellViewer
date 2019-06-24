@@ -19,6 +19,9 @@
 		0A06C5F8226F891C0097A731 /* MarvelAPIHashGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06C5F7226F891C0097A731 /* MarvelAPIHashGenerator.swift */; };
 		0A0A7E1222A4090600C3ADB6 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0A7E1122A4090600C3ADB6 /* LoaderView.swift */; };
 		0A0E7D79229F1D54000E16D0 /* ImageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E7D78229F1D54000E16D0 /* ImageUtility.swift */; };
+		0A1379AC22C0FC4200ED6A17 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1379AB22C0FC4200ED6A17 /* DataFetcher.swift */; };
+		0A1379AE22C1010F00ED6A17 /* MarvelCharacterFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1379AD22C1010F00ED6A17 /* MarvelCharacterFetcher.swift */; };
+		0A1379B022C1011900ED6A17 /* MarvelComicsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1379AF22C1011900ED6A17 /* MarvelComicsFetcher.swift */; };
 		0A4B913D226F8C2F0095765B /* TimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B913C226F8C2F0095765B /* TimeProvider.swift */; };
 		0A4B913F227059FB0095765B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B913E227059FB0095765B /* NetworkManager.swift */; };
 		0A4B9141227092CF0095765B /* MarvelAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B9140227092CF0095765B /* MarvelAPIConfig.swift */; };
@@ -47,6 +50,9 @@
 		0A06C5F7226F891C0097A731 /* MarvelAPIHashGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIHashGenerator.swift; sourceTree = "<group>"; };
 		0A0A7E1122A4090600C3ADB6 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		0A0E7D78229F1D54000E16D0 /* ImageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtility.swift; sourceTree = "<group>"; };
+		0A1379AB22C0FC4200ED6A17 /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
+		0A1379AD22C1010F00ED6A17 /* MarvelCharacterFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacterFetcher.swift; sourceTree = "<group>"; };
+		0A1379AF22C1011900ED6A17 /* MarvelComicsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelComicsFetcher.swift; sourceTree = "<group>"; };
 		0A4B913C226F8C2F0095765B /* TimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeProvider.swift; sourceTree = "<group>"; };
 		0A4B913E227059FB0095765B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0A4B9140227092CF0095765B /* MarvelAPIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIConfig.swift; sourceTree = "<group>"; };
@@ -118,6 +124,9 @@
 				0A0E7D78229F1D54000E16D0 /* ImageUtility.swift */,
 				0AB4E7FE22B23E460025583D /* MarvelComics.swift */,
 				0AB4E80722B78B3A0025583D /* MarvelEntity.swift */,
+				0A1379AB22C0FC4200ED6A17 /* DataFetcher.swift */,
+				0A1379AD22C1010F00ED6A17 /* MarvelCharacterFetcher.swift */,
+				0A1379AF22C1011900ED6A17 /* MarvelComicsFetcher.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -319,6 +328,7 @@
 			files = (
 				0A4B913F227059FB0095765B /* NetworkManager.swift in Sources */,
 				0A59589E2292FA9600723CB4 /* UIViewController+Extension.swift in Sources */,
+				0A1379AE22C1010F00ED6A17 /* MarvelCharacterFetcher.swift in Sources */,
 				0AB4E7FF22B23E460025583D /* MarvelComics.swift in Sources */,
 				0A0A7E1222A4090600C3ADB6 /* LoaderView.swift in Sources */,
 				0A06C5F6226F7AA20097A731 /* MarvelCharacter.swift in Sources */,
@@ -330,8 +340,10 @@
 				0A0E7D79229F1D54000E16D0 /* ImageUtility.swift in Sources */,
 				0A4B9141227092CF0095765B /* MarvelAPIConfig.swift in Sources */,
 				0A06C5D6226F735B0097A731 /* AppDelegate.swift in Sources */,
+				0A1379B022C1011900ED6A17 /* MarvelComicsFetcher.swift in Sources */,
 				0A4B91492270DE0A0095765B /* Data+Extension.swift in Sources */,
 				0AF78A1122746C2700C366E4 /* MarvelCharacterDetailsViewController.swift in Sources */,
+				0A1379AC22C0FC4200ED6A17 /* DataFetcher.swift in Sources */,
 				0A06C5F4226F76450097A731 /* UICollectionViewCell+Extension.swift in Sources */,
 				0A4B913D226F8C2F0095765B /* TimeProvider.swift in Sources */,
 			);

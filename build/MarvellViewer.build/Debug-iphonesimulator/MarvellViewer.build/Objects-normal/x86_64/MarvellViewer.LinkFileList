@@ -1,5 +1,6 @@
 /Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/NetworkManager.o
 /Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/UIViewController+Extension.o
+/Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/MarvelCharacterFetcher.o
 /Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/MarvelComics.o
 /Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/LoaderView.o
 /Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/MarvelCharacter.o
@@ -11,7 +12,9 @@
 /Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/ImageUtility.o
 /Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/MarvelAPIConfig.o
 /Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/AppDelegate.o
+/Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/MarvelComicsFetcher.o
 /Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/Data+Extension.o
 /Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/MarvelCharacterDetailsViewController.o
+/Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/DataFetcher.o
 /Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/UICollectionViewCell+Extension.o
 /Users/dmitry/Documents/Projects/MarvellViewer/build/MarvellViewer.build/Debug-iphonesimulator/MarvellViewer.build/Objects-normal/x86_64/TimeProvider.o

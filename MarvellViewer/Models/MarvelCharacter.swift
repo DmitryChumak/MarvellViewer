@@ -9,11 +9,8 @@
 import Foundation
 import UIKit
 
-struct MarvelCharacter : Decodable, MarvelEntity {
-    var title: String {
-        return name
-    }
-    
+struct MarvelCharacter : Decodable {
+   
     
     var id: Int
     var name: String
@@ -47,6 +44,12 @@ struct MarvelCharacter : Decodable, MarvelEntity {
     }
 }
 
+
+extension MarvelCharacter: MarvelEntity {
+    var title: String {
+        return name
+    }
+}
 
 
 struct MarvelCharacterCollection : Decodable {

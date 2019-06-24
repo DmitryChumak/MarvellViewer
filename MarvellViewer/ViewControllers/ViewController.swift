@@ -14,8 +14,11 @@ class ViewController: UIViewController {
     
     @IBOutlet private var collectionView: UICollectionView!
     
-    private var marvelCharacters: [MarvelCharacter] = Array()
-    private var marvelManager: MarvelManager!
+    
+    private var charactersFetcher: MarvelCharacterFetcher!
+    
+    private var marvelCharacters: [MarvelEntity] = Array()
+    
     private var isLoading: Bool = false
     
     private var cellsPerRow:CGFloat = 2
@@ -24,7 +27,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        marvelManager = MarvelManager(networkClient: URLSession.shared)
+        charactersFetcher = MarvelCharacterFetcher()
         MarvelCharacterCollectionViewCell.register(for: collectionView)
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -42,7 +45,7 @@ class ViewController: UIViewController {
     }
     
     private func loadDataToCollection(from offset: Int, loaderView: LoaderView) {
-        marvelManager.loadCharacters(from: offset) { [weak self] result in
+        charactersFetcher.fetch(for: offset) { [weak self] result in
             switch result {
             case .success(let res):
                 
@@ -117,7 +120,7 @@ extension ViewController: UICollectionViewDelegate {
         let storyboard = UIStoryboard(name: "MarvelCharacterDetails", bundle: nil)
         let vc = storyboard.instantiateInitialViewController() as! MarvelCharacterDetailsViewController
         let character = marvelCharacters[indexPath.row]
-        vc.configure(marvelCharacter: character)
+        vc.configure(marvelCharacter: character as! MarvelCharacter)
         self.navigationController?.pushViewController(vc, animated: true)
     
     }

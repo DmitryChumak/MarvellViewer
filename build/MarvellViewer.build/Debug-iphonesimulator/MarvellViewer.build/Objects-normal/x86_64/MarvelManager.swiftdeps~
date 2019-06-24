@@ -15,13 +15,15 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - !private "MarvelAPIConfig"
 - "MarvelCharacter"
-- "MarvelCharacterCollection"
-- "MarvelComicsCollection"
+- !private "MarvelCharacterCollection"
+- "MarvelComics"
+- !private "MarvelComicsCollection"
 - "MarvelManager"
 - "NetworkManager"
 - "Result"
 - !private "StringLiteralType"
 - !private "UnicodeScalarType"
+- "Void"
 depends-member:
 - !private ["SK", "decoded"]
 - !private ["Sl", "decoded"]
@@ -35,6 +37,8 @@ depends-member:
 - !private ["10Foundation12DataProtocolP", "decoded"]
 - !private ["Se", "decoded"]
 - !private ["Se", "id"]
+- !private ["Se", "marvelCharacters"]
+- !private ["Se", "marvelComics"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "decoded"]
@@ -79,17 +83,21 @@ depends-member:
 - !private ["13MarvellViewer15MarvelAPIConfigC", "secureParameters"]
 - !private ["13MarvellViewer15MarvelCharacterV", "id"]
 - !private ["13MarvellViewer25MarvelCharacterCollectionV", "deinit"]
+- !private ["13MarvellViewer25MarvelCharacterCollectionV", "marvelCharacters"]
 - !private ["13MarvellViewer22MarvelComicsCollectionV", "deinit"]
+- !private ["13MarvellViewer22MarvelComicsCollectionV", "marvelComics"]
 - !private ["13MarvellViewer12MarvelEntityP", "id"]
 - ["13MarvellViewer13MarvelManagerC", "Error"]
 - ["13MarvellViewer13MarvelManagerC", "Int"]
 - !private ["13MarvellViewer13MarvelManagerC", "MarvelAPIConfig"]
 - ["13MarvellViewer13MarvelManagerC", "MarvelCharacter"]
-- ["13MarvellViewer13MarvelManagerC", "MarvelCharacterCollection"]
-- ["13MarvellViewer13MarvelManagerC", "MarvelComicsCollection"]
+- !private ["13MarvellViewer13MarvelManagerC", "MarvelCharacterCollection"]
+- ["13MarvellViewer13MarvelManagerC", "MarvelComics"]
+- !private ["13MarvellViewer13MarvelManagerC", "MarvelComicsCollection"]
 - !private ["13MarvellViewer13MarvelManagerC", "MarvelManagerError"]
 - ["13MarvellViewer13MarvelManagerC", "NetworkManager"]
 - ["13MarvellViewer13MarvelManagerC", "Result"]
+- ["13MarvellViewer13MarvelManagerC", "Void"]
 - ["13MarvellViewer13MarvelManagerC", "init"]
 - ["13MarvellViewer13MarvelManagerC", "loadCharacters"]
 - ["13MarvellViewer13MarvelManagerC", "loadComics"]
@@ -171,4 +179,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e9ed42a3bff0552f06634d46b2e8f423"
+interface-hash: "80253bf8061242b75353172ec7bcf5f0"

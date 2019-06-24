@@ -18,7 +18,7 @@ class MarvelManager {
     }
     
     
-    func loadCharacters(from offset: Int,  completionHandler: @escaping (Result<[MarvelCharacter], Error>) -> ()) {
+    func loadCharacters(from offset: Int,  completionHandler: @escaping (Result<[MarvelEntity], Error>) -> (Void)) {
         let url = "\(MarvelAPIConfig.baseURL)characters?offset=\(offset)&\(MarvelAPIConfig.secureParameters)"
         networkClient.loadData(from: url) { result in
             switch result {
@@ -34,14 +34,15 @@ class MarvelManager {
             }
         }
     }
-    func loadComics(for character: MarvelCharacter, from offset: Int, completionHandler: @escaping (Result<MarvelComicsCollection,Error>) -> ()) {
+    func loadComics(for character: MarvelCharacter, from offset: Int, completionHandler: @escaping (Result<[MarvelEntity],Error>) -> (Void)) {
         let characterId = character.id
         let url = "\(MarvelAPIConfig.baseURL)characters/\(characterId)/comics?offset=\(offset)&\(MarvelAPIConfig.secureParameters)"
         networkClient.loadData(from: url) { result in
             switch result {
             case .success(let data):
                 do {
-                    completionHandler(.success(try data.decoded()))
+                    let comics: MarvelComicsCollection = try data.decoded()
+                    completionHandler(.success(comics.marvelComics))
                 } catch {
                     completionHandler(.failure(MarvelManagerError.invalidData))
                 }

@@ -12,9 +12,10 @@ class MarvelCharacterDetailsViewController: UIViewController {
 
     @IBOutlet private var collectionView: UICollectionView!
     
-    private var marvelCharacter: MarvelCharacter!
-    private var marvelManager: MarvelManager!
-    private var marvelComicsCollection: MarvelComicsCollection!
+    private var marvelCharacter: MarvelEntity!
+    private var marvelComics: [MarvelComics] = Array()
+    
+    private var comicsFetcher: MarvelComicsFetcher!
     
     private var isLoading: Bool = false
     private var cellsPerRow:CGFloat = 2
@@ -24,7 +25,7 @@ class MarvelCharacterDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        marvelManager = MarvelManager(networkClient: URLSession.shared)
+        comicsFetcher = MarvelComicsFetcher(for: marvelCharacter as! MarvelCharacter)
         MarvelCharacterCollectionViewCell.register(for: collectionView)
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -43,19 +44,17 @@ class MarvelCharacterDetailsViewController: UIViewController {
     }
     
     private func loadDataToCollection(from offset: Int, loaderView: LoaderView) {
-        marvelManager.loadComics(for: marvelCharacter, from: offset) { [weak self] result in
+        comicsFetcher.fetch(for: offset) { [weak self] result in
             switch result {
             case .success(let res):
-                if self?.marvelComicsCollection == nil {
-                    self?.marvelComicsCollection = res
-                } else {
-                    self?.marvelComicsCollection.marvelComics.append(contentsOf: res.marvelComics)
-                }
+                self?.marvelComics.append(contentsOf: res as! [MarvelComics])
+                
                 DispatchQueue.main.async {
+                    self?.isLoading = false
                     self?.collectionView.contentInset = .zero
                     loaderView.removeFromSuperview()
                     self?.collectionView.reloadData()
-                    self?.isLoading = false
+                    
                 }
                 
             case .failure(let error):
@@ -63,6 +62,7 @@ class MarvelCharacterDetailsViewController: UIViewController {
                     self?.collectionView.contentInset = .zero
                     loaderView.removeFromSuperview()
                     self?.handleError(error: error)
+                    self?.isLoading = false
                 }
             }
         }
@@ -103,14 +103,13 @@ class MarvelCharacterDetailsViewController: UIViewController {
 
 extension MarvelCharacterDetailsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let count = marvelComicsCollection?.marvelComics.count else { return 0 }
-        return count
+        return marvelComics.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MarvelCharacterCollectionViewCell.reuseIdentifier, for: indexPath) as! MarvelCharacterCollectionViewCell
     
-        cell.configure(with: marvelComicsCollection.marvelComics[indexPath.row] as MarvelEntity)
+        cell.configure(with: marvelComics[indexPath.row] as MarvelEntity)
         return cell
     }
     
@@ -129,11 +128,9 @@ extension MarvelCharacterDetailsViewController: UICollectionViewDelegate {
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
         if offsetY > contentHeight - scrollView.frame.size.height && !isLoading {
+            let offset = marvelComics.count
             isLoading = true
-            if let offset = marvelComicsCollection?.marvelComics.count {
-                loadDataForNextPage(from: offset)
-            }
-            
+            loadDataForNextPage(from: offset)
         }
     }
 }
