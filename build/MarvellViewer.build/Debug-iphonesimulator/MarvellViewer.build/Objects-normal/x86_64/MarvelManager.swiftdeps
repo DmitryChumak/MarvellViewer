@@ -19,8 +19,6 @@ depends-top-level:
 - "MarvelManager"
 - "NetworkManager"
 - "Result"
-- !private "StringLiteralType"
-- !private "UnicodeScalarType"
 - "Void"
 depends-member:
 - !private ["SK", "decoded"]
@@ -98,7 +96,6 @@ depends-member:
 - ["13MarvellViewer13MarvelManagerC", "NetworkManager"]
 - ["13MarvellViewer13MarvelManagerC", "Result"]
 - ["13MarvellViewer13MarvelManagerC", "Void"]
-- ["13MarvellViewer13MarvelManagerC", "deinit"]
 - ["13MarvellViewer13MarvelManagerC", "init"]
 - ["13MarvellViewer13MarvelManagerC", "loadCharacters"]
 - ["13MarvellViewer13MarvelManagerC", "loadComics"]

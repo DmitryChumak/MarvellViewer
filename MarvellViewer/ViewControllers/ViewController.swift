@@ -10,24 +10,21 @@ import UIKit
 import CoreGraphics
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Storyboarded {
+    
+    var dataFetcher: DataFetcher!
+    weak var coordinator: MainCoordinator?
     
     @IBOutlet private var collectionView: UICollectionView!
     
-    
-    private var charactersFetcher: MarvelCharacterFetcher!
-    
-    private var marvelCharacters: [MarvelEntity] = Array()
+    private var marvelEntities: [MarvelEntity] = Array()
     
     private var isLoading: Bool = false
-    
     private var cellsPerRow:CGFloat = 2
     private let cellPadding:CGFloat = 5
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        charactersFetcher = MarvelCharacterFetcher()
         MarvelCharacterCollectionViewCell.register(for: collectionView)
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -45,11 +42,11 @@ class ViewController: UIViewController {
     }
     
     private func loadDataToCollection(from offset: Int, loaderView: LoaderView) {
-        charactersFetcher.fetch(for: offset) { [weak self] result in
+        dataFetcher.fetch(for: offset) { [weak self] result in
             switch result {
             case .success(let res):
                 
-                self?.marvelCharacters.append(contentsOf: res)
+                self?.marvelEntities.append(contentsOf: res)
                 
                 DispatchQueue.main.async {
                     self?.collectionView.contentInset = .zero
@@ -97,13 +94,13 @@ class ViewController: UIViewController {
 extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return marvelCharacters.count
+        return marvelEntities.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MarvelCharacterCollectionViewCell.reuseIdentifier, for: indexPath) as! MarvelCharacterCollectionViewCell
-        cell.configure(with: marvelCharacters[indexPath.row])
+        cell.configure(with: marvelEntities[indexPath.row])
         return cell
     }
     
@@ -117,12 +114,8 @@ extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let storyboard = UIStoryboard(name: "MarvelCharacterDetails", bundle: nil)
-        let vc = storyboard.instantiateInitialViewController() as! MarvelCharacterDetailsViewController
-        let character = marvelCharacters[indexPath.row]
-        vc.configure(marvelCharacter: character as! MarvelCharacter)
-        self.navigationController?.pushViewController(vc, animated: true)
-    
+        coordinator?.showDetails(for: marvelEntities[indexPath.row])
+        
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -130,8 +123,7 @@ extension ViewController: UICollectionViewDelegate {
         let contentHeight = scrollView.contentSize.height
         if offsetY > contentHeight - scrollView.frame.size.height && !isLoading {
             isLoading = true
-            loadDataForNextPage(from: marvelCharacters.count)
-            
+            loadDataForNextPage(from: marvelEntities.count)
         }
     }
 }

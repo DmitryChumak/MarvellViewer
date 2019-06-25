@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.addLoaderSubview():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "subview.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.collectionView(_:layout:sizeForItemAt:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cellsPerRow">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewWillLayoutSubviews():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cellsPerRow">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoaderView.init(frame:):LoaderView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "centerXAnchor">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "loaderView.frame.size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

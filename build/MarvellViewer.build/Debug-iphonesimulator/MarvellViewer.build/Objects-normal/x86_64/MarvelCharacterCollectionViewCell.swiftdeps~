@@ -121,7 +121,6 @@ depends-member:
 - ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "UIImageView"]
 - ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "UILabel"]
 - ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "configure"]
-- ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "deinit"]
 - !private ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "imageUtil"]
 - ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "init"]
 - !private ["13MarvellViewer33MarvelCharacterCollectionViewCellC", "marvelCharacterImage"]
