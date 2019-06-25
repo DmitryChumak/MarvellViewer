@@ -17,3 +17,14 @@ extension UIViewController {
     }
 }
 
+extension UIViewController {
+    static var reuseIdentifier: String {
+        return String(describing: self)
+    }
+    
+    static func instantiate<T: UIViewController>() -> T {
+        let className = self.reuseIdentifier
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        return storyboard.instantiateViewController(withIdentifier: className) as! T
+    }
+}

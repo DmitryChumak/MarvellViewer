@@ -10,7 +10,7 @@ import UIKit
 import CoreGraphics
 
 
-class ViewController: UIViewController, Storyboarded {
+class ViewController: UIViewController {
     
     var dataFetcher: DataFetcher!
     weak var coordinator: MainCoordinator?
@@ -19,7 +19,7 @@ class ViewController: UIViewController, Storyboarded {
     
     private var marvelEntities: [MarvelEntity] = Array()
     
-    private var isLoading: Bool = false
+    private var isLoading: Bool = true
     private var cellsPerRow:CGFloat = 2
     private let cellPadding:CGFloat = 5
     
@@ -67,8 +67,8 @@ class ViewController: UIViewController, Storyboarded {
     }
     
     private func loadDataForFirstPage() {
-        let loaderView = LoaderView(frame: CGRect(x: 0, y: 0, width: collectionView.bounds.width, height: 50))
         
+        let loaderView = LoaderView(frame: CGRect(x: 0, y: 0, width: collectionView.bounds.width, height: 50))
         loaderView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.addSubview(loaderView)
         loaderView.centerXAnchor.constraint(equalTo: collectionView.centerXAnchor).isActive = true

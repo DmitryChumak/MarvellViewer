@@ -22,22 +22,18 @@ depends-top-level:
 - "Array"
 - "AssignmentPrecedence"
 - "Bool"
-- "BooleanLiteralType"
 - "CGFloat"
 - !private "CGRect"
 - "CGSize"
 - "CastingPrecedence"
 - "DataFetcher"
 - !private "DispatchQueue"
-- "FloatLiteralType"
 - "IndexPath"
 - "Int"
-- "IntegerLiteralType"
 - "LoaderView"
 - "MainCoordinator"
 - !private "MarvelCharacterCollectionViewCell"
 - "MarvelEntity"
-- "Storyboarded"
 - "TernaryPrecedence"
 - "UICollectionView"
 - "UICollectionViewCell"
@@ -123,7 +119,6 @@ depends-member:
 - ["s7CVarArgP", "indexTitles"]
 - ["s7CVarArgP", "indexTitlesForCollectionView"]
 - ["s7CVarArgP", "init"]
-- ["s7CVarArgP", "instantiate"]
 - !private ["s7CVarArgP", "invalidateLayout"]
 - !private ["s7CVarArgP", "isActive"]
 - !private ["s7CVarArgP", "isLoading"]
@@ -210,7 +205,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "indexTitles"]
 - ["s28CustomDebugStringConvertibleP", "indexTitlesForCollectionView"]
 - ["s28CustomDebugStringConvertibleP", "init"]
-- ["s28CustomDebugStringConvertibleP", "instantiate"]
 - !private ["s28CustomDebugStringConvertibleP", "invalidateLayout"]
 - !private ["s28CustomDebugStringConvertibleP", "isActive"]
 - !private ["s28CustomDebugStringConvertibleP", "isLoading"]
@@ -308,7 +302,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "indexTitles"]
 - ["s23CustomStringConvertibleP", "indexTitlesForCollectionView"]
 - ["s23CustomStringConvertibleP", "init"]
-- ["s23CustomStringConvertibleP", "instantiate"]
 - !private ["s23CustomStringConvertibleP", "invalidateLayout"]
 - !private ["s23CustomStringConvertibleP", "isActive"]
 - !private ["s23CustomStringConvertibleP", "isLoading"]
@@ -437,7 +430,6 @@ depends-member:
 - ["SQ", "indexTitles"]
 - ["SQ", "indexTitlesForCollectionView"]
 - ["SQ", "init"]
-- ["SQ", "instantiate"]
 - !private ["SQ", "invalidateLayout"]
 - !private ["SQ", "isActive"]
 - !private ["SQ", "isLandscape"]
@@ -537,7 +529,6 @@ depends-member:
 - ["SH", "indexTitles"]
 - ["SH", "indexTitlesForCollectionView"]
 - ["SH", "init"]
-- ["SH", "instantiate"]
 - !private ["SH", "invalidateLayout"]
 - !private ["SH", "isActive"]
 - !private ["SH", "isLandscape"]
@@ -632,7 +623,6 @@ depends-member:
 - ["So8NSCodingP", "indexTitles"]
 - ["So8NSCodingP", "indexTitlesForCollectionView"]
 - !private ["So8NSCodingP", "init"]
-- ["So8NSCodingP", "instantiate"]
 - !private ["So8NSCodingP", "invalidateLayout"]
 - !private ["So8NSCodingP", "isLoading"]
 - !private ["So8NSCodingP", "loadDataForFirstPage"]
@@ -683,7 +673,6 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "indexTitles"]
 - ["So26NSExtensionRequestHandlingP", "indexTitlesForCollectionView"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
-- ["So26NSExtensionRequestHandlingP", "instantiate"]
 - !private ["So26NSExtensionRequestHandlingP", "isLoading"]
 - !private ["So26NSExtensionRequestHandlingP", "loadDataForFirstPage"]
 - !private ["So26NSExtensionRequestHandlingP", "loadDataForNextPage"]
@@ -758,7 +747,6 @@ depends-member:
 - ["So8NSObjectC", "indexTitles"]
 - ["So8NSObjectC", "indexTitlesForCollectionView"]
 - ["So8NSObjectC", "init"]
-- ["So8NSObjectC", "instantiate"]
 - !private ["So8NSObjectC", "invalidateLayout"]
 - !private ["So8NSObjectC", "isActive"]
 - ["So8NSObjectC", "isLoading"]
@@ -829,7 +817,6 @@ depends-member:
 - ["So8NSObjectP", "indexTitles"]
 - ["So8NSObjectP", "indexTitlesForCollectionView"]
 - !private ["So8NSObjectP", "init"]
-- ["So8NSObjectP", "instantiate"]
 - !private ["So8NSObjectP", "invalidateLayout"]
 - !private ["So8NSObjectP", "isActive"]
 - !private ["So8NSObjectP", "isLoading"]
@@ -896,48 +883,6 @@ depends-member:
 - ["ST", "init"]
 - !private ["ST", "row"]
 - !private ["ST", "subscript"]
-- ["13MarvellViewer12StoryboardedP", "Array"]
-- !private ["13MarvellViewer12StoryboardedP", "CGRect"]
-- !private ["13MarvellViewer12StoryboardedP", "CGSize"]
-- !private ["13MarvellViewer12StoryboardedP", "DispatchQueue"]
-- !private ["13MarvellViewer12StoryboardedP", "LoaderView"]
-- !private ["13MarvellViewer12StoryboardedP", "MarvelCharacterCollectionViewCell"]
-- !private ["13MarvellViewer12StoryboardedP", "UIDevice"]
-- !private ["13MarvellViewer12StoryboardedP", "UIEdgeInsets"]
-- ["13MarvellViewer12StoryboardedP", ""]
-- !private ["13MarvellViewer12StoryboardedP", "cellPadding"]
-- !private ["13MarvellViewer12StoryboardedP", "cellsPerRow"]
-- ["13MarvellViewer12StoryboardedP", "collectionView"]
-- !private ["13MarvellViewer12StoryboardedP", "coordinator"]
-- !private ["13MarvellViewer12StoryboardedP", "dataFetcher"]
-- !private ["13MarvellViewer12StoryboardedP", "handleError"]
-- ["13MarvellViewer12StoryboardedP", "indexPathForPreferredFocusedView"]
-- ["13MarvellViewer12StoryboardedP", "indexPathForPreferredFocusedViewInCollectionView"]
-- ["13MarvellViewer12StoryboardedP", "indexTitles"]
-- ["13MarvellViewer12StoryboardedP", "indexTitlesForCollectionView"]
-- ["13MarvellViewer12StoryboardedP", "instantiate"]
-- !private ["13MarvellViewer12StoryboardedP", "isLoading"]
-- !private ["13MarvellViewer12StoryboardedP", "loadDataForFirstPage"]
-- !private ["13MarvellViewer12StoryboardedP", "loadDataForNextPage"]
-- !private ["13MarvellViewer12StoryboardedP", "loadDataToCollection"]
-- !private ["13MarvellViewer12StoryboardedP", "marvelEntities"]
-- ["13MarvellViewer12StoryboardedP", "numberOfSections"]
-- ["13MarvellViewer12StoryboardedP", "numberOfSectionsInCollectionView"]
-- ["13MarvellViewer12StoryboardedP", "scrollViewDidChangeAdjustedContentInset"]
-- ["13MarvellViewer12StoryboardedP", "scrollViewDidEndDecelerating"]
-- ["13MarvellViewer12StoryboardedP", "scrollViewDidEndDragging"]
-- ["13MarvellViewer12StoryboardedP", "scrollViewDidEndScrollingAnimation"]
-- ["13MarvellViewer12StoryboardedP", "scrollViewDidEndZooming"]
-- ["13MarvellViewer12StoryboardedP", "scrollViewDidScroll"]
-- ["13MarvellViewer12StoryboardedP", "scrollViewDidScrollToTop"]
-- ["13MarvellViewer12StoryboardedP", "scrollViewDidZoom"]
-- ["13MarvellViewer12StoryboardedP", "scrollViewShouldScrollToTop"]
-- ["13MarvellViewer12StoryboardedP", "scrollViewWillBeginDecelerating"]
-- ["13MarvellViewer12StoryboardedP", "scrollViewWillBeginDragging"]
-- ["13MarvellViewer12StoryboardedP", "scrollViewWillBeginZooming"]
-- ["13MarvellViewer12StoryboardedP", "scrollViewWillEndDragging"]
-- ["13MarvellViewer12StoryboardedP", "viewForZooming"]
-- ["13MarvellViewer12StoryboardedP", "viewForZoomingInScrollView"]
 - !private ["So29UIAccessibilityIdentificationP", "addSubview"]
 - !private ["So29UIAccessibilityIdentificationP", "bounds"]
 - !private ["So29UIAccessibilityIdentificationP", "centerXAnchor"]
@@ -1009,7 +954,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "indexTitles"]
 - ["So21UIAppearanceContainerP", "indexTitlesForCollectionView"]
 - !private ["So21UIAppearanceContainerP", "init"]
-- ["So21UIAppearanceContainerP", "instantiate"]
 - !private ["So21UIAppearanceContainerP", "isLoading"]
 - !private ["So21UIAppearanceContainerP", "loadDataForFirstPage"]
 - !private ["So21UIAppearanceContainerP", "loadDataForNextPage"]
@@ -1075,7 +1019,6 @@ depends-member:
 - ["So26UICollectionViewDataSourceP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So26UICollectionViewDataSourceP", "indexTitles"]
 - ["So26UICollectionViewDataSourceP", "indexTitlesForCollectionView"]
-- ["So26UICollectionViewDataSourceP", "instantiate"]
 - !private ["So26UICollectionViewDataSourceP", "isLoading"]
 - !private ["So26UICollectionViewDataSourceP", "loadDataForFirstPage"]
 - !private ["So26UICollectionViewDataSourceP", "loadDataForNextPage"]
@@ -1117,7 +1060,6 @@ depends-member:
 - ["So24UICollectionViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So24UICollectionViewDelegateP", "indexTitles"]
 - ["So24UICollectionViewDelegateP", "indexTitlesForCollectionView"]
-- ["So24UICollectionViewDelegateP", "instantiate"]
 - !private ["So24UICollectionViewDelegateP", "isLoading"]
 - !private ["So24UICollectionViewDelegateP", "loadDataForFirstPage"]
 - !private ["So24UICollectionViewDelegateP", "loadDataForNextPage"]
@@ -1159,7 +1101,6 @@ depends-member:
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexTitles"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexTitlesForCollectionView"]
-- ["So34UICollectionViewDelegateFlowLayoutP", "instantiate"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "isLoading"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "loadDataForFirstPage"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "loadDataForNextPage"]
@@ -1203,7 +1144,6 @@ depends-member:
 - ["So18UIContentContainerP", "indexTitles"]
 - ["So18UIContentContainerP", "indexTitlesForCollectionView"]
 - !private ["So18UIContentContainerP", "init"]
-- ["So18UIContentContainerP", "instantiate"]
 - !private ["So18UIContentContainerP", "isLoading"]
 - !private ["So18UIContentContainerP", "loadDataForFirstPage"]
 - !private ["So18UIContentContainerP", "loadDataForNextPage"]
@@ -1316,7 +1256,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "indexTitles"]
 - ["So18UIFocusEnvironmentP", "indexTitlesForCollectionView"]
 - !private ["So18UIFocusEnvironmentP", "init"]
-- ["So18UIFocusEnvironmentP", "instantiate"]
 - !private ["So18UIFocusEnvironmentP", "isLoading"]
 - !private ["So18UIFocusEnvironmentP", "loadDataForFirstPage"]
 - !private ["So18UIFocusEnvironmentP", "loadDataForNextPage"]
@@ -1430,7 +1369,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "indexTitles"]
 - ["So30UIPasteConfigurationSupportingP", "indexTitlesForCollectionView"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
-- ["So30UIPasteConfigurationSupportingP", "instantiate"]
 - !private ["So30UIPasteConfigurationSupportingP", "isLoading"]
 - !private ["So30UIPasteConfigurationSupportingP", "loadDataForFirstPage"]
 - !private ["So30UIPasteConfigurationSupportingP", "loadDataForNextPage"]
@@ -1503,7 +1441,6 @@ depends-member:
 - ["So11UIResponderC", "indexTitles"]
 - ["So11UIResponderC", "indexTitlesForCollectionView"]
 - ["So11UIResponderC", "init"]
-- ["So11UIResponderC", "instantiate"]
 - ["So11UIResponderC", "isLoading"]
 - ["So11UIResponderC", "loadDataForFirstPage"]
 - ["So11UIResponderC", "loadDataForNextPage"]
@@ -1566,7 +1503,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "indexTitles"]
 - ["So30UIResponderStandardEditActionsP", "indexTitlesForCollectionView"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
-- ["So30UIResponderStandardEditActionsP", "instantiate"]
 - !private ["So30UIResponderStandardEditActionsP", "isLoading"]
 - !private ["So30UIResponderStandardEditActionsP", "loadDataForFirstPage"]
 - !private ["So30UIResponderStandardEditActionsP", "loadDataForNextPage"]
@@ -1628,7 +1564,6 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So20UIScrollViewDelegateP", "indexTitles"]
 - ["So20UIScrollViewDelegateP", "indexTitlesForCollectionView"]
-- ["So20UIScrollViewDelegateP", "instantiate"]
 - !private ["So20UIScrollViewDelegateP", "isLoading"]
 - !private ["So20UIScrollViewDelegateP", "loadDataForFirstPage"]
 - !private ["So20UIScrollViewDelegateP", "loadDataForNextPage"]
@@ -1682,7 +1617,6 @@ depends-member:
 - ["So16UIStateRestoringP", "indexTitles"]
 - ["So16UIStateRestoringP", "indexTitlesForCollectionView"]
 - !private ["So16UIStateRestoringP", "init"]
-- ["So16UIStateRestoringP", "instantiate"]
 - !private ["So16UIStateRestoringP", "isLoading"]
 - !private ["So16UIStateRestoringP", "loadDataForFirstPage"]
 - !private ["So16UIStateRestoringP", "loadDataForNextPage"]
@@ -1740,7 +1674,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", "indexTitles"]
 - ["So18UITraitEnvironmentP", "indexTitlesForCollectionView"]
 - !private ["So18UITraitEnvironmentP", "init"]
-- ["So18UITraitEnvironmentP", "instantiate"]
 - !private ["So18UITraitEnvironmentP", "isLoading"]
 - !private ["So18UITraitEnvironmentP", "loadDataForFirstPage"]
 - !private ["So18UITraitEnvironmentP", "loadDataForNextPage"]
@@ -1803,7 +1736,6 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "indexTitles"]
 - ["So23UIUserActivityRestoringP", "indexTitlesForCollectionView"]
 - !private ["So23UIUserActivityRestoringP", "init"]
-- ["So23UIUserActivityRestoringP", "instantiate"]
 - !private ["So23UIUserActivityRestoringP", "isLoading"]
 - !private ["So23UIUserActivityRestoringP", "loadDataForFirstPage"]
 - !private ["So23UIUserActivityRestoringP", "loadDataForNextPage"]
@@ -1884,7 +1816,6 @@ depends-member:
 - ["So16UIViewControllerC", "indexTitles"]
 - ["So16UIViewControllerC", "indexTitlesForCollectionView"]
 - ["So16UIViewControllerC", "init"]
-- ["So16UIViewControllerC", "instantiate"]
 - ["So16UIViewControllerC", "isLoading"]
 - ["So16UIViewControllerC", "loadDataForFirstPage"]
 - ["So16UIViewControllerC", "loadDataForNextPage"]
@@ -1940,7 +1871,6 @@ depends-member:
 - ["13MarvellViewer14ViewControllerC", "indexTitles"]
 - ["13MarvellViewer14ViewControllerC", "indexTitlesForCollectionView"]
 - ["13MarvellViewer14ViewControllerC", "init"]
-- ["13MarvellViewer14ViewControllerC", "instantiate"]
 - !private ["13MarvellViewer14ViewControllerC", "isLoading"]
 - !private ["13MarvellViewer14ViewControllerC", "loadDataForFirstPage"]
 - !private ["13MarvellViewer14ViewControllerC", "loadDataForNextPage"]
@@ -2022,7 +1952,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexTitles"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexTitlesForCollectionView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "instantiate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "invalidateLayout"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isActive"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isLoading"]
@@ -2144,7 +2073,6 @@ depends-nominal:
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "s6ResultO"
 - "ST"
-- "13MarvellViewer12StoryboardedP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -2217,4 +2145,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "50c6f613b77798c46e5650e7b8c69883"
+interface-hash: "95ed10c0427e1ce378d6e823c35a36d6"

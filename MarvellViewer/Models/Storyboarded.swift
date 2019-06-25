@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-protocol Storyboarded {
-    static func instantiate() -> Self
-}
-
-extension Storyboarded where Self: UIViewController {
-    static func instantiate() -> Self {
-        let fullName = NSStringFromClass(self)
+extension UIViewController {
+    static var reuseIdentifier: String {
+        return String(describing: self)
+    }
+    
+    static func instantiate() -> self {
+        let fullName = self.reuseIdentifier
         let className = fullName.components(separatedBy: ".")[1]
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        return storyboard.instantiateViewController(withIdentifier: className) as! Self
+        return storyboard.instantiateViewController(withIdentifier: className) as! self
     }
 }
