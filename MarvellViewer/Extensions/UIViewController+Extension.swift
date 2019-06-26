@@ -17,14 +17,20 @@ extension UIViewController {
     }
 }
 
-extension UIViewController {
-    static var reuseIdentifier: String {
-        return String(describing: self)
-    }
-    
-    static func instantiate<T: UIViewController>() -> T {
-        let className = self.reuseIdentifier
+
+
+protocol Storyboarded {
+    static func instantiate() -> Self
+}
+
+
+extension Storyboarded where Self: UIViewController {
+    static func instantiate() -> Self {
+        let fullName = NSStringFromClass(self)
+        let className = fullName.components(separatedBy: ".")[1]
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        return storyboard.instantiateViewController(withIdentifier: className) as! T
+        return storyboard.instantiateViewController(withIdentifier: className) as! Self
     }
 }
+
+extension UIViewController : Storyboarded   { }

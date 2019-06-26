@@ -18,14 +18,14 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        let vc = ViewController.instantiate() as ViewController
+        let vc = ViewController.instantiate() 
         vc.coordinator = self
         vc.dataFetcher = MarvelCharacterFetcher()
         navigationController.pushViewController(vc, animated: true)
     }
     
     func showDetails(for entity: MarvelEntity) {
-        let vc = ViewController.instantiate() as ViewController
+        let vc = ViewController.instantiate()
         vc.coordinator = self
         vc.dataFetcher = MarvelComicsFetcher(for: entity as! MarvelCharacter)
         navigationController.pushViewController(vc, animated: true)

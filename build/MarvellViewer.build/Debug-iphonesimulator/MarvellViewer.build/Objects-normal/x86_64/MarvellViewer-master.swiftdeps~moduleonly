@@ -1,15 +1,15 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "22c9128ce6297f9e451b09de81d00170"
-build_time: [1561487688, 923241000]
+build_time: [1561532507, 156784000]
 inputs:
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/NetworkManager.swift": [1559161215, 398281443]
-  "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Extensions/UIViewController+Extension.swift": [1561486819, 278531642]
+  "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Extensions/UIViewController+Extension.swift": [1561532480, 162644652]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/MarvelCharacterFetcher.swift": [1561383670, 346759812]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/MarvelComics.swift": [1561379838, 912695962]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/ViewControllers/Views/LoaderView.swift": [1561069893, 2527794]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/MarvelCharacter.swift": [1561379863, 967645061]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/MarvelManager.swift": [1561383299, 21974488]
-  "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/MainCoordinator.swift": [1561486646, 986087002]
+  "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/MainCoordinator.swift": [1561532378, 286274684]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/Models/MarvelAPIHashGenerator.swift": [1558364684, 180921966]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/ViewControllers/ViewController.swift": [1561487688, 774799517]
   "/Users/dmitry/Documents/Projects/MarvellViewer/MarvellViewer/ViewControllers/Cells/MarvelCharacterCollectionViewCell/MarvelCharacterCollectionViewCell.swift": [1560861292, 529843478]
