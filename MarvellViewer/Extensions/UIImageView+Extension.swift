@@ -39,9 +39,9 @@ extension UIImageView {
         task?.resume()
     }
     func cancelLoading() {
-        if task?.state == .running {
-            task?.cancel()
-        }
+
+        task?.cancel()
+        
     }
     
 }
