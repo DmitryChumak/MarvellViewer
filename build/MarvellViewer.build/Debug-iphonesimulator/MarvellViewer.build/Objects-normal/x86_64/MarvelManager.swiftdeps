@@ -10,7 +10,9 @@ depends-top-level:
 - "=="
 - "AssignmentPrecedence"
 - "Error"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - !private "MarvelAPIConfig"
 - "MarvelCharacter"
 - !private "MarvelCharacterCollection"
@@ -19,6 +21,8 @@ depends-top-level:
 - "MarvelManager"
 - "NetworkManager"
 - "Result"
+- !private "StringLiteralType"
+- !private "UnicodeScalarType"
 - "Void"
 depends-member:
 - !private ["SK", "decoded"]

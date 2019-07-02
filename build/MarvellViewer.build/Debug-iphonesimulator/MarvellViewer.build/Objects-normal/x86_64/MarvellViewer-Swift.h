@@ -220,6 +220,8 @@ SWIFT_CLASS("_TtC13MarvellViewer33MarvelCharacterCollectionViewCell")
 
 
 
+
+
 @class NSBundle;
 
 SWIFT_CLASS("_TtC13MarvellViewer14ViewController")

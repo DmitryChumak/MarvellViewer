@@ -18,7 +18,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		y2qt7JkVoH7c2pNDt4ZXsIESMi0=
+		L12I+yhGFPtXu3inzbyD7DlZEa8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/ViewController.nib</key>
 		<data>
-		eJ5zL5BFkyDRT5hGczZsfTyPL5o=
+		+KYA/kzaVj1RCZIvw+gdhVGEYMw=
 		</data>
 		<key>Frameworks/CryptoSwift.framework/CryptoSwift</key>
 		<data>
@@ -100,6 +100,18 @@
 		<data>
 		rr133hg746piedcqcMbshhVYb1I=
 		</data>
+		<key>MarvelCharacterDetails.storyboardc/0Cp-lW-Svg-view-Lxp-Ru-T88.nib</key>
+		<data>
+		7bPs8CUO0CTqiHEZ8c4OzeEC7qg=
+		</data>
+		<key>MarvelCharacterDetails.storyboardc/Info.plist</key>
+		<data>
+		pJSD8/8SHXO1m+SeB4kiqILbmTo=
+		</data>
+		<key>MarvelCharacterDetails.storyboardc/MarvelCharacterDetails.nib</key>
+		<data>
+		Ysv8hj2aKoV2IOoIuFkqrA8fAko=
+		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
@@ -136,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KkBfsrk5kaoXLzECzWBSOZkwlMa/9dF1Syn35gYABnQ=
+			txglrZ44ALX8fVTVXWOcZFhM1MskyX3sAKPz+vEFPcI=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -150,7 +162,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X59UXSfOYrmhdjmR4do9GlMJHeZflok89gHIgWmTILY=
+			35U/CcJb2VUrpWv8bN5/LsLOxUNarWdCbaNJ8XvI36U=
 			</data>
 		</dict>
 		<key>Frameworks/CryptoSwift.framework/CryptoSwift</key>
@@ -270,6 +282,27 @@
 			<key>hash2</key>
 			<data>
 			eF+DbQW2YreGteP8qEvLG54ZAx4cmxoEz4Ux9yVtc8E=
+			</data>
+		</dict>
+		<key>MarvelCharacterDetails.storyboardc/0Cp-lW-Svg-view-Lxp-Ru-T88.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G4Y4ywHdFdI9ZpsawziPoSEyKHW8B5fkT5CYruvzQmc=
+			</data>
+		</dict>
+		<key>MarvelCharacterDetails.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zDhA/WXUWfmpD02i2hirgsEQYsXJ5rYhOSgeK6uzOBM=
+			</data>
+		</dict>
+		<key>MarvelCharacterDetails.storyboardc/MarvelCharacterDetails.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R5rNmvmtqNuD4Lk+Z4RSNEPrf0LXPvta4OZUwMTnZRg=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

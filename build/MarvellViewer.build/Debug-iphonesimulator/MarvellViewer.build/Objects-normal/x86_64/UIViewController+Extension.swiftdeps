@@ -1,194 +1,242 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "Storyboarded"
 provides-nominal:
+- "So16UIViewControllerC"
+- "13MarvellViewer12StoryboardedP"
 provides-member:
 - ["So16UIViewControllerC", ""]
+- ["13MarvellViewer12StoryboardedP", ""]
 - ["So16UIViewControllerC", "handleError"]
-- ["So16UIViewControllerC", "reuseIdentifier"]
-- ["So16UIViewControllerC", "instantiate"]
+- ["13MarvellViewer12StoryboardedP", "instantiate"]
 provides-dynamic-lookup:
 depends-top-level:
 - !private "BooleanLiteralType"
 - !private "Bundle"
 - "CastingPrecedence"
 - "Error"
-- "String"
+- !private "NSStringFromClass"
+- "Storyboarded"
 - !private "StringLiteralType"
 - !private "UIAlertAction"
 - !private "UIAlertController"
 - !private "UIStoryboard"
 - "UIViewController"
+- !private "UnicodeScalarType"
 depends-member:
-- !private ["SK", "init"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "components"]
+- !private ["SK", "subscript"]
 - !private ["So8NSBundleC", "main"]
 - !private ["s7CVarArgP", "Bundle"]
-- !private ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "NSStringFromClass"]
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "UIStoryboard"]
 - !private ["s7CVarArgP", "addAction"]
+- !private ["s7CVarArgP", "components"]
 - !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "instantiate"]
 - !private ["s7CVarArgP", "instantiateViewController"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "present"]
-- !private ["s7CVarArgP", "reuseIdentifier"]
-- !private ["Sl", "init"]
-- !private ["SL", "init"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "components"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "components"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "Bundle"]
-- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "NSStringFromClass"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - !private ["s28CustomDebugStringConvertibleP", "addAction"]
+- !private ["s28CustomDebugStringConvertibleP", "components"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "instantiate"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
-- !private ["s28CustomDebugStringConvertibleP", "reuseIdentifier"]
-- !private ["s17CustomReflectableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "components"]
+- !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "Bundle"]
-- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "NSStringFromClass"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - !private ["s23CustomStringConvertibleP", "addAction"]
+- !private ["s23CustomStringConvertibleP", "components"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "instantiate"]
 - !private ["s23CustomStringConvertibleP", "instantiateViewController"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "present"]
-- !private ["s23CustomStringConvertibleP", "reuseIdentifier"]
-- !private ["Se", "init"]
-- !private ["SE", "init"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "components"]
+- !private ["Se", "subscript"]
+- !private ["SE", "components"]
+- !private ["SE", "subscript"]
 - !private ["SQ", "Bundle"]
-- !private ["SQ", "String"]
+- !private ["SQ", "NSStringFromClass"]
 - !private ["SQ", "UIAlertAction"]
 - !private ["SQ", "UIAlertController"]
 - !private ["SQ", "UIStoryboard"]
 - !private ["SQ", "addAction"]
 - !private ["SQ", "alert"]
+- !private ["SQ", "components"]
 - !private ["SQ", "default"]
 - !private ["SQ", "init"]
+- ["SQ", "instantiate"]
 - !private ["SQ", "instantiateViewController"]
 - !private ["SQ", "main"]
 - !private ["SQ", "present"]
-- !private ["SQ", "reuseIdentifier"]
+- !private ["SQ", "subscript"]
 - !private ["s5ErrorP", "localizedDescription"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s32ExpressibleByStringInterpolationP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "components"]
+- !private ["s32ExpressibleByStringInterpolationP", "components"]
+- !private ["s26ExpressibleByStringLiteralP", "components"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "components"]
 - !private ["SH", "Bundle"]
-- !private ["SH", "String"]
+- !private ["SH", "NSStringFromClass"]
 - !private ["SH", "UIAlertAction"]
 - !private ["SH", "UIAlertController"]
 - !private ["SH", "UIStoryboard"]
 - !private ["SH", "addAction"]
 - !private ["SH", "alert"]
+- !private ["SH", "components"]
 - !private ["SH", "default"]
 - !private ["SH", "init"]
+- ["SH", "instantiate"]
 - !private ["SH", "instantiateViewController"]
 - !private ["SH", "main"]
 - !private ["SH", "present"]
-- !private ["SH", "reuseIdentifier"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "init"]
+- !private ["SH", "subscript"]
+- !private ["s25LosslessStringConvertibleP", "components"]
+- !private ["s10MirrorPathP", "components"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["So8NSCodingP", "Bundle"]
-- !private ["So8NSCodingP", "String"]
+- !private ["So8NSCodingP", "NSStringFromClass"]
 - !private ["So8NSCodingP", "UIAlertAction"]
 - !private ["So8NSCodingP", "UIAlertController"]
 - !private ["So8NSCodingP", "UIStoryboard"]
 - !private ["So8NSCodingP", "addAction"]
+- !private ["So8NSCodingP", "components"]
 - !private ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "instantiate"]
 - !private ["So8NSCodingP", "present"]
-- !private ["So8NSCodingP", "reuseIdentifier"]
+- !private ["So9NSCopyingP", "components"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "Bundle"]
-- !private ["So26NSExtensionRequestHandlingP", "String"]
+- !private ["So26NSExtensionRequestHandlingP", "NSStringFromClass"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIStoryboard"]
 - !private ["So26NSExtensionRequestHandlingP", "addAction"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
+- ["So26NSExtensionRequestHandlingP", "instantiate"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
-- !private ["So26NSExtensionRequestHandlingP", "reuseIdentifier"]
+- !private ["So21NSItemProviderReadingP", "components"]
+- !private ["So21NSItemProviderWritingP", "components"]
+- !private ["So16NSMutableCopyingP", "components"]
 - !private ["So8NSObjectC", "Bundle"]
 - ["So8NSObjectC", "Error"]
-- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "NSStringFromClass"]
 - !private ["So8NSObjectC", "UIAlertAction"]
 - !private ["So8NSObjectC", "UIAlertController"]
 - !private ["So8NSObjectC", "UIStoryboard"]
 - ["So8NSObjectC", "UIViewController"]
 - !private ["So8NSObjectC", "addAction"]
+- !private ["So8NSObjectC", "components"]
 - ["So8NSObjectC", "handleError"]
 - !private ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "instantiate"]
 - !private ["So8NSObjectC", "instantiateViewController"]
 - !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "present"]
-- ["So8NSObjectC", "reuseIdentifier"]
 - !private ["So8NSObjectP", "Bundle"]
-- !private ["So8NSObjectP", "String"]
+- !private ["So8NSObjectP", "NSStringFromClass"]
 - !private ["So8NSObjectP", "UIAlertAction"]
 - !private ["So8NSObjectP", "UIAlertController"]
 - !private ["So8NSObjectP", "UIStoryboard"]
 - !private ["So8NSObjectP", "addAction"]
+- !private ["So8NSObjectP", "components"]
 - !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "instantiate"]
 - !private ["So8NSObjectP", "instantiateViewController"]
 - !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "present"]
-- !private ["So8NSObjectP", "reuseIdentifier"]
-- !private ["Sm", "init"]
+- !private ["So14NSSecureCodingP", "components"]
+- !private ["So8NSStringC", "components"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "components"]
+- !private ["Sm", "subscript"]
 - !private ["SY", "alert"]
 - !private ["SY", "default"]
-- !private ["ST", "init"]
-- !private ["SS", "init"]
-- !private ["Sy", "init"]
+- !private ["ST", "components"]
+- !private ["ST", "subscript"]
+- !private ["13MarvellViewer12StoryboardedP", "Bundle"]
+- !private ["13MarvellViewer12StoryboardedP", "NSStringFromClass"]
+- !private ["13MarvellViewer12StoryboardedP", "UIAlertAction"]
+- !private ["13MarvellViewer12StoryboardedP", "UIAlertController"]
+- !private ["13MarvellViewer12StoryboardedP", "UIStoryboard"]
+- ["13MarvellViewer12StoryboardedP", "UIViewController"]
+- ["13MarvellViewer12StoryboardedP", ""]
+- !private ["13MarvellViewer12StoryboardedP", "addAction"]
+- !private ["13MarvellViewer12StoryboardedP", "init"]
+- ["13MarvellViewer12StoryboardedP", "instantiate"]
+- !private ["13MarvellViewer12StoryboardedP", "present"]
+- !private ["SS", "components"]
+- !private ["Sy", "components"]
 - !private ["So22UIAlertControllerStyleV", "alert"]
 - !private ["So18UIAlertActionStyleV", "default"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s16TextOutputStreamP", "components"]
+- !private ["s20TextOutputStreamableP", "components"]
 - !private ["So13UIAlertActionC", "init"]
 - !private ["So17UIAlertControllerC", "addAction"]
 - !private ["So17UIAlertControllerC", "init"]
 - !private ["So21UIAppearanceContainerP", "Bundle"]
-- !private ["So21UIAppearanceContainerP", "String"]
+- !private ["So21UIAppearanceContainerP", "NSStringFromClass"]
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
 - !private ["So21UIAppearanceContainerP", "UIStoryboard"]
 - !private ["So21UIAppearanceContainerP", "addAction"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- ["So21UIAppearanceContainerP", "instantiate"]
 - !private ["So21UIAppearanceContainerP", "present"]
-- !private ["So21UIAppearanceContainerP", "reuseIdentifier"]
 - !private ["So18UIContentContainerP", "Bundle"]
-- !private ["So18UIContentContainerP", "String"]
+- !private ["So18UIContentContainerP", "NSStringFromClass"]
 - !private ["So18UIContentContainerP", "UIAlertAction"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
 - !private ["So18UIContentContainerP", "UIStoryboard"]
 - !private ["So18UIContentContainerP", "addAction"]
 - !private ["So18UIContentContainerP", "init"]
+- ["So18UIContentContainerP", "instantiate"]
 - !private ["So18UIContentContainerP", "present"]
-- !private ["So18UIContentContainerP", "reuseIdentifier"]
 - !private ["So18UIFocusEnvironmentP", "Bundle"]
-- !private ["So18UIFocusEnvironmentP", "String"]
+- !private ["So18UIFocusEnvironmentP", "NSStringFromClass"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
 - !private ["So18UIFocusEnvironmentP", "UIStoryboard"]
 - !private ["So18UIFocusEnvironmentP", "addAction"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- ["So18UIFocusEnvironmentP", "instantiate"]
 - !private ["So18UIFocusEnvironmentP", "present"]
-- !private ["So18UIFocusEnvironmentP", "reuseIdentifier"]
 - !private ["So30UIPasteConfigurationSupportingP", "Bundle"]
-- !private ["So30UIPasteConfigurationSupportingP", "String"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSStringFromClass"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "addAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "instantiate"]
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
-- !private ["So30UIPasteConfigurationSupportingP", "reuseIdentifier"]
 - !private ["So11UIResponderC", "Bundle"]
 - ["So11UIResponderC", "Error"]
-- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "NSStringFromClass"]
 - !private ["So11UIResponderC", "UIAlertAction"]
 - !private ["So11UIResponderC", "UIAlertController"]
 - !private ["So11UIResponderC", "UIStoryboard"]
@@ -198,105 +246,124 @@ depends-member:
 - !private ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "instantiate"]
 - !private ["So11UIResponderC", "present"]
-- ["So11UIResponderC", "reuseIdentifier"]
 - !private ["So30UIResponderStandardEditActionsP", "Bundle"]
-- !private ["So30UIResponderStandardEditActionsP", "String"]
+- !private ["So30UIResponderStandardEditActionsP", "NSStringFromClass"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - !private ["So30UIResponderStandardEditActionsP", "addAction"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- ["So30UIResponderStandardEditActionsP", "instantiate"]
 - !private ["So30UIResponderStandardEditActionsP", "present"]
-- !private ["So30UIResponderStandardEditActionsP", "reuseIdentifier"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - !private ["So16UIStateRestoringP", "Bundle"]
-- !private ["So16UIStateRestoringP", "String"]
+- !private ["So16UIStateRestoringP", "NSStringFromClass"]
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
 - !private ["So16UIStateRestoringP", "UIStoryboard"]
 - !private ["So16UIStateRestoringP", "addAction"]
 - !private ["So16UIStateRestoringP", "init"]
+- ["So16UIStateRestoringP", "instantiate"]
 - !private ["So16UIStateRestoringP", "present"]
-- !private ["So16UIStateRestoringP", "reuseIdentifier"]
 - !private ["So12UIStoryboardC", "init"]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
 - !private ["So18UITraitEnvironmentP", "Bundle"]
-- !private ["So18UITraitEnvironmentP", "String"]
+- !private ["So18UITraitEnvironmentP", "NSStringFromClass"]
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
 - !private ["So18UITraitEnvironmentP", "UIStoryboard"]
 - !private ["So18UITraitEnvironmentP", "addAction"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- ["So18UITraitEnvironmentP", "instantiate"]
 - !private ["So18UITraitEnvironmentP", "present"]
-- !private ["So18UITraitEnvironmentP", "reuseIdentifier"]
 - !private ["So23UIUserActivityRestoringP", "Bundle"]
-- !private ["So23UIUserActivityRestoringP", "String"]
+- !private ["So23UIUserActivityRestoringP", "NSStringFromClass"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertAction"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertController"]
 - !private ["So23UIUserActivityRestoringP", "UIStoryboard"]
 - !private ["So23UIUserActivityRestoringP", "addAction"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- ["So23UIUserActivityRestoringP", "instantiate"]
 - !private ["So23UIUserActivityRestoringP", "present"]
-- !private ["So23UIUserActivityRestoringP", "reuseIdentifier"]
 - !private ["So16UIViewControllerC", "Bundle"]
 - ["So16UIViewControllerC", "Error"]
-- ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "NSStringFromClass"]
 - !private ["So16UIViewControllerC", "UIAlertAction"]
 - !private ["So16UIViewControllerC", "UIAlertController"]
 - !private ["So16UIViewControllerC", "UIStoryboard"]
 - ["So16UIViewControllerC", "UIViewController"]
 - !private ["So16UIViewControllerC", "addAction"]
+- ["So16UIViewControllerC", "deinit"]
 - ["So16UIViewControllerC", "handleError"]
 - !private ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "instantiate"]
 - !private ["So16UIViewControllerC", "present"]
-- ["So16UIViewControllerC", "reuseIdentifier"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "components"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "components"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "components"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "components"]
+- !private ["s19_HasContiguousBytesP", "components"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "components"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Bundle"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSStringFromClass"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "components"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "instantiate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "reuseIdentifier"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "components"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 depends-nominal:
+- !private "Sa"
 - !private "SK"
 - !private "So8NSBundleC"
-- !private "s7CVarArgP"
+- "s7CVarArgP"
 - !private "Sl"
 - !private "SL"
-- !private "s28CustomDebugStringConvertibleP"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
-- !private "s23CustomStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
 - !private "Se"
 - !private "SE"
-- !private "SQ"
+- "SQ"
 - !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "SH"
+- "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "So8NSCodingP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "So8NSCodingP"
 - !private "So9NSCopyingP"
-- !private "So26NSExtensionRequestHandlingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
-- !private "So8NSObjectP"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "Sk"
 - !private "Sm"
 - !private "SY"
 - !private "ST"
+- "13MarvellViewer12StoryboardedP"
 - !private "SS"
 - !private "Sy"
 - !private "So22UIAlertControllerStyleV"
@@ -305,24 +372,27 @@ depends-nominal:
 - !private "s20TextOutputStreamableP"
 - !private "So13UIAlertActionC"
 - !private "So17UIAlertControllerC"
-- !private "So21UIAppearanceContainerP"
-- !private "So18UIContentContainerP"
-- !private "So18UIFocusEnvironmentP"
-- !private "So30UIPasteConfigurationSupportingP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
-- !private "So30UIResponderStandardEditActionsP"
+- "So30UIResponderStandardEditActionsP"
 - !private "So35UISpringLoadedInteractionSupportingP"
-- !private "So16UIStateRestoringP"
+- "So16UIStateRestoringP"
 - !private "So12UIStoryboardC"
-- !private "So18UITraitEnvironmentP"
-- !private "So23UIUserActivityRestoringP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So16UIViewControllerC"
+- !private "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s19_HasContiguousBytesP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
@@ -354,4 +424,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "bb534481217ff90de1418156d4b03a0d"
+interface-hash: "ae3ce7848c3b7467c5b15234950cb877"
