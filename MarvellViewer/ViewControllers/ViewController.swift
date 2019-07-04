@@ -43,27 +43,30 @@ class ViewController: UIViewController {
     
     private func loadDataToCollection(from offset: Int, loaderView: LoaderView) {
         dataFetcher.fetch(for: offset) { [weak self] result in
-            switch result {
-            case .success(let res):
-                
-                self?.marvelEntities.append(contentsOf: res)
-                
-                DispatchQueue.main.async {
-                    self?.collectionView.contentInset = .zero
-                    loaderView.removeFromSuperview()
-                    self?.collectionView.reloadData()
-                    self?.isLoading = false
-                }
-                
-            case .failure(let error):
-                DispatchQueue.main.async {
-                    self?.collectionView.contentInset = .zero
-                    loaderView.removeFromSuperview()
-                    self?.isLoading = false
-                    self?.handleError(error: error)
-                }
+            DispatchQueue.main.async {
+                 self?.handleLoadedData(result: result, loaderView: loaderView)
             }
         }
+    }
+    
+    private func handleLoadedData(result: Result<[MarvelEntity],Error>, loaderView: LoaderView) {
+            switch result {
+            case .success(let newEntities):
+                let lastExistedItemIndex = max(self.marvelEntities.count - 1, 0)
+                self.marvelEntities.append(contentsOf: newEntities)
+                let indexPaths = newEntities.enumerated().map { (index, item) -> IndexPath in
+                    return IndexPath(row: index + lastExistedItemIndex, section: 0)
+                }
+                self.collectionView.insertItems(at: indexPaths)
+            case .failure(let error):
+                self.handleError(error: error)
+            }
+            self.isLoading = false
+            loaderView.removeFromSuperview()
+            UIView.animate(withDuration: 1) {
+                self.collectionView.contentInset = .zero
+            }
+        
     }
     
     private func loadDataForFirstPage() {

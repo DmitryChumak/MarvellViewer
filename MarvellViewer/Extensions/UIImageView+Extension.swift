@@ -17,10 +17,8 @@ extension UIImageView {
         get {
             return objc_getAssociatedObject(self, &key) as? URLSessionTask
         }
-        set(newValue) {
-            objc_setAssociatedObject(self,
-                                     &key, newValue,
-                                     .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        set {
+            objc_setAssociatedObject(self, &key, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
     
@@ -28,8 +26,8 @@ extension UIImageView {
        task = URLSession.shared.dataTask(with: url) { data , _ , error in
             if let data = data {
                 if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self.image = image
+                    DispatchQueue.main.async { [weak self] in
+                        self?.image = image
                     }
                 }
             } else if let error = error {

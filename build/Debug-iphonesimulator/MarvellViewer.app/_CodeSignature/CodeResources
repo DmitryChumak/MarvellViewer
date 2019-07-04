@@ -16,17 +16,17 @@
 		<data>
 		DFbA9mO7VJg4Bm36kiwB7Y4cUCk=
 		</data>
-		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
+		<key>Base.lproj/ViewController.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		L12I+yhGFPtXu3inzbyD7DlZEa8=
+		iXeIyyrVg9EzJ8eByusZMcLCq0Q=
 		</data>
-		<key>Base.lproj/Main.storyboardc/Info.plist</key>
+		<key>Base.lproj/ViewController.storyboardc/Info.plist</key>
 		<data>
 		V4A6K9nxoaFg+xUDERq3M7nebkk=
 		</data>
-		<key>Base.lproj/Main.storyboardc/ViewController.nib</key>
+		<key>Base.lproj/ViewController.storyboardc/ViewController.nib</key>
 		<data>
-		+KYA/kzaVj1RCZIvw+gdhVGEYMw=
+		20QMNP0jNZf/fggRXvUIG8YrHb4=
 		</data>
 		<key>Frameworks/CryptoSwift.framework/CryptoSwift</key>
 		<data>
@@ -144,25 +144,25 @@
 			P2VuNmsE1Puiwo6fdYT1jiPyWGaCgvOeSXg5Ysatvw8=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
+		<key>Base.lproj/ViewController.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			txglrZ44ALX8fVTVXWOcZFhM1MskyX3sAKPz+vEFPcI=
+			MzXJ6GmouqB+ICcxVDMIdVsbwG+inxt99sqGo/2VtM8=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/Info.plist</key>
+		<key>Base.lproj/ViewController.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			DeAXQWq4jXDTsjE4QLzMP1kCqPwNlTXcpFVpTP8W3CU=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/ViewController.nib</key>
+		<key>Base.lproj/ViewController.storyboardc/ViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			35U/CcJb2VUrpWv8bN5/LsLOxUNarWdCbaNJ8XvI36U=
+			7PIuWUMa0qrLb9DGsyI4Iwp9hMLUYXHSp0t2XZt51Ns=
 			</data>
 		</dict>
 		<key>Frameworks/CryptoSwift.framework/CryptoSwift</key>

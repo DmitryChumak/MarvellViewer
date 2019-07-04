@@ -16,6 +16,7 @@ class MarvelCharacterCollectionViewCell: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         marvelCharacterImage.cancelLoading()
+        marvelCharacterImage.image = nil
     }
     
     
