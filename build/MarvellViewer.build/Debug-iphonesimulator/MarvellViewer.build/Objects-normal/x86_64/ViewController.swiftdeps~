@@ -460,7 +460,7 @@ depends-member:
 - !private ["SQ", "delegate"]
 - !private ["SQ", "dequeueReusableCell"]
 - !private ["SQ", "enumerated"]
-- !private ["SQ", "failure"]
+- ["SQ", "failure"]
 - !private ["SQ", "fetch"]
 - !private ["SQ", "frame"]
 - !private ["SQ", "handleError"]
@@ -505,7 +505,7 @@ depends-member:
 - ["SQ", "scrollViewWillEndDragging"]
 - !private ["SQ", "size"]
 - !private ["SQ", "subscript"]
-- !private ["SQ", "success"]
+- ["SQ", "success"]
 - !private ["SQ", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["SQ", "userInterfaceIdiom"]
 - !private ["SQ", "viewDidLoad"]
@@ -567,7 +567,7 @@ depends-member:
 - !private ["SH", "delegate"]
 - !private ["SH", "dequeueReusableCell"]
 - !private ["SH", "enumerated"]
-- !private ["SH", "failure"]
+- ["SH", "failure"]
 - !private ["SH", "fetch"]
 - !private ["SH", "frame"]
 - !private ["SH", "handleError"]
@@ -610,7 +610,7 @@ depends-member:
 - ["SH", "scrollViewWillBeginZooming"]
 - ["SH", "scrollViewWillEndDragging"]
 - !private ["SH", "subscript"]
-- !private ["SH", "success"]
+- ["SH", "success"]
 - !private ["SH", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["SH", "userInterfaceIdiom"]
 - !private ["SH", "viewDidLoad"]
@@ -951,8 +951,8 @@ depends-member:
 - !private ["SY", "pad"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
-- !private ["s6ResultO", "failure"]
-- !private ["s6ResultO", "success"]
+- ["s6ResultO", "failure"]
+- ["s6ResultO", "success"]
 - !private ["ST", "append"]
 - !private ["ST", "count"]
 - !private ["ST", "enumerated"]
@@ -2285,7 +2285,7 @@ depends-nominal:
 - "Sm"
 - !private "SY"
 - !private "10Foundation20ReferenceConvertibleP"
-- !private "s6ResultO"
+- "s6ResultO"
 - "ST"
 - "13MarvellViewer12StoryboardedP"
 - !private "So29UIAccessibilityIdentificationP"

@@ -25,9 +25,11 @@ class MainCoordinator: Coordinator {
     }
     
     func showDetails(for entity: MarvelEntity) {
-        let vc = ViewController.instantiate()
-        vc.coordinator = self
-        vc.dataFetcher = MarvelComicsFetcher(for: entity as! MarvelCharacter)
-        navigationController.pushViewController(vc, animated: true)
+        if let entity = entity as? MarvelCharacter {
+            let vc = ViewController.instantiate()
+            vc.coordinator = self
+            vc.dataFetcher = MarvelComicsFetcher(for: entity)
+            navigationController.pushViewController(vc, animated: true)
+        }
     }
 }
