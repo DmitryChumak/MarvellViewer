@@ -19,9 +19,9 @@ class ViewController: UIViewController {
     
     private var marvelEntities: [MarvelEntity] = Array()
     
-    private var isLoading: Bool = true
-    private var cellsPerRow:CGFloat = 2
-    private let cellPadding:CGFloat = 5
+    private var isLoading : Bool = true
+    private var cellsPerRow : CGFloat = 2
+    private let cellPadding : CGFloat = 5
     
     override func viewDidLoad() {
         super.viewDidLoad()
