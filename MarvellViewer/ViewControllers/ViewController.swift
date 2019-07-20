@@ -67,6 +67,7 @@ class ViewController: UIViewController {
                 self.collectionView.contentInset = .zero
             }
         
+        
     }
     
     private func loadDataForFirstPage() {
